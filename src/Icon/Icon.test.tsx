@@ -10,14 +10,14 @@ describe("Test Component", () => {
 
   beforeEach(() => {
     props = {
-      modifier: ""
+      modifier: "success"
     };
   });
 
   const renderComponent = () => render(<Icon {...props} />);
 
   it("should render foo text correctly", () => {
-    props.modifier = "harvey was here";
+    props.modifier = "success";
     const { getByTestId } = renderComponent();
 
     const component = getByTestId("Icon");
