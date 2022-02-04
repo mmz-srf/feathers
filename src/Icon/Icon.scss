@@ -1,0 +1,55 @@
+// Generated with util/create-component.js
+@import "../variables.scss";
+@import "../typography.scss";
+
+.f-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  svg {
+    height: 24px;
+    width: 24px;
+  }
+
+  svg * {
+    stroke: currentColor;
+  }
+}
+
+.f-icon--small svg {
+  width: 16px;
+  height: 16px;
+}
+
+.f-icon--tiny svg {
+  width: 12px;
+  height: 12px;
+}
+
+.f-icon--rotatable {
+  transition: transform .2s ease-in-out;
+}
+
+.f-icon--rotated-180 {
+  transform: rotate(180deg);
+}
+
+.f-icon--no-stroke {
+  svg * {
+    stroke: none;
+  }
+}
+
+.f-icon--success {
+  color: $color-srf-green-500;
+}
+.f-icon--danger {
+  color: $color-srf-red-400;
+}
+.f-icon--info {
+  color: $color-srf-blue-600;
+}
+.f-icon--white {
+  color: $color-srf-neutral-white;
+}
