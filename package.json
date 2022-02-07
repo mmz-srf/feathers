@@ -10,7 +10,7 @@
   "description": "Shared Frontend Components between SRF web applications",
   "scripts": {
     "build": "rollup -c",
-    "test": "jest",
+    "test": "jest --passWithNoTests",
     "test:watch": "jest --watch",
     "storybook": "start-storybook -p 6006",
     "storybook:export": "build-storybook",
