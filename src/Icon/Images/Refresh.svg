@@ -1,0 +1,9 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M24 0L0 24M0 0L24 24M24 12H0M12 0V24M15.9375 0V24M8.125 0C8.125 9.37258 8.125 14.6274 8.125 24M24 7.8125H0M24 15.8125H0" stroke="#50E3C2" stroke-width="0.05"/>
+    <rect width="24" height="24" transform="matrix(-1 0 0 1 24 0)" stroke="#50E3C2" stroke-width="0.05"/>
+    <circle r="5" transform="matrix(-1 0 0 1 12 12)" stroke="#50E3C2" stroke-width="0.05"/>
+    <circle r="10" transform="matrix(-1 0 0 1 12 12)" stroke="#50E3C2" stroke-width="0.05"/>
+    <rect width="15.75" height="20" rx="2" transform="matrix(-1 0 0 1 19.875 2)" stroke="#50E3C2" stroke-width="0.05"/>
+    <rect width="20" height="16" rx="2" transform="matrix(-1 0 0 1 22 4)" stroke="#50E3C2" stroke-width="0.05"/>
+    <rect width="17.75" height="17.75" rx="2" transform="matrix(-1 0 0 1 20.875 3.125)" stroke="#50E3C2" stroke-width="0.05"/>
+</svg>
