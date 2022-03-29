@@ -3,7 +3,7 @@ import classNames from "classnames";
 
 import { IconProps } from "./Icon.types";
 
-import Refresh from "./Images/Refresh.svg";
+import Update from "./Images/Update.svg";
 
 import "./Icon.scss";
 
@@ -22,7 +22,7 @@ const Icon: React.FC<IconProps> = ({ modifier, children }) => (
 
 export const UpdateIcon: React.FC<IconProps> = ({ modifier }) => (
     <Icon {...{modifier}}>
-        <Refresh />
+        <Update />
     </Icon>
 );
 

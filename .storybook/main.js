@@ -1,6 +1,9 @@
 const path = require("path");
 
 module.exports = {
+  core: {
+    builder: "webpack5",
+  },
   stories: ["../src/**/*.stories.tsx"],
   // Add any Storybook addons you want here: https://storybook.js.org/addons/
   addons: [],
@@ -19,6 +22,23 @@ module.exports = {
       }
     });
     config.resolve.extensions.push(".ts", ".tsx");
+
+    const fileLoaderRule = config.module.rules.find(rule => rule.test && rule.test.test(".svg"));
+    fileLoaderRule.exclude = /\.svg$/;
+
+    config.module.rules.push({
+      test: /\.svg$/u,
+      use: [
+        {
+          loader: "@svgr/webpack",
+          options: {
+            icon: true,
+          },
+        },
+      ],
+    });
+
+    config.resolve.extensions.push(".svg");
 
     return config;
   }
