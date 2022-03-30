@@ -9,7 +9,7 @@
   "types": "build/index.d.ts",
   "description": "Shared Frontend Components between SRF web applications",
   "scripts": {
-    "build": "rollup -c",
+    "build": "rollup -c -w",
     "test": "jest --passWithNoTests",
     "test:watch": "jest --watch",
     "storybook": "start-storybook -p 6006",
