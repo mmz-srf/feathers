@@ -11,3 +11,9 @@ export interface ButtonProps {
   dataCy: string;
   tooltip?: any;
 }
+
+export interface ButtonTooltipProps {
+  modifier?: string;
+  content: string;
+  direction?: string;
+}

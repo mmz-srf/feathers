@@ -1,7 +1,12 @@
 import React from 'react';
 import classNames from 'classnames';
 
-import { ButtonProps } from './Button.types';
+import { ButtonProps, ButtonTooltipProps } from './Button.types';
+
+import Tooltip, {
+  TOOLTIP_DIRECTION_DOWN,
+  modifier as TOOLTIP_MODIFIER,
+} from "../Tooltip/Tooltip";
 
 import './Button.scss';
 
@@ -82,6 +87,27 @@ const Button: React.FC<ButtonProps> = ({
     {tooltip}
     {children}
   </button>
+);
+
+const ButtonTooltip: React.FC<ButtonTooltipProps> = ({
+    modifier,
+    direction = TOOLTIP_DIRECTION_DOWN,
+    content,
+  }) => (
+  <ToolTip
+    content={content}
+    modifier={classNames(
+      TOOLTIP_MODIFIER.SPACE_FILLING,
+      TOOLTIP_MODIFIER.SHOW_DELAYED,
+      modifier,
+      {
+        [TOOLTIP_MODIFIER.NO_WORD_WRAP]:
+          modifier.includes(TOOLTIP_MODIFIER.NO_MIN_WIDTH) &&
+          content.length < 30,
+      }
+    )}
+    direction={direction}
+  />
 );
 
 export default Button;
