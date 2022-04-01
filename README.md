@@ -40,7 +40,7 @@ In case this fails, publish via `npm publish` (you must be logged into npm in th
 
 ### Generating New Components
 
-I've included a handy NodeJS util file under `util` called `create-component.js`. Instead of copy pasting components to create a new component, you can instead run this command to generate all the files you need to start building out a new component. To use it:
+There is a handy NodeJS util file under `util` called `create-component.js`. Instead of copy pasting components to create a new component, you can instead run this command to generate all the files you need to start building out a new component. To use it:
 
 ```
 npm run generate YourComponentName
@@ -60,22 +60,31 @@ This will generate:
 
 The default templates for each file can be modified under `util/templates`.
 
-Don't forget to add the component to your `index.ts` exports if you want the library to export the component!
+⚠️ Don't forget to add the component to your `index.ts` exports if you want the library to export the component!
 
 ## Additional Help
 
-### Component Code Splitting
+### Install local version of feathers in your project
 
-Code splitting of your components is not supported by default.
-
-[Read this section of my blog post](https://blog.harveydelaney.com/creating-your-own-react-component-library/#introducing-code-splitting-optional-) to find out how and why you would enable code splitting of your components. In summary, code splitting enables users to import components in isolation like:
+While developing, it is useful to not have to publish every little change to NPM before you can use it in your project.
+For this, it's possible to "install" a local version of srf-feathers in your project with
 
 ```
-import TestComponent from 'harvey-component-library/build/TestComponent';
+npm i --save relative/path/to/feathers/repo
 ```
 
-This can reduce the bundle size for projects using older (CJS) module formats.
+If, for example, your project's repository is in the same folder you checked out srf-feather, you can run the following command in your project's root folder:
 
-You can check out [this branch](https://github.com/HarveyD/react-component-library/tree/code-splitting) or [this commit](https://github.com/HarveyD/react-component-library/commit/94631be5a871f3b39dbc3e9bd3e75a8ae5b3b759) to see what changes are neccesary to implement it.
+```
+npm i --save ../feathers
+```
 
-Please note, there's an issue with code splitting and using `rollup-plugin-postcss`. I recommend using `rollup-plugin-sass` instead alongside code splitting.
+⚠️ If you've previously installed srf-feathers via NPM, you might have to remove the folder in your `node_modules`.
+
+### dev-tools (feathers-dev)
+
+For a smoother experience, a collection of the most used commands has been added to a dev-script in `/bin/feathers-dev`. List the available commands with
+
+```
+./bin/feathers-dev help 
+```
