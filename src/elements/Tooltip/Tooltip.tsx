@@ -1,7 +1,7 @@
 import React from "react";
 import classNames from "classnames";
 
-import TOOLTIP_CONTENT from "./Tooltip-Content";
+//import TOOLTIP_CONTENT from "./Tooltip-Content";
 import { TooltipProps } from "./Tooltip.types";
 
 import "./Tooltip.scss";
