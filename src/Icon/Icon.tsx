@@ -8,12 +8,12 @@ import Update from "./Images/Update.svg";
 import "./Icon.scss";
 
 const Icon: React.FC<IconProps> = ({ modifier, children }) => (
-  <div data-testid="Icon" className={classNames(
-    'f-icon',
-    {
-      'f-icon--success': modifier === 'success',
-      'f-icon--danger': modifier === 'danger',
-      'f-icon--info': modifier === 'info'
+  <div
+    data-testid="Icon"
+    className={classNames("f-icon", {
+      "f-icon--success": modifier === "success",
+      "f-icon--danger": modifier === "danger",
+      "f-icon--info": modifier === "info",
     })}
   >
     {children}
@@ -21,13 +21,13 @@ const Icon: React.FC<IconProps> = ({ modifier, children }) => (
 );
 
 export const UpdateIcon: React.FC<IconProps> = ({ modifier }) => (
-    <Icon {...{modifier}}>
-        <Update />
-    </Icon>
+  <Icon {...{ modifier }}>
+    <Update />
+  </Icon>
 );
 
-export const ExclamationMarkIcon: React.FC<IconProps> = ({modifier}) => (
-  <Icon {...{modifier}}>
+export const ExclamationMarkIcon: React.FC<IconProps> = ({ modifier }) => (
+  <Icon {...{ modifier }}>
     <svg
       width="24"
       height="24"
@@ -57,8 +57,8 @@ export const ExclamationMarkIcon: React.FC<IconProps> = ({modifier}) => (
   </Icon>
 );
 
-export const SettingsIcon: React.FC<IconProps> = ({modifier}) => (
-  <Icon {...{modifier}}>
+export const SettingsIcon: React.FC<IconProps> = ({ modifier }) => (
+  <Icon {...{ modifier }}>
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="24"
@@ -80,4 +80,3 @@ export const SettingsIcon: React.FC<IconProps> = ({modifier}) => (
 );
 
 export default Icon;
-
