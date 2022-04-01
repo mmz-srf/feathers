@@ -1,0 +1,84 @@
+<svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+>
+    <path
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M16.5 10C17.8807 10 19 8.88071 19 7.5C19 6.11929 17.8807 5 16.5 5C15.1193 5 14 6.11929 14 7.5C14 8.88071 15.1193 10 16.5 10Z"
+            stroke="white"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+    />
+    <path
+            d="M16.5 3V2.5"
+            stroke="white"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+    />
+    <path
+            d="M13.3181 4.31787L12.9641 3.96387"
+            stroke="white"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+    />
+    <path
+            d="M12 7.5H11.5"
+            stroke="white"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+    />
+    <path
+            d="M13.3181 10.6821L12.9641 11.0361"
+            stroke="white"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+    />
+    <path
+            d="M16.5 12V12.5"
+            stroke="white"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+    />
+    <path
+            d="M19.6819 10.6821L20.0359 11.0361"
+            stroke="white"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+    />
+    <path
+            d="M21 7.5H21.5"
+            stroke="white"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+    />
+    <path
+            d="M19.6819 4.31787L20.0359 3.96387"
+            stroke="white"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+    />
+    <path
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M0.5 2.5C0.5 1.39543 1.39543 0.5 2.5 0.5H21.5C22.6046 0.5 23.5 1.39543 23.5 2.5V21.5C23.5 22.6046 22.6046 23.5 21.5 23.5H2.5C1.39543 23.5 0.5 22.6046 0.5 21.5V2.5Z"
+            stroke="white"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+    />
+    <path
+            d="M2.30688 15.9002C4.48394 14.1711 7.35303 13.5792 10.0366 14.3055C12.7203 15.0319 14.8991 16.9901 15.9069 19.5812"
+            stroke="white"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+    />
+    <path
+            d="M14.5481 17.2409C15.5342 16.3414 16.8533 15.8982 18.1825 16.0198C19.5117 16.1413 20.7285 16.8164 21.5351 17.8799"
+            stroke="white"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+    />
+</svg>

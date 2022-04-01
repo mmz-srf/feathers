@@ -1,0 +1,82 @@
+<svg
+        width="24"
+        height="25"
+        viewBox="0 0 24 25"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+>
+    <path
+            d="M21.5 6.23779V18.7178"
+            stroke="white"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+    />
+    <path
+            d="M5.5 3.35791H18.5"
+            stroke="white"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+    />
+    <path
+            d="M2.5 18.7178V6.23779"
+            stroke="white"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+    />
+    <path
+            d="M18.5 21.5981H5.5"
+            stroke="white"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+    />
+    <path
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M0.5 1.93799C0.5 1.66185 0.723858 1.43799 1 1.43799H3C3.27614 1.43799 3.5 1.66185 3.5 1.93799V3.81799C3.5 4.09413 3.27614 4.31799 3 4.31799H1C0.723858 4.31799 0.5 4.09413 0.5 3.81799V1.93799Z"
+            stroke="white"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+    />
+    <path
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M20.5 1.93799C20.5 1.66185 20.7239 1.43799 21 1.43799H23C23.2761 1.43799 23.5 1.66185 23.5 1.93799V3.81799C23.5 4.09413 23.2761 4.31799 23 4.31799H21C20.7239 4.31799 20.5 4.09413 20.5 3.81799V1.93799Z"
+            stroke="white"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+    />
+    <path
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M0.5 21.1382C0.5 20.862 0.723858 20.6382 1 20.6382H3C3.27614 20.6382 3.5 20.862 3.5 21.1382V23.0182C3.5 23.2943 3.27614 23.5182 3 23.5182H1C0.723858 23.5182 0.5 23.2943 0.5 23.0182V21.1382Z"
+            stroke="white"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+    />
+    <path
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M20.5 21.1382C20.5 20.862 20.7239 20.6382 21 20.6382H23C23.2761 20.6382 23.5 20.862 23.5 21.1382V23.0182C23.5 23.2943 23.2761 23.5182 23 23.5182H21C20.7239 23.5182 20.5 23.2943 20.5 23.0182V21.1382Z"
+            stroke="white"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+    />
+    <path
+            d="M7 9.11971V7.67971C7 7.41461 7.22386 7.19971 7.5 7.19971H16.5C16.7761 7.19971 17 7.41461 17 7.67971V9.11971"
+            stroke="white"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+    />
+    <path
+            d="M12 7.19775V18.7178"
+            stroke="white"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+    />
+    <path
+            d="M10.5 18.7178H13.5"
+            stroke="white"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+    />
+</svg>
