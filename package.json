@@ -19,6 +19,9 @@
     "prepublishOnly": "npm run build",
     "chromatic": "npx chromatic"
   },
+  "engines": {
+    "node": ">=12 <17"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mmz-srf/feathers.git"

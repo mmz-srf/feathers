@@ -1,0 +1,108 @@
+#!/bin/bash
+
+cd $(dirname $0)/..;
+
+COLOR="\033[95m";
+ENDC="\033[0m";
+
+# sneaky little help
+function help {
+    echo "Usage: $0"
+    echo ""
+    echo "Commands in detail"
+    printf "  └$COLOR help $ENDC               Shows this help\n"
+    echo   ""
+    echo   "INSTALLATION"
+    printf "  └$COLOR install $ENDC            Prepares a fresh installation of srf-feathers\n"
+    echo   ""
+    echo   "DAILY BUSINESS"
+    printf "  └$COLOR build $ENDC              Creates a build of srf-feathers in /build\n"
+    printf "  └$COLOR build:watch $ENDC        Creates a build of srf-feathers in /build whenever a file is changed\n"
+    printf "  └$COLOR storybook $ENDC          Starts storybook\n"
+    printf "  └$COLOR generate X $ENDC         Creates a new component X\n"
+    printf "  └$COLOR publish $ENDC            Publish srf-feathers package on NPM\n"
+    echo   ""
+    echo   "CLEAN CODE"
+    printf "  └$COLOR lint $ENDC               Runs ESLint Check\n"
+    printf "  └$COLOR lint:fix $ENDC           Runs ESLint Fix\n"
+}
+
+# print a colorized title
+function title {
+    printf "$COLOR$1$ENDC";
+    echo '';
+}
+
+function checkEngine {
+    printf '%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -
+    printf "NODE VERSION:  "
+    node -v
+    printf "NPM VERSION:  "
+    npm -v
+    printf '"''package.json''"'' exist?:  '
+    [ -f "package.json" ] && echo "✓"
+    [ ! -f "package.json" ] && echo "✘"
+    printf '"''node_modules/''"'' exist?:  '
+    [ -d node_modules/ ] && echo "✓"
+    [ ! -d node_modules/ ] && echo "✘"
+    [ -x "$(command -v check-engine)" ] && check-engine
+    if [ ! -x "$(command -v check-engine)" ]
+    then
+      read -p "You do not have check-engine npm package globally installed which lets you check your current node/npm version against the current directory package.json, install now? (y/n)" -n 1 -r
+      echo
+      if [[ $REPLY =~ ^[Yy]$ ]]
+      then
+          npm i -g check-engine && echo "\n global dep installed, running it now... \n" && check-engine
+      fi
+    fi
+    printf '%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -
+
+}
+
+function prepareFeathers {
+    checkEngine
+    title 'Installing node dependencies'
+    npm ci
+    title 'srf-feathers is now prepared and ready. Try feathers-dev storybook to check out the goods'
+}
+
+# evaluate the bash arguments
+case "$1" in
+  storybook)
+    title 'Starting Storybook'
+    npm run storybook
+    ;;
+  install)
+    prepareFeathers;
+    ;;
+  build)
+    title "Building srf-feathers"
+    npm run build
+    ;;
+  build:watch)
+    title "Building & watching srf-feathers"
+    npm run build:watch
+    ;;
+  generate)
+    title "Starting the generator"
+    npm run generate $2
+    ;;
+  publish)
+    title "Publishing on NPM"
+    npm view . version
+    npm publish
+    ;;
+  lint)
+    title "Running ESLint (Check)"
+    npx eslint src
+    ;;
+  lint:fix)
+    title "Running ESLint (Fixing what's possible)"
+    npx eslint src --fix
+    ;;
+  *)
+    help;
+    ;;
+esac
+
+exit 0;
