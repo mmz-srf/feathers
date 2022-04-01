@@ -4,6 +4,8 @@ import commonjs from "@rollup/plugin-commonjs";
 import typescript from "rollup-plugin-typescript2";
 import postcss from "rollup-plugin-postcss";
 import copy from "rollup-plugin-copy";
+import svgr from "@svgr/rollup";
+import eslint from '@rollup/plugin-eslint';
 
 const packageJson = require("./package.json");
 
@@ -24,6 +26,8 @@ export default {
   plugins: [
     peerDepsExternal(),
     resolve(),
+    svgr(),
+    eslint(),
     commonjs(),
     typescript({ useTsconfigDeclarationDir: true }),
     postcss(),

@@ -3,15 +3,17 @@ import classNames from "classnames";
 
 import { IconProps } from "./Icon.types";
 
+import Update from "./Images/Update.svg";
+
 import "./Icon.scss";
 
 const Icon: React.FC<IconProps> = ({ modifier, children }) => (
-  <div data-testid="Icon" className={classNames(
-    'f-icon',
-    {
-      'f-icon--success': modifier === 'success',
-      'f-icon--danger': modifier === 'danger',
-      'f-icon--info': modifier === 'info'
+  <div
+    data-testid="Icon"
+    className={classNames("f-icon", {
+      "f-icon--success": modifier === "success",
+      "f-icon--danger": modifier === "danger",
+      "f-icon--info": modifier === "info",
     })}
   >
     {children}
@@ -19,44 +21,13 @@ const Icon: React.FC<IconProps> = ({ modifier, children }) => (
 );
 
 export const UpdateIcon: React.FC<IconProps> = ({ modifier }) => (
-    <Icon {...{modifier}}>
-        <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            >
-            <path
-                d="M0.713989 10.353L3.50099 14.503L6.70599 10.665"
-                stroke="#4E4D47"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-            />
-            <path
-                d="M23.2859 14.6551L20.5009 10.5031L17.2939 14.3421"
-                stroke="#4E4D47"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-            />
-            <path
-                d="M20.464 10.54C20.8021 12.6833 20.3197 14.8753 19.1131 16.6787C17.9064 18.482 16.0642 19.764 13.9539 20.269C12.5519 20.6016 11.0882 20.5719 9.70079 20.1829C8.31334 19.7938 7.04769 19.0581 6.02295 18.045"
-                stroke="#4E4D47"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-            />
-            <path
-                d="M3.50501 14.479C3.22197 13.3435 3.16688 12.1631 3.34294 11.0061C3.51899 9.84912 3.92269 8.73853 4.53069 7.73856C5.13868 6.7386 5.93891 5.8691 6.88508 5.18036C7.83125 4.49163 8.90459 3.99732 10.043 3.72604C11.5397 3.37139 13.1046 3.42984 14.5706 3.89516C16.0367 4.36047 17.3488 5.21518 18.367 6.36804"
-                stroke="#4E4D47"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-            />
-            </svg>
-    </Icon>
+  <Icon {...{ modifier }}>
+    <Update />
+  </Icon>
 );
 
-export const ExclamationMarkIcon: React.FC<IconProps> = ({modifier}) => (
-  <Icon {...{modifier}}>
+export const ExclamationMarkIcon: React.FC<IconProps> = ({ modifier }) => (
+  <Icon {...{ modifier }}>
     <svg
       width="24"
       height="24"
@@ -86,8 +57,8 @@ export const ExclamationMarkIcon: React.FC<IconProps> = ({modifier}) => (
   </Icon>
 );
 
-export const SettingsIcon: React.FC<IconProps> = ({modifier}) => (
-  <Icon {...{modifier}}>
+export const SettingsIcon: React.FC<IconProps> = ({ modifier }) => (
+  <Icon {...{ modifier }}>
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="24"
@@ -109,4 +80,3 @@ export const SettingsIcon: React.FC<IconProps> = ({modifier}) => (
 );
 
 export default Icon;
-
