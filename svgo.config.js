@@ -9,6 +9,8 @@ module.exports = {
           inlineStyles: false,
           mergeStyles: false,
           minifyStyles: false,
+          removeTitle: false,
+          removeViewBox: false,
         },
       },
     },
