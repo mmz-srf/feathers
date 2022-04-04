@@ -1,0 +1,73 @@
+<svg
+        width="40"
+        height="40"
+        viewBox="0 0 40 40"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+>
+    <path
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M32.0911 20.0001C32.0911 13.3225 26.6778 7.90918 20.0001 7.90918V7.90918C13.3225 7.90918 7.90918 13.3225 7.90918 20.0001H7.90918C7.90918 26.6778 13.3225 32.0911 20.0001 32.0911V32.0911C26.6778 32.0911 32.0911 26.6778 32.0911 20.0001V20.0001Z"
+            stroke="#6B6960"
+            strokeWidth="1.67"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+    />
+    <path
+            d="M20 35.5454V39"
+            stroke="#6B6960"
+            strokeWidth="1.67"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+    />
+    <path
+            d="M35.5454 20H39"
+            stroke="#6B6960"
+            strokeWidth="1.67"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+    />
+    <path
+            d="M20 4.45455V1"
+            stroke="#6B6960"
+            strokeWidth="1.67"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+    />
+    <path
+            d="M4.45455 20H1"
+            stroke="#6B6960"
+            strokeWidth="1.67"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+    />
+    <path
+            d="M9.00928 30.9924L6.56519 33.4365"
+            stroke="#6B6960"
+            strokeWidth="1.67"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+    />
+    <path
+            d="M30.9924 30.9924L33.4348 33.4348"
+            stroke="#6B6960"
+            strokeWidth="1.67"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+    />
+    <path
+            d="M30.9941 9.00926L33.4365 6.56689"
+            stroke="#6B6960"
+            strokeWidth="1.67"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+    />
+    <path
+            d="M9.00756 9.00926L6.56519 6.56689"
+            stroke="#6B6960"
+            strokeWidth="1.67"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+    />
+</svg>

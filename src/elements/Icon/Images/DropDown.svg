@@ -1,0 +1,36 @@
+<svg
+        width="12"
+        height="12"
+        viewBox="0 0 12 12"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+>
+    <path
+            d="M8 6.5L6 8.5"
+            stroke="#22211D"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+    />
+    <path
+            d="M4 6.5L6 8.5"
+            stroke="#22211D"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+    />
+    <path
+            d="M6 3.5L6 8.5"
+            stroke="#22211D"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+    />
+    <rect
+            x="0.25"
+            y="0.25"
+            width="11.5"
+            height="11.5"
+            rx="5.75"
+            stroke="#22211D"
+            strokeWidth="0.5"
+            strokeDasharray="1 1"
+    />
+</svg>
