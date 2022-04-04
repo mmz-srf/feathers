@@ -25,7 +25,14 @@ import {
   TextboxIcon,
   CheckIcon,
   ImageGalleryIcon,
-  DatawrapperIcon, VideoGalleryIcon, AudioGalleryIcon, PeopleIcon,
+  DatawrapperIcon,
+  VideoGalleryIcon,
+  AudioGalleryIcon,
+  PeopleIcon,
+  TwitterIcon,
+  EdithIcon,
+  CaretIcon,
+  SpinnerIcon,
 } from "./Icon";
 
 export default {
@@ -66,6 +73,10 @@ export const ImageGallery = () => <ImageGalleryIcon />;
 export const VideoGallery = () => <VideoGalleryIcon />;
 export const AudioGallery = () => <AudioGalleryIcon />;
 export const People = () => <PeopleIcon />;
-
+export const Twitter = () => <TwitterIcon />;
+export const Edith = () => <EdithIcon />;
+export const Caret = () => <CaretIcon />;
+export const Spinner = () => <SpinnerIcon />;
+export const SpinnerWithBrandColor = () => <SpinnerIcon modifier="branding" />;
 
 //export const Settings = () => <SettingsIcon />;

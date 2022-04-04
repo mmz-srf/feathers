@@ -32,7 +32,10 @@ import ImageGallery from "./Images/ImageGallery.svg";
 import VideoGallery from "./Images/VideoGallery.svg";
 import AudioGallery from "./Images/AudioGallery.svg";
 import People from "./Images/People.svg";
-
+import Twitter from "./Images/Twitter.svg";
+import Edith from "./Images/Edith.svg";
+import Caret from "./Images/Caret.svg";
+import Spinner from "./Images/Spinner.svg";
 
 import "./Icon.scss";
 
@@ -220,6 +223,34 @@ export const AudioGalleryIcon: React.FC<IconProps> = ({ modifier }) => (
 export const PeopleIcon: React.FC<IconProps> = ({ modifier }) => (
   <Icon {...{ modifier }}>
     <People />
+  </Icon>
+);
+
+export const TwitterIcon: React.FC<IconProps> = ({ modifier }) => (
+  <Icon {...{ modifier }}>
+    <Twitter />
+  </Icon>
+);
+
+export const EdithIcon: React.FC<IconProps> = ({ modifier }) => (
+  <Icon {...{ modifier }}>
+    <Edith />
+  </Icon>
+);
+
+export const CaretIcon: React.FC<IconProps> = ({ modifier }) => (
+  <Icon {...{ modifier }}>
+    <Caret />
+  </Icon>
+);
+
+export const SpinnerIcon: React.FC<IconProps> = ({ modifier }) => (
+  <Icon {...{ modifier }}>
+    {modifier && modifier === "branding" ? (
+      <Spinner className="f-icon-spinner f-icon-spinner--with-brand-color" />
+    ) : (
+      <Spinner />
+    )}
   </Icon>
 );
 
