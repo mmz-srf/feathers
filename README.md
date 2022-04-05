@@ -10,6 +10,12 @@ Shared Frontend Components for SRF applications
 - [Storybook](https://storybook.js.org/) to help you create and show off your components
 - [Jest](https://jestjs.io/) and [React Testing Library](https://github.com/testing-library/react-testing-library) enabling testing of the components
 
+## Installation
+
+* check out srf-feathers `git clone git@github.com:mmz-srf/feathers.git`
+* enter directory where you installed it, e.g. `cd feathers`
+* install dependencies `npm install`
+
 ## Development
 
 ### Testing
