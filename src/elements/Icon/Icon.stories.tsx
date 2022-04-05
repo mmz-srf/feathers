@@ -110,9 +110,11 @@ export default {
 };
 
 /* MODIFIER */
-export const SuccessModifer = () => <UpdateIcon modifier="success" />;
-export const DangerModifer = () => <UpdateIcon modifier="danger" />;
-export const InfoModifer = () => <UpdateIcon modifier="info" />;
+export const SuccessModifier = () => <UpdateIcon modifier="success" />;
+export const DangerModifier = () => <UpdateIcon modifier="danger" />;
+export const InfoModifier = () => <UpdateIcon modifier="info" />;
+
+export const WithAltText = () => <TwitterIcon alt="A little bird" />;
 
 /* ICONS*/
 export const Update = () => <UpdateIcon />;
