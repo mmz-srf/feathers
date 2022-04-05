@@ -1,4 +1,6 @@
 import { ButtonModifiers } from "./Button";
+import {IconProps} from "../Icon/Icon.types";
+import {ReactElement} from "react";
 
 export interface ButtonProps {
   modifier?: ButtonModifiers | Array<ButtonModifiers>;
@@ -6,7 +8,7 @@ export interface ButtonProps {
   text?: string;
   title?: string;
   onClick?: (any) => any; // TODO - specific parameters/return types
-  icon?: JSX.Element; // TODO - should probably be Icon?
+  icon?: ReactElement<IconProps>;
   disabled?: boolean;
   tabIndex?: number;
   dataId?: string;
