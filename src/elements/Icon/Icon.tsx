@@ -104,6 +104,8 @@ import DeleteColumn from "./Images/DeleteColumn.svg";
 import TableHead from "./Images/TableHead.svg";
 import TableWidth from "./Images/TableWidth.svg";
 import Instagram from "./Images/Instagram.svg";
+import ArrowDown from "./Images/ArrowDown.svg";
+import ArrowUp from "./Images/ArrowUp.svg";
 
 import "./Icon.scss";
 
@@ -706,19 +708,13 @@ export const ImportImageIcon: React.FC<IconProps> = ({
 
 export const ArrowDownIcon: React.FC<IconProps> = ({ modifier, alt }) => (
   <Icon {...{ modifier }}>
-    <></>
-    {/* TODO
-        <GoArrowDown />
-      */}
+    <ArrowDown />
   </Icon>
 );
 
 export const ArrowUpIcon: React.FC<IconProps> = ({ modifier, alt }) => (
   <Icon {...{ modifier }}>
-    <></>
-    {/* TODO
-        <GoArrowUp />
-      */}
+    <ArrowUp />
   </Icon>
 );
 
