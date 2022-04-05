@@ -6,30 +6,11 @@ import { TooltipProps } from './Tooltip.types';
 
 import './Tooltip.scss';
 
-export const TOOLTIP_DIRECTION_UP = 'f-tooltip--up';
-export const TOOLTIP_DIRECTION_RIGHT = 'f-tooltip--right';
-export const TOOLTIP_DIRECTION_DOWN = 'f-tooltip--down';
-export const TOOLTIP_DIRECTION_LEFT = 'f-tooltip--left';
-export const TOOLTIP_DIRECTION_DOWN_EDGE_LEFT = 'f-tooltip--down-edge-left';
-export const TOOLTIP_DIRECTION_DOWN_EDGE_RIGHT =
-  'f-tooltip--down-edge-right';
-
-export const TOOLTIP_DIRECTIONS = {
-  UP: TOOLTIP_DIRECTION_UP,
-  RIGHT: TOOLTIP_DIRECTION_RIGHT,
-  DOWN: TOOLTIP_DIRECTION_DOWN,
-  LEFT: TOOLTIP_DIRECTION_LEFT,
-  DOWN_EDGE_LEFT: TOOLTIP_DIRECTION_DOWN_EDGE_LEFT,
-  DOWN_EDGE_RIGHT: TOOLTIP_DIRECTION_DOWN_EDGE_RIGHT,
-};
-
-export const TOOLTIP_CONTENT = TOOLTIP_CONTENT;
-
 const Tooltip: React.FC<TooltipProps> = ({
   modifier,
   text,
   content,
-  direction = TOOLTIP_DIRECTION_DOWN,
+  direction = 'down',
 }) => {
   if (!content) {
     return null;
@@ -48,7 +29,13 @@ const Tooltip: React.FC<TooltipProps> = ({
           'f-tooltip--no-word-wrap': modifier === 'no_word_wrap',
           'f-tooltip--no-border': modifier === 'no_border',
           'f-tooltip--no-margin': modifier === 'no_margin',
-        }, direction, {
+          'f-tooltip--up': direction === 'up',
+          'f-tooltip--right': direction === 'right',
+          'f-tooltip--down': direction === 'down',
+          'f-tooltip--left': direction === 'left',
+          'f-tooltip--down-edge-left': direction === 'down-edge-left',
+          'f-tooltip--down-edge-right': direction === 'down-edge-right',
+        }, {
         [modifier.NO_WORD_WRAP]:
           modifier.includes(modifier.NO_MIN_WIDTH) && content.length < 30,
       })}
