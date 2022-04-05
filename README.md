@@ -14,7 +14,7 @@ Shared Frontend Components for SRF applications
 
 * check out srf-feathers `git clone git@github.com:mmz-srf/feathers.git`
 * enter directory where you installed it, e.g. `cd feathers`
-* install dependencies `npm install`
+* install dependencies `npm ci`
 
 ## Development
 
