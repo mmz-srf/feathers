@@ -1,5 +1,5 @@
 import React from 'react';
-import Button, {ButtonModifiers} from './Button';
+import Button, {ButtonModifiers, ButtonTooltip} from './Button';
 
 import {UpdateIcon} from '../Icon/Icon';
 
@@ -39,3 +39,5 @@ export const WithText = () => <Button text='SRF rulez' />;
 
 export const ModifierAsArray = () => <Button text='SRF rulez' modifier={[ButtonModifiers.Primary]} />;
 export const MultipleModifiers = () => <Button text='SRF rulez' modifier={[ButtonModifiers.Primary, ButtonModifiers.Big]} />;
+
+export const WithTooltip = () => <Button text='Hover me' modifier={[ButtonModifiers.Primary, ButtonModifiers.Big]} tooltip={<ButtonTooltip content="Gugus! 😘"/>} />;

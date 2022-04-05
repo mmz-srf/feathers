@@ -1,11 +1,12 @@
 import React from 'react';
 import classNames from 'classnames';
 
-import {ButtonProps, ButtonTooltipProps} from './Button.types';
-
-//import Tooltip, {modifier as TOOLTIP_MODIFIER, TOOLTIP_DIRECTION_DOWN,} from "../Tooltip/Tooltip";
+import {ButtonProps} from './Button.types';
+import Tooltip, {ToolTipModifiers} from "../Tooltip/Tooltip";
+import {TooltipProps} from "../Tooltip/Tooltip.types";
 
 import './Button.scss';
+import './../Tooltip/Tooltip.scss';
 
 export enum ButtonModifiers {
   Primary = 'primary',
@@ -47,9 +48,9 @@ const Button: React.FC<ButtonProps> = ({
   disabled = false,
   tabIndex = 0,
   title = '',
-  tooltip = null,
-  dataId = null,
-  dataCy = null,
+  tooltip,
+  dataId,
+  dataCy,
 }) => (
   <button
     type='button'
@@ -117,26 +118,17 @@ const Button: React.FC<ButtonProps> = ({
   </button>
 );
 
-/*
-const ButtonTooltip: React.FC<ButtonTooltipProps> = ({
+// Shorthand component because buttons' tooltips should always be space filling & show up delayed
+export const ButtonTooltip: React.FC<TooltipProps> = ({
     modifier,
-    direction = TOOLTIP_DIRECTION_DOWN,
+    direction,
     content,
   }) => (
-  <ToolTip
+  <Tooltip
     content={content}
-    modifier={classNames(
-      TOOLTIP_MODIFIER.SPACE_FILLING,
-      TOOLTIP_MODIFIER.SHOW_DELAYED,
-      modifier,
-      {
-        [TOOLTIP_MODIFIER.NO_WORD_WRAP]:
-          modifier?.includes(TOOLTIP_MODIFIER.NO_MIN_WIDTH) &&
-          content.length < 30,
-      }
-    )}
+    modifier={[ToolTipModifiers.SpaceFilling, ToolTipModifiers.ShowDelayed].concat(modifier)}
     direction={direction}
   />
 );
-*/
+
 export default Button;

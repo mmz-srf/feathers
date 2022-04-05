@@ -1,6 +1,7 @@
+import {ReactElement} from "react";
 import { ButtonModifiers } from "./Button";
 import {IconProps} from "../Icon/Icon.types";
-import {ReactElement} from "react";
+import {TooltipProps} from "../Tooltip/Tooltip.types";
 
 export interface ButtonProps {
   modifier?: ButtonModifiers | Array<ButtonModifiers>;
@@ -13,11 +14,5 @@ export interface ButtonProps {
   tabIndex?: number;
   dataId?: string;
   dataCy?: string;
-  tooltip?: any;
-}
-
-export interface ButtonTooltipProps {
-  modifier?: string;
-  content: string;
-  direction?: string;
+  tooltip?: ReactElement<TooltipProps>;
 }
