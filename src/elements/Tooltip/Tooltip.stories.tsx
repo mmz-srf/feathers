@@ -1,3 +1,4 @@
+import React from 'react';
 import Tooltip, { ToolTipModifiers } from "./Tooltip";
 import TOOLTIP_CONTENT from "./Tooltip-Content";
 
