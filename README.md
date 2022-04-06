@@ -16,6 +16,8 @@ Shared Frontend Components for SRF applications
 * enter directory where you installed it, e.g. `cd feathers`
 * install dependencies `npm install`
 
+ℹ️ If you have to update the _secrets_ (e.g. `CHROMATIC_PROJECT_TOKEN` for deployment to chromatic or `NPM_TOKEN` for deployong on NPM), you can change them on https://github.com/mmz-srf/feathers/settings/secrets/actions 
+
 ## Development
 
 ### Testing
@@ -94,3 +96,5 @@ For a smoother experience, a collection of the most used commands has been added
 ```
 ./bin/feathers-dev help 
 ```
+
+ℹ️ Pro tip: add `alias feathers-dev='path/to/feathers/bin/feathers-dev'` to your `~/.zshrc` or equivalent to be able to type `feathers-dev`!
