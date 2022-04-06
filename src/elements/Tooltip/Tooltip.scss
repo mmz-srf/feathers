@@ -1,0 +1,153 @@
+@import '../../foundation/colors';
+@import '../../foundation/variables';
+@import '../../foundation/mixins';
+@import '../../foundation/typography';
+
+.f-tooltip {
+  display: inline-block;
+  position: relative;
+  border-bottom: 1px dotted #666;
+  text-align: left;
+  pointer-events: auto;
+  margin: 0 4px;
+
+  &:hover .f-tooltip__content {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.f-tooltip__content {
+  visibility: hidden;
+  position: absolute;
+  z-index: 9999999;
+  box-sizing: border-box;
+  min-width: 125px;
+  padding: 6px 8px;
+  @include fontWeight(400);
+  font-size: 12px;
+  line-height: $secondary-line-height-ratio;
+  color: var(--tooltip-text-color);
+  background-color: var(--tooltip-background-color);
+  border-radius: 2px;
+  box-shadow: $shadow-elevation2;
+  opacity: 0;
+  transition: opacity 0.8s;
+  white-space: initial;
+  letter-spacing: normal;
+
+  /* this pseudo-element creates an invisible area around the content, which also covers the gap between the tooltip element
+     and the tooltip content so that moving the mouse from the tooltip to the content keeps the hover state active.
+     needed i.e. to click on a link in the content
+
+          +---------+       no gap here!
+          | tooltip |           |
+    +-----+---------+------+ <--+
+    | +------------------+ |
+    | | tooltip__content | |<----- ::before
+    | +------------------+ |
+    +----------------------+
+  */
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: -1; // must be behind the content - otherwise links in content are not clickable
+    display: inline-block;
+    top: -12px;
+    right: -12px;
+    bottom: -12px;
+    left: -12px;
+  }
+}
+
+.f-tooltip--up .f-tooltip__content {
+  bottom: calc(100% + 12px);
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.f-tooltip--right .f-tooltip__content {
+  left: calc(100% + 12px);
+  bottom: 50%;
+  transform: translate(0%, 50%);
+}
+
+.f-tooltip--down .f-tooltip__content {
+  top: calc(100% + 12px);
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.f-tooltip--left .f-tooltip__content {
+  right: calc(100% + 12px);
+  bottom: 50%;
+  transform: translate(0%, 50%);
+}
+
+.f-tooltip--down-edge-left .f-tooltip__content {
+  top: calc(100% + 12px);
+  left: 0;
+  transform: translate(0, 0);
+}
+
+.f-tooltip--down-edge-right .f-tooltip__content {
+  top: calc(100% + 12px);
+  right: 0;
+  transform: translate(0, 0);
+  text-align: right;
+}
+
+.f-tooltip--space-filling {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border: none;
+  margin: 0;
+}
+
+.f-tooltip--no-min-width .f-tooltip__content {
+  min-width: 0;
+}
+
+.f-tooltip--no-word-wrap .f-tooltip__content {
+  white-space: nowrap;
+}
+
+.f-tooltip--show-delayed:hover .f-tooltip__content {
+  transition-delay: 1s;
+}
+
+.f-tooltip--always-open {
+  .f-tooltip__content {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.f-tooltip--validation {
+  .f-tooltip__content {
+    padding: 8px;
+    color: var(--tooltip-text-color);
+    background-color: var(--tooltip-validation-background-color);
+    @include fontWeight(400);
+    font-size: 14px;
+    line-height: $default-line-height-ratio;
+    border-radius: 2px;
+  }
+}
+
+.f-tooltip--max-parent-width {
+  .f-tooltip__content {
+    max-width: 100%;
+  }
+}
+
+.f-tooltip--no-border {
+  border: none;
+}
+
+.f-tooltip--no-margin {
+  margin: 0;
+}

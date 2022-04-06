@@ -5,7 +5,7 @@ import typescript from "rollup-plugin-typescript2";
 import postcss from "rollup-plugin-postcss";
 import copy from "rollup-plugin-copy";
 import svgr from "@svgr/rollup";
-import eslint from '@rollup/plugin-eslint';
+import eslint from "@rollup/plugin-eslint";
 
 const packageJson = require("./package.json");
 
@@ -15,13 +15,13 @@ export default {
     {
       file: packageJson.main,
       format: "cjs",
-      sourcemap: true
+      sourcemap: true,
     },
     {
       file: packageJson.module,
       format: "esm",
-      sourcemap: true
-    }
+      sourcemap: true,
+    },
   ],
   plugins: [
     peerDepsExternal(),
@@ -36,29 +36,29 @@ export default {
         {
           src: "src/foundation/variables.scss",
           dest: "build/scss/foundation",
-          rename: "variables.scss"
+          rename: "variables.scss",
         },
         {
           src: "src/foundation/typography.scss",
           dest: "build/scss/foundation",
-          rename: "typography.scss"
+          rename: "typography.scss",
         },
         {
           src: "src/foundation/breakpoints.scss",
           dest: "build/scss/foundation",
-          rename: "breakpoints.scss"
+          rename: "breakpoints.scss",
         },
         {
           src: "src/foundation/colors.scss",
           dest: "build/scss/foundation",
-          rename: "colors.scss"
+          rename: "colors.scss",
         },
         {
           src: "src/foundation/mixins.scss",
           dest: "build/scss/foundation",
-          rename: "mixins.scss"
-        }
-      ]
-    })
-  ]
+          rename: "mixins.scss",
+        },
+      ],
+    }),
+  ],
 };

@@ -1,0 +1,37 @@
+<svg
+        width="24px"
+        height="24px"
+        viewBox="0 0 24 24"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+>
+    <g
+            id="Article"
+            stroke="none"
+            stroke-width="1"
+            fill="none"
+            fill-rule="evenodd"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+    >
+        <g
+                id="Group"
+                transform="translate(2.000000, 0.000000)"
+                stroke="#888579"
+        >
+            <g id="common-file-text">
+                <path
+                        d="M19.207,4.5 C19.3945494,4.68749273 19.4999434,4.94180519 19.5,5.207 L19.5,22.5 C19.5,23.0522847 19.0522847,23.5 18.5,23.5 L1.5,23.5 C0.94771525,23.5 0.5,23.0522847 0.5,22.5 L0.5,1.5 C0.5,0.94771525 0.94771525,0.5 1.5,0.5 L14.793,0.5 C15.0581948,0.500056637 15.3125073,0.605450625 15.5,0.793 L19.207,4.5 Z"
+                        id="Shape"
+                ></path>
+                <g id="Group-2" transform="translate(4.500000, 5.500000)">
+                    <path d="M0,9 L12,9" id="Shape"></path>
+                    <path d="M0,12 L12,12" id="Shape"></path>
+                    <path d="M0,6 L12,6" id="Shape"></path>
+                    <path d="M0,3 L12,3" id="Shape"></path>
+                    <path d="M0,0 L7,0" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

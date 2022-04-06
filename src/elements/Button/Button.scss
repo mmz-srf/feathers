@@ -1,0 +1,382 @@
+@import '../../foundation/colors';
+@import '../../foundation/variables';
+@import '../../foundation/mixins';
+@import '../../foundation/typography';
+
+$button-animation-duration: 0.3s;
+
+// Theming
+:root {
+  // f-button ("secondary", default - because most buttons in GlobiEdithSchorsch are secondary buttons)
+  --f-button-default-background: #{$color-srf-warmgrey-50};
+  --f-button-default-color: #{$color-srf-warmgrey-900};
+
+  --f-button-hover-background: #{$color-srf-warmgrey-100};
+  --f-button-focus-background: #{$color-srf-warmgrey-200};
+
+  // f-button--primary
+  --f-button-primary-default-background: #{$color-srf-warmgrey-900};
+  --f-button-primary-default-color: #{$color-srf-neutral-white};
+
+  --f-button-primary-hover-background: #{$color-srf-warmgrey-800};
+  --f-button-primary-focus-background: #{$color-srf-warmgrey-700};
+
+  // f-button--danger
+  --f-button-danger-default-background: #{$color-srf-red-400};
+  --f-button-danger-default-color: #{$color-srf-neutral-white};
+
+  --f-button-danger-hover-background: #{$color-srf-red-500};
+  --f-button-danger-focus-background: #{$color-srf-red-600};
+
+  // f-button--save
+  --f-button-save-default-background: #{$color-srf-green-500};
+  --f-button-save-default-color: #{$color-srf-neutral-white};
+
+  // f-button--retire
+  --f-button-retire-default-background: #{$color-srf-yellow-600};
+  --f-button-retire-default-color: #{$color-srf-neutral-white};
+
+  --f-button-retire-hover-background: #{$color-srf-yellow-700};
+  --f-button-retire-focus-background: #{$color-srf-yellow-800};
+
+  --f-button-save-hover-background: #{$color-srf-green-600};
+  --f-button-save-focus-background: #{$color-srf-green-700};
+
+  // f-button--publish
+  --f-button-publish-default-background: #{$color-srf-blue-600};
+  --f-button-publish-default-color: #{$color-srf-neutral-white};
+
+  --f-button-publish-hover-background: #{$color-srf-blue-700};
+  --f-button-publish-focus-background: #{$color-srf-blue-800};
+
+  // f-button--white
+  --f-button-white-default-background: #{$color-srf-warmgrey-10};
+  --f-button-white-default-color: #{$color-srf-warmgrey-900};
+
+  --f-button-white-hover-background: #{$color-srf-warmgrey-100};
+  --f-button-white-focus-background: #{$color-srf-warmgrey-200};
+
+  // f-button--link
+  --f-button-link-default-color: #{$color-srf-red-400};
+  --f-button-link-hover-color: #{$color-srf-red-600};
+}
+
+.f-button {
+  --f-button-height: 40px;
+  --f-button-gutter: 16px; // gap between button's edge and its content
+  --f-button-icon-size: 24px; // size (height and width) of the icon
+  --f-button-icon-text-gap: 8px; // gap between icon and text
+  --f-button-text-color: var(--f-button-default-color);
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // the smallest a button can be: gutter left, a single icon, gutter right
+  min-width: calc(var(--f-button-gutter) + var(--f-button-icon-size) + var(--f-button-gutter));
+  height: var(--f-button-height);
+  max-width: 100%; // button shouldn't get bigger than its parent
+  padding: 0 var(--f-button-gutter);
+  letter-spacing: .4px;
+  background: var(--f-button-default-background);
+  box-shadow: $shadow-elevation2;
+  border: none;
+  border-radius: 2px;
+  transition: background-color $button-animation-duration ease-in-out,
+  width $button-animation-duration ease,
+  box-shadow $button-animation-duration ease-in-out,
+  filter $button-animation-duration ease-in-out;
+
+  // override browser styles
+  -webkit-appearance: none;
+
+  svg {
+    transition: transform $button-animation-duration ease;
+  }
+
+  // set stroke color of the SVG elements to the parent's font color
+  svg * {
+    stroke: currentColor;
+  }
+
+  &,
+  &:hover,
+  &:active,
+  &:focus {
+    color: var(--f-button-text-color);
+  }
+
+  &:not(:disabled) {
+    &:hover {
+      cursor: pointer;
+      background: var(--f-button-hover-background);
+    }
+
+    &:focus {
+      background: var(--f-button-focus-background);
+      outline: none;
+    }
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: .66;
+  }
+}
+
+.f-button__icon-wrapper {
+  display: flex;
+  // together with some text
+  padding: 0 var(--f-button-icon-text-gap) 0 0;
+}
+
+.f-button__text {
+  @include fontWeight(400);
+  --f-button-text-font-size: 16px;
+  font-size: var(--f-button-text-font-size);
+  line-height: 20px;
+  @include font-smoothing;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.f-button--circle {
+  border-radius: 50%;
+}
+
+// Button that looks like a link
+.f-button--link {
+  --f-button-text-color: var(--f-button-link-default-color);
+  box-shadow: none;
+  background: transparent;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: transparent;
+    color: var(--f-button-link-hover-color);
+  }
+}
+
+.f-button--primary {
+  --f-button-text-color:         var(--f-button-primary-default-color);
+  --f-button-default-background: var(--f-button-primary-default-background);
+  --f-button-hover-background:   var(--f-button-primary-hover-background);
+  --f-button-focus-background:   var(--f-button-primary-focus-background);
+}
+
+.f-button--danger {
+  --f-button-text-color:         var(--f-button-danger-default-color);
+  --f-button-default-background: var(--f-button-danger-default-background);
+  --f-button-hover-background:   var(--f-button-danger-hover-background);
+  --f-button-focus-background:   var(--f-button-danger-focus-background);
+}
+
+.f-button--save {
+  --f-button-text-color:         var(--f-button-save-default-color);
+  --f-button-default-background: var(--f-button-save-default-background);
+  --f-button-hover-background:   var(--f-button-save-hover-background);
+  --f-button-focus-background:   var(--f-button-save-focus-background);
+}
+
+.f-button--publish {
+  --f-button-text-color:         var(--f-button-publish-default-color);
+  --f-button-default-background: var(--f-button-publish-default-background);
+  --f-button-hover-background:   var(--f-button-publish-hover-background);
+  --f-button-focus-background:   var(--f-button-publish-focus-background);
+}
+
+.f-button--retire {
+  --f-button-text-color:         var(--f-button-retire-default-color);
+  --f-button-default-background: var(--f-button-retire-default-background);
+  --f-button-hover-background:   var(--f-button-retire-hover-background);
+  --f-button-focus-background:   var(--f-button-retire-focus-background);
+}
+
+.f-button--white {
+  --f-button-text-color:         var(--f-button-white-default-color);
+  --f-button-default-background: var(--f-button-white-default-background);
+  --f-button-hover-background:   var(--f-button-white-hover-background);
+  --f-button-focus-background:   var(--f-button-white-focus-background);
+}
+
+.f-button--unobtrusive.f-button--unobtrusive {
+  --f-button-text-color: var(--icon-button-changing-icon-color);
+  box-shadow: none;
+
+  &,
+  &:hover,
+  &:focus,
+  &:active {
+    background: transparent;
+  }
+}
+
+.f-button--icon-only {
+  --f-button-gutter: 8px;
+
+  .f-button__icon-wrapper {
+    // icon only - no gap
+    padding: 0;
+  }
+}
+
+.f-button--extra-big {
+  --f-button-height: 56px;
+  --f-button-gutter: 14px;
+  --f-button-icon-size: 28px;
+
+  .f-button__text {
+    --f-button-text-font-size: 18px;
+  }
+}
+
+.f-button--big {
+  --f-button-height: 48px;
+  --f-button-gutter: 12px;
+  --f-button-icon-size: 24px;
+
+  .f-button__text {
+    --f-button-text-font-size: 16px;
+  }
+}
+
+.f-button--small {
+  --f-button-height: 32px;
+  --f-button-gutter: 12px;
+  --f-button-icon-size: 16px;
+
+  &.f-button--icon-only {
+    --f-button-gutter: 8px;
+  }
+
+  .f-button__text {
+    @include fontWeight(400);
+    --f-button-text-font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+.f-button--tiny {
+  --f-button-height: 24px;
+  --f-button-gutter: 4px;
+  --f-button-icon-size: 16px;
+  --f-button-icon-text-gap: 4px;
+
+  .f-button__text {
+    @include fontWeight(400);
+    --f-button-text-font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+.f-button--extra-tiny {
+  --f-button-height: 18px;
+  --f-button-gutter: 4px;
+  --f-button-icon-size: 10px;
+
+  .f-button__text {
+    --f-button-text-font-size: 12px;
+  }
+}
+
+.f-button--no-outline {
+  box-shadow: none;
+  border-radius: 0;
+}
+
+.f-button--icon-rotated {
+  svg {
+    transform: rotate(180deg);
+  }
+}
+
+.f-button--fullwidth {
+  width: 100%;
+}
+
+.f-button--margin-top {
+  margin-top: 24px;
+}
+
+.f-button--margin-bottom {
+  margin-bottom: 24px;
+}
+
+.f-button--left-align {
+  justify-content: left;
+}
+
+.f-button--invisible-content {
+  .f-button__text,
+  .f-button__icon-wrapper,
+  &::before {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+.f-button--hidden {
+  display: none;
+}
+
+// icon is placed on the right of the text
+.f-button--icon-on-the-right {
+  flex-direction: row-reverse;
+
+  .f-button__icon-wrapper {
+    padding: 0 0 0 var(--f-button-icon-text-gap);
+  }
+}
+
+// This results in the icon being positioned absolutely. This way the text will
+// be centered over the whole button and not just the area that's left besides
+// the icon.
+.f-button--icon-sticks-to-border {
+  // this means the button "reserves" enough space on both sides for the icon +
+  // gap + gutter
+  padding: 0 calc(var(--f-button-gutter) + var(--f-button-icon-size) + var(--f-button-icon-text-gap));
+
+  .f-button__text {
+    flex-grow: 1;
+    text-align: center;
+  }
+
+  .f-button__icon-wrapper {
+    position: absolute;
+    left: 0;
+    padding: 0 var(--f-button-gutter);
+  }
+
+  &.f-button--icon-on-the-right {
+    .f-button__icon-wrapper {
+      left: initial;
+      right: 0;
+    }
+  }
+}
+
+.f-button--spread-content {
+  justify-content: space-between;
+}
+
+.f-button--bold {
+  .f-button__text {
+    @include fontWeight(700);
+  }
+}
+
+// e.g. used in globi-selector-group
+.f-button--selected {
+  background: var(--f-button-focus-background);
+
+  .f-button__text {
+    @include fontWeight(700);
+  }
+}
+
+.f-button--uppercase {
+  text-transform: uppercase;
+}
