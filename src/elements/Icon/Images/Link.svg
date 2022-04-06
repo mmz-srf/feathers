@@ -8,19 +8,19 @@
     <path
             d="M13.5 14C13.5 15.1046 14.3954 16 15.5 16H20.5C22.155 15.9956 23.4956 14.655 23.5 13V11C23.4951 9.3452 22.1548 8.00494 20.5 8H15.5C14.3954 8 13.5 8.89543 13.5 10"
             stroke="#22211D"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-linecap="round"
+            stroke-linejoin="round"
     />
     <path
             d="M10.5 14C10.5 15.1046 9.60457 16 8.5 16H3.5C1.84497 15.9956 0.504396 14.655 0.5 13V11C0.504942 9.3452 1.8452 8.00494 3.5 8H8.5C9.60457 8 10.5 8.89543 10.5 10"
             stroke="#22211D"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-linecap="round"
+            stroke-linejoin="round"
     />
     <path
             d="M6.5 11.999H17.5"
             stroke="#22211D"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-linecap="round"
+            stroke-linejoin="round"
     />
 </svg>

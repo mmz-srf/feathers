@@ -8,11 +8,11 @@
     <g
             id="Article"
             stroke="none"
-            strokeWidth="1"
+            stroke-width="1"
             fill="none"
-            fillRule="evenodd"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            fill-rule="evenodd"
+            stroke-linecap="round"
+            stroke-linejoin="round"
     >
         <g
                 id="Group"

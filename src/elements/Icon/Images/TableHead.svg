@@ -6,8 +6,8 @@
         xmlns="http://www.w3.org/2000/svg"
 >
     <path
-            fillRule="evenodd"
-            clipRule="evenodd"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
             d="M0.5 4C0.223858 4 0 4.22386 0 4.5V19.5C0 19.7761 0.223857 20 0.5 20H23.5C23.7761 20 24 19.7761 24 19.5V4.5C24 4.22386 23.7761 4 23.5 4H0.5ZM8 12H1V19H8V12ZM16 12H23V19H16V12ZM15 12H9V19H15V12Z"
             fill="#22211D"
     />

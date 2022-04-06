@@ -7,14 +7,14 @@
 >
     <mask id="path-1-inside-1_4678:230243" fill="white">
         <path
-                fillRule="evenodd"
-                clipRule="evenodd"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
                 d="M0.5 0C0.223858 0 0 0.223858 0 0.5V8.5C0 8.77614 0.223857 9 0.5 9H23.5C23.7761 9 24 8.77614 24 8.5V0.5C24 0.223858 23.7761 0 23.5 0H0.5ZM8 1H1V8H8V1ZM9 1H15V8H9V1ZM23 1H16V8H23V1Z"
         />
     </mask>
     <path
-            fillRule="evenodd"
-            clipRule="evenodd"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
             d="M0.5 0C0.223858 0 0 0.223858 0 0.5V8.5C0 8.77614 0.223857 9 0.5 9H23.5C23.7761 9 24 8.77614 24 8.5V0.5C24 0.223858 23.7761 0 23.5 0H0.5ZM8 1H1V8H8V1ZM9 1H15V8H9V1ZM23 1H16V8H23V1Z"
             fill="#22211D"
     />

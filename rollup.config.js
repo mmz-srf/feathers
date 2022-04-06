@@ -26,7 +26,7 @@ export default {
   plugins: [
     peerDepsExternal(),
     resolve(),
-    svgr({ titleProp: true }),
+    svgr(),
     eslint(),
     commonjs(),
     typescript({ useTsconfigDeclarationDir: true }),

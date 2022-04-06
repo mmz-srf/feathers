@@ -8,19 +8,19 @@
     <path
             d="M0.5 23.5581H8.5"
             stroke="#22211D"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-linecap="round"
+            stroke-linejoin="round"
     />
     <path
             d="M19.5 1.47803L4.5 23.558"
             stroke="#22211D"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-linecap="round"
+            stroke-linejoin="round"
     />
     <path
             d="M15.5 1.47803H23.5"
             stroke="#22211D"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-linecap="round"
+            stroke-linejoin="round"
     />
 </svg>

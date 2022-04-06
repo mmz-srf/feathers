@@ -8,37 +8,37 @@
     <path
             d="M20 5.75L18.49 20.0908C18.447 20.5003 18.2539 20.8794 17.948 21.1549C17.6421 21.4305 17.2451 21.5831 16.8333 21.5833H8.16667C7.7548 21.5833 7.35753 21.4308 7.05146 21.1552C6.74539 20.8796 6.55221 20.5004 6.50917 20.0908L5 5.75"
             stroke="white"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-linecap="round"
+            stroke-linejoin="round"
     />
     <path
             d="M16.2502 9.5L15.8335 18.25"
             stroke="white"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-linecap="round"
+            stroke-linejoin="round"
     />
     <path
             d="M12.5 9.5V18.25"
             stroke="white"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-linecap="round"
+            stroke-linejoin="round"
     />
     <path
             d="M8.75 9.5L9.16667 18.25"
             stroke="white"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-linecap="round"
+            stroke-linejoin="round"
     />
     <path
             d="M2.9165 5.75H22.0832"
             stroke="white"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-linecap="round"
+            stroke-linejoin="round"
     />
     <path
             d="M8.75 5.74984V3.24984C8.75 3.02882 8.8378 2.81686 8.99408 2.66058C9.15036 2.5043 9.36232 2.4165 9.58333 2.4165H15.4167C15.6377 2.4165 15.8496 2.5043 16.0059 2.66058C16.1622 2.81686 16.25 3.02882 16.25 3.24984V5.74984"
             stroke="white"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-linecap="round"
+            stroke-linejoin="round"
     />
 </svg>

@@ -8,36 +8,36 @@
     <path
             d="M0.734863 32.5H39.0682"
             stroke="#6B6960"
-            strokeWidth="1.66667"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-width="1.66667"
+            stroke-linecap="round"
+            stroke-linejoin="round"
     />
     <path
             d="M7.40161 32.4998V24.9998C7.40161 24.7788 7.31381 24.5669 7.15753 24.4106C7.00125 24.2543 6.78929 24.1665 6.56828 24.1665H3.23494C3.01393 24.1665 2.80197 24.2543 2.64569 24.4106C2.48941 24.5669 2.40161 24.7788 2.40161 24.9998V32.4998"
             stroke="#6B6960"
-            strokeWidth="1.66667"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-width="1.66667"
+            stroke-linecap="round"
+            stroke-linejoin="round"
     />
     <path
             d="M27.4016 32.4998V19.9998C27.4016 19.7788 27.3138 19.5669 27.1575 19.4106C27.0013 19.2543 26.7893 19.1665 26.5683 19.1665H23.2349C23.0139 19.1665 22.802 19.2543 22.6457 19.4106C22.4894 19.5669 22.4016 19.7788 22.4016 19.9998V32.4998"
             stroke="#6B6960"
-            strokeWidth="1.66667"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-width="1.66667"
+            stroke-linecap="round"
+            stroke-linejoin="round"
     />
     <path
             d="M17.4016 32.5002V16.6668C17.4016 16.4458 17.3138 16.2339 17.1575 16.0776C17.0013 15.9213 16.7893 15.8335 16.5683 15.8335H13.2349C13.0139 15.8335 12.802 15.9213 12.6457 16.0776C12.4894 16.2339 12.4016 16.4458 12.4016 16.6668V32.5002"
             stroke="#6B6960"
-            strokeWidth="1.66667"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-width="1.66667"
+            stroke-linecap="round"
+            stroke-linejoin="round"
     />
     <path
             d="M37.4016 32.5V8.33333C37.4016 8.11232 37.3138 7.90036 37.1575 7.74408C37.0013 7.5878 36.7893 7.5 36.5683 7.5H33.2349C33.0139 7.5 32.802 7.5878 32.6457 7.74408C32.4894 7.90036 32.4016 8.11232 32.4016 8.33333V32.5"
             stroke="#6B6960"
-            strokeWidth="1.66667"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-width="1.66667"
+            stroke-linecap="round"
+            stroke-linejoin="round"
     />
 </svg>

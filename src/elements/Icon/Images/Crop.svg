@@ -8,55 +8,55 @@
     <path
             d="M5.5 0.5V3.5"
             stroke="#22211D"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-linecap="round"
+            stroke-linejoin="round"
     />
     <path
             d="M3.5 5.5H0.5"
             stroke="#22211D"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-linecap="round"
+            stroke-linejoin="round"
     />
     <path
             d="M3.5 18.5H0.5"
             stroke="#22211D"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-linecap="round"
+            stroke-linejoin="round"
     />
     <path
             d="M18.5 0.5V3.5"
             stroke="#22211D"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-linecap="round"
+            stroke-linejoin="round"
     />
     <path
             d="M5.5 20.5V23.5"
             stroke="#22211D"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-linecap="round"
+            stroke-linejoin="round"
     />
     <path
             d="M18.5 20.5V23.5"
             stroke="#22211D"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-linecap="round"
+            stroke-linejoin="round"
     />
     <path
             d="M23.5 5.5H20.5"
             stroke="#22211D"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-linecap="round"
+            stroke-linejoin="round"
     />
     <path
             d="M23.5 18.5H20.5"
             stroke="#22211D"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-linecap="round"
+            stroke-linejoin="round"
     />
     <path
             d="M18.5 5.5H5.5V18.5H18.5V5.5Z"
             stroke="#22211D"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-linecap="round"
+            stroke-linejoin="round"
     />
 </svg>

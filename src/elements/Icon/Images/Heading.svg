@@ -8,45 +8,45 @@
     <path
             d="M4 1.49805V24.498"
             stroke="#22211D"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-linecap="round"
+            stroke-linejoin="round"
     />
     <g clipPath="url(#clip0)">
         <path
                 d="M20 1.49805V24.498"
                 stroke="black"
-                strokeLinecap="round"
-                strokeLinejoin="round"
+                stroke-linecap="round"
+                stroke-linejoin="round"
         />
         <path
                 d="M19 1.49805H22.5"
                 stroke="black"
-                strokeLinecap="round"
-                strokeLinejoin="round"
+                stroke-linecap="round"
+                stroke-linejoin="round"
         />
         <path
                 d="M19 24.498H22.5"
                 stroke="black"
-                strokeLinecap="round"
-                strokeLinejoin="round"
+                stroke-linecap="round"
+                stroke-linejoin="round"
         />
         <path
                 d="M2 1.49805H5.5"
                 stroke="black"
-                strokeLinecap="round"
-                strokeLinejoin="round"
+                stroke-linecap="round"
+                stroke-linejoin="round"
         />
         <path
                 d="M2 24.498H5.5"
                 stroke="black"
-                strokeLinecap="round"
-                strokeLinejoin="round"
+                stroke-linecap="round"
+                stroke-linejoin="round"
         />
         <path
                 d="M4 12.498H20"
                 stroke="black"
-                strokeLinecap="round"
-                strokeLinejoin="round"
+                stroke-linecap="round"
+                stroke-linejoin="round"
         />
     </g>
     <defs>

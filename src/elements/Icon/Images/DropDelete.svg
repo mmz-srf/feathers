@@ -30,7 +30,7 @@
             height="11.5"
             rx="5.75"
             stroke="#22211D"
-            strokeWidth="0.5"
-            strokeDasharray="1 1"
+            stroke-width="0.5"
+            stroke-dasharray="1 1"
     />
 </svg>

@@ -9,75 +9,75 @@
     <path
             d="M12.9131 13.9375C12.9131 14.6624 13.4581 15.25 14.1305 15.25H17.174C18.1814 15.2471 18.9974 14.3674 19 13.2812V11.9688C18.997 10.8828 18.1812 10.0032 17.174 10H14.1305C13.4581 10 12.9131 10.5876 12.9131 11.3125"
             stroke="white"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-linecap="round"
+            stroke-linejoin="round"
     />
     <path
             d="M11.087 13.9375C11.087 14.6624 10.5419 15.25 9.86957 15.25H6.82609C5.81868 15.2471 5.00268 14.3674 5 13.2812V11.9688C5.00301 10.8828 5.81882 10.0032 6.82609 10H9.86957C10.5419 10 11.087 10.5876 11.087 11.3125"
             stroke="white"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-linecap="round"
+            stroke-linejoin="round"
     />
     <path
             d="M8.6521 12.6245H15.3478"
             stroke="white"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-linecap="round"
+            stroke-linejoin="round"
     />
     <path
             d="M21.5 7V19"
             stroke="white"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-linecap="round"
+            stroke-linejoin="round"
     />
     <path
             d="M6 3.49805H18"
             stroke="white"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-linecap="round"
+            stroke-linejoin="round"
     />
     <path
             d="M2.5 19V7"
             stroke="white"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-linecap="round"
+            stroke-linejoin="round"
     />
     <path
             d="M18 22.498H6"
             stroke="white"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-linecap="round"
+            stroke-linejoin="round"
     />
     <path
-            fillRule="evenodd"
-            clipRule="evenodd"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
             d="M0.5 1.99805C0.5 1.7219 0.723858 1.49805 1 1.49805H4C4.27614 1.49805 4.5 1.7219 4.5 1.99805V4.99805C4.5 5.27419 4.27614 5.49805 4 5.49805H1C0.723858 5.49805 0.5 5.27419 0.5 4.99805V1.99805Z"
             stroke="white"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-linecap="round"
+            stroke-linejoin="round"
     />
     <path
-            fillRule="evenodd"
-            clipRule="evenodd"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
             d="M19.5 1.99805C19.5 1.7219 19.7239 1.49805 20 1.49805H23C23.2761 1.49805 23.5 1.7219 23.5 1.99805V4.99805C23.5 5.27419 23.2761 5.49805 23 5.49805H20C19.7239 5.49805 19.5 5.27419 19.5 4.99805V1.99805Z"
             stroke="white"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-linecap="round"
+            stroke-linejoin="round"
     />
     <path
-            fillRule="evenodd"
-            clipRule="evenodd"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
             d="M0.5 20.998C0.5 20.7219 0.723858 20.498 1 20.498H4C4.27614 20.498 4.5 20.7219 4.5 20.998V23.998C4.5 24.2742 4.27614 24.498 4 24.498H1C0.723858 24.498 0.5 24.2742 0.5 23.998V20.998Z"
             stroke="white"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-linecap="round"
+            stroke-linejoin="round"
     />
     <path
-            fillRule="evenodd"
-            clipRule="evenodd"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
             d="M19.5 20.998C19.5 20.7219 19.7239 20.498 20 20.498H23C23.2761 20.498 23.5 20.7219 23.5 20.998V23.998C23.5 24.2742 23.2761 24.498 23 24.498H20C19.7239 24.498 19.5 24.2742 19.5 23.998V20.998Z"
             stroke="white"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-linecap="round"
+            stroke-linejoin="round"
     />
 </svg>

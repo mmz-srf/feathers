@@ -8,14 +8,14 @@
     <g clipPath="url(#clip0_4672:175232)">
         <mask id="path-1-inside-1_4672:175232" fill="white">
             <path
-                    fillRule="evenodd"
-                    clipRule="evenodd"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
                     d="M0.5 0C0.223858 0 0 0.223858 0 0.5V5.5C0 5.77614 0.223858 6 0.5 6H15.5C15.7761 6 16 5.77614 16 5.5V0.5C16 0.223858 15.7761 0 15.5 0H0.5ZM5 1H1V5H5V1ZM6 1H10V5H6V1ZM15 1H11V5H15V1Z"
             />
         </mask>
         <path
-                fillRule="evenodd"
-                clipRule="evenodd"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
                 d="M0.5 0C0.223858 0 0 0.223858 0 0.5V5.5C0 5.77614 0.223858 6 0.5 6H15.5C15.7761 6 16 5.77614 16 5.5V0.5C16 0.223858 15.7761 0 15.5 0H0.5ZM5 1H1V5H5V1ZM6 1H10V5H6V1ZM15 1H11V5H15V1Z"
                 fill="#22211D"
         />

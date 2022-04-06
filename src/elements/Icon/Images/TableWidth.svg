@@ -8,14 +8,14 @@
     <g clipPath="url(#clip0_4674:177006)">
         <mask id="path-1-inside-1_4674:177006" fill="white">
             <path
-                    fillRule="evenodd"
-                    clipRule="evenodd"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
                     d="M15 0.5C15 0.223857 14.7761 -9.78512e-09 14.5 -2.18557e-08L9.5 -2.40413e-07C9.22386 -2.52483e-07 9 0.223857 9 0.499999L9 23.5C9 23.7761 9.22386 24 9.5 24L14.5 24C14.7761 24 15 23.7761 15 23.5L15 0.5ZM14 8L14 1L10 1L10 8L14 8ZM14 9L14 15L10 15L10 9L14 9ZM14 23L14 16L10 16L10 23L14 23Z"
             />
         </mask>
         <path
-                fillRule="evenodd"
-                clipRule="evenodd"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
                 d="M15 0.5C15 0.223857 14.7761 -9.78512e-09 14.5 -2.18557e-08L9.5 -2.40413e-07C9.22386 -2.52483e-07 9 0.223857 9 0.499999L9 23.5C9 23.7761 9.22386 24 9.5 24L14.5 24C14.7761 24 15 23.7761 15 23.5L15 0.5ZM14 8L14 1L10 1L10 8L14 8ZM14 9L14 15L10 15L10 9L14 9ZM14 23L14 16L10 16L10 23L14 23Z"
                 fill="#22211D"
         />
@@ -27,44 +27,44 @@
         <path
                 d="M19.25 9L22.25 12"
                 stroke="#22211D"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
         />
         <path
                 d="M19.25 15L22.25 12"
                 stroke="#22211D"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
         />
         <path
                 d="M16.25 12L22.25 12"
                 stroke="#22211D"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
         />
         <path
                 d="M4 15L1 12"
                 stroke="#22211D"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
         />
         <path
                 d="M4 9L1 12"
                 stroke="#22211D"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
         />
         <path
                 d="M7 12L1 12"
                 stroke="#22211D"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
         />
     </g>
     <defs>

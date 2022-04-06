@@ -8,43 +8,43 @@
     <path
             d="M13.6422 22.468C14.3232 22.3909 14.9936 22.2395 15.6416 22.0166"
             stroke="#22211D"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-linecap="round"
+            stroke-linejoin="round"
     />
     <path
             d="M17.6398 21.0566C18.2088 20.6951 18.7376 20.2738 19.217 19.7998"
             stroke="#22211D"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-linecap="round"
+            stroke-linejoin="round"
     />
     <path
             d="M20.5453 18.1357C20.9023 17.5714 21.1982 16.9707 21.4282 16.3438"
             stroke="#22211D"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-linecap="round"
+            stroke-linejoin="round"
     />
     <path
             d="M21.9277 14.2751C21.9762 13.886 22.0003 13.4942 22 13.1021C22 12.797 21.9857 12.4957 21.9571 12.1982"
             stroke="#22211D"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-linecap="round"
+            stroke-linejoin="round"
     />
     <path
             d="M21.5452 10.2025C21.3978 9.74404 21.2147 9.2979 20.9974 8.86816"
             stroke="#22211D"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-linecap="round"
+            stroke-linejoin="round"
     />
     <path
             d="M14.6687 3.61816H12.574C7.56493 3.63282 3.43625 7.55105 3.15978 12.5525C2.8833 17.554 6.55497 21.9035 11.5319 22.4701"
             stroke="#22211D"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-linecap="round"
+            stroke-linejoin="round"
     />
     <path
             d="M11.003 1L14.6687 3.61833L11.003 6.23666"
             stroke="#22211D"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-linecap="round"
+            stroke-linejoin="round"
     />
 </svg>

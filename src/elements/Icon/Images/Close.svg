@@ -8,13 +8,13 @@
     <path
             d="M4 4L20 20"
             stroke="#ffffff"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-linecap="round"
+            stroke-linejoin="round"
     />
     <path
             d="M20 4L4 20"
             stroke="#ffffff"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-linecap="round"
+            stroke-linejoin="round"
     />
 </svg>
