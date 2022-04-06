@@ -116,6 +116,11 @@ const Icon: React.FC<IconProps> = ({ modifier, noStroke, children }) => (
       "f-icon--success": modifier === "success",
       "f-icon--danger": modifier === "danger",
       "f-icon--info": modifier === "info",
+      "f-icon--branding": modifier === "branding",
+      "f-icon--small": modifier === "small",
+      "f-icon--tiny": modifier === "tiny",
+      "f-icon--rotatable": modifier === "rotatable",
+      "f-icon--rotatable f-icon--rotated-180": modifier === "rotated-180",
       "f-icon--no-stroke": noStroke,
     })}
   >
