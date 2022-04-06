@@ -1,7 +1,7 @@
-import {ReactElement} from "react";
+import { ReactElement } from "react";
 import { ButtonModifiers } from "./Button";
-import {IconProps} from "../Icon/Icon.types";
-import {TooltipProps} from "../Tooltip/Tooltip.types";
+import { IconProps } from "../Icon/Icon.types";
+import { TooltipProps } from "../Tooltip/Tooltip.types";
 
 export interface ButtonProps {
   modifier?: ButtonModifiers | Array<ButtonModifiers>;

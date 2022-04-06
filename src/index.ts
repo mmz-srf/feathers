@@ -103,8 +103,8 @@ import {
   ZoomInIcon,
   ZoomOutIcon,
 } from "./elements/Icon/Icon";
-import Button from './elements/Button/Button';
-import ToolTip from './elements/Tooltip/Tooltip';
+import Button from "./elements/Button/Button";
+import ToolTip from "./elements/Tooltip/Tooltip";
 
 export {
   AddColumnIcon,
