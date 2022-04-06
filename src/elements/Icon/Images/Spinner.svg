@@ -7,6 +7,7 @@
 
     <style type="text/css">
         .f-icon-spinner {
+          color: #999;
           animation: rotate360Animation 2s linear infinite;
         }
 

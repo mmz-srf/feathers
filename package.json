@@ -50,6 +50,7 @@
     "@rollup/plugin-commonjs": "^17.1.0",
     "@rollup/plugin-eslint": "^8.0.1",
     "@rollup/plugin-node-resolve": "^11.2.1",
+    "@storybook/addon-essentials": "^6.4.20",
     "@storybook/builder-webpack5": "^6.5.0-alpha.51",
     "@storybook/manager-webpack5": "^6.5.0-alpha.51",
     "@storybook/react": "^6.5.0-alpha.51",
