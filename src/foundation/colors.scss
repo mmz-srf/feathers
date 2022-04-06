@@ -1,11 +1,23 @@
-// Variables
-$harvey-black: #131111;
-$harvey-white: #e0e0e0;
-$harvey-red: #ff2323;
-$harvey-green: #005f20;
-$harvey-blue: #070bce;
-
 /*** COLORS ***/
+//
+// # How To Color-Variables @ SRF
+//
+// 1. Global Color Variables
+//    Name all the colors and keep 'em neutral (e.g. don't use «light», use «secondary» or a value like 100, since in dark-themes a «light»-color might be something «dark»)
+//
+// 2. Element-Variables
+//    Add variables on a element-basis
+//
+// 3. Variable to Variable
+//    Reference element-variables to corresponding global color variables
+//
+// (Optional)
+// 4. Add Themes (like a Dark-Theme)
+//    Just overwrite element-variables inside theme-media-queries (ideally no new colors needed in this step)
+//
+// *** REMINDER: Don't forget to add new colors to the export at the end of this file! ***
+//
+
 // SRF Color RED
 $color-srf-red-50:                            rgba(255,230,230,1);   // #ffe6e6
 $color-srf-red-100:                           rgba(255,187,188,1);   // #ffbbbc
@@ -170,14 +182,168 @@ $color-brand-facebook:                        rgba(52,100,165,1);    // #3464a5
 $color-brand-twitter:                         rgba(90,168,223,1);    // #5aa8df
 $color-brand-whatsapp:                        rgba(78,206,91,1);     // #4ece5b
 
-:root {
-  --background: #fff;
-  --font-color: #494949;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #3c3c3c;
-    --font-color: #fafafa;
-  }
+:export {
+  SRFColorRed: {
+     color-srf-red-50: $color-srf-red-50;
+     color-srf-red-100: $color-srf-red-100;
+     color-srf-red-200: $color-srf-red-200;
+     color-srf-red-300: $color-srf-red-300;
+     color-srf-red-300a12: $color-srf-red-300a12;
+     color-srf-red-300a24: $color-srf-red-300a24;
+     color-srf-red-400: $color-srf-red-400;
+     color-srf-red-500: $color-srf-red-500;
+     color-srf-red-500a60: $color-srf-red-500a60;
+     color-srf-red-600: $color-srf-red-600;
+     color-srf-red-600a00: $color-srf-red-600a00;
+     color-srf-red-600a12: $color-srf-red-600a12;
+     color-srf-red-600a24: $color-srf-red-600a24;
+     color-srf-red-600a60: $color-srf-red-600a60;
+     color-srf-red-700: $color-srf-red-700;
+     color-srf-red-700a00: $color-srf-red-700a00;
+     color-srf-red-800: $color-srf-red-800;
+     color-srf-red-900: $color-srf-red-900;
+  };
+  SRFColorYellow: {
+     color-srf-yellow-50: $color-srf-yellow-50;
+     color-srf-yellow-100: $color-srf-yellow-100;
+     color-srf-yellow-200: $color-srf-yellow-200;
+     color-srf-yellow-300: $color-srf-yellow-300;
+     color-srf-yellow-300a00: $color-srf-yellow-300a00;
+     color-srf-yellow-300a60: $color-srf-yellow-300a60;
+     color-srf-yellow-400: $color-srf-yellow-400;
+     color-srf-yellow-500: $color-srf-yellow-500;
+     color-srf-yellow-500a00: $color-srf-yellow-500a00;
+     color-srf-yellow-600: $color-srf-yellow-600;
+     color-srf-yellow-700: $color-srf-yellow-700;
+     color-srf-yellow-700a00: $color-srf-yellow-700a00;
+     color-srf-yellow-800: $color-srf-yellow-800;
+     color-srf-yellow-900: $color-srf-yellow-900;
+  };
+  SRFColorGreen: {
+     color-srf-green-50: $color-srf-green-50;
+     color-srf-green-100: $color-srf-green-100;
+     color-srf-green-200: $color-srf-green-200;
+     color-srf-green-300: $color-srf-green-300;
+     color-srf-green-400: $color-srf-green-400;
+     color-srf-green-500: $color-srf-green-500;
+     color-srf-green-600: $color-srf-green-600;
+     color-srf-green-700: $color-srf-green-700;
+     color-srf-green-700a00: $color-srf-green-700a00;
+     color-srf-green-800: $color-srf-green-800;
+     color-srf-green-900: $color-srf-green-900;
+     color-srf-green-900a00: $color-srf-green-900a00;
+  };
+  SRFColorBlue: {
+     color-srf-blue-50: $color-srf-blue-50;
+     color-srf-blue-100: $color-srf-blue-100;
+     color-srf-blue-200: $color-srf-blue-200;
+     color-srf-blue-300: $color-srf-blue-300;
+     color-srf-blue-400: $color-srf-blue-400;
+     color-srf-blue-500: $color-srf-blue-500;
+     color-srf-blue-600: $color-srf-blue-600;
+     color-srf-blue-650: $color-srf-blue-650;
+     color-srf-blue-700: $color-srf-blue-700;
+     color-srf-blue-750: $color-srf-blue-750;
+     color-srf-blue-800: $color-srf-blue-800;
+     color-srf-blue-800a00: $color-srf-blue-800a00;
+     color-srf-blue-850: $color-srf-blue-850;
+     color-srf-blue-900: $color-srf-blue-900;
+     color-srf-blue-900a00: $color-srf-blue-900a00;
+     color-srf-blue-950: $color-srf-blue-950;
+  };
+  SRFColorPurple: {
+     color-srf-purple-50: $color-srf-purple-50;
+     color-srf-purple-100: $color-srf-purple-100;
+     color-srf-purple-200: $color-srf-purple-200;
+     color-srf-purple-300: $color-srf-purple-300;
+     color-srf-purple-400: $color-srf-purple-400;
+     color-srf-purple-500: $color-srf-purple-500;
+     color-srf-purple-600: $color-srf-purple-600;
+     color-srf-purple-700: $color-srf-purple-700;
+     color-srf-purple-700a00: $color-srf-purple-700a00;
+     color-srf-purple-800: $color-srf-purple-800;
+     color-srf-purple-900: $color-srf-purple-900;
+     color-srf-purple-900a00: $color-srf-purple-900a00;
+  };
+  SRFColorWarmgrey: {
+     color-srf-warmgrey-10: $color-srf-warmgrey-10;
+     color-srf-warmgrey-10a00: $color-srf-warmgrey-10a00;
+     color-srf-warmgrey-25: $color-srf-warmgrey-25;
+     color-srf-warmgrey-25a70: $color-srf-warmgrey-25a70;
+     color-srf-warmgrey-25a80: $color-srf-warmgrey-25a80;
+     color-srf-warmgrey-50: $color-srf-warmgrey-50;
+     color-srf-warmgrey-50a00: $color-srf-warmgrey-50a00;
+     color-srf-warmgrey-50a40: $color-srf-warmgrey-50a40;
+     color-srf-warmgrey-50a80: $color-srf-warmgrey-50a80;
+     color-srf-warmgrey-100: $color-srf-warmgrey-100;
+     color-srf-warmgrey-200: $color-srf-warmgrey-200;
+     color-srf-warmgrey-300: $color-srf-warmgrey-300;
+     color-srf-warmgrey-300a12: $color-srf-warmgrey-300a12;
+     color-srf-warmgrey-300a24: $color-srf-warmgrey-300a24;
+     color-srf-warmgrey-400: $color-srf-warmgrey-400;
+     color-srf-warmgrey-500: $color-srf-warmgrey-500;
+     color-srf-warmgrey-600: $color-srf-warmgrey-600;
+     color-srf-warmgrey-700: $color-srf-warmgrey-700;
+     color-srf-warmgrey-800: $color-srf-warmgrey-800;
+     color-srf-warmgrey-850: $color-srf-warmgrey-850;
+     color-srf-warmgrey-900: $color-srf-warmgrey-900;
+     color-srf-warmgrey-900a24: $color-srf-warmgrey-900a24;
+     color-srf-warmgrey-900a64: $color-srf-warmgrey-900a64;
+     color-srf-warmgrey-950: $color-srf-warmgrey-950;
+     color-srf-warmgrey-1000: $color-srf-warmgrey-1000;
+     color-srf-warmgrey-1000a32: $color-srf-warmgrey-1000a32;
+     color-srf-warmgrey-1000a64: $color-srf-warmgrey-1000a64;
+     color-srf-warmgrey-1050: $color-srf-warmgrey-1050;
+     color-srf-warmgrey-1050a00: $color-srf-warmgrey-1050a00;
+     color-srf-warmgrey-1100: $color-srf-warmgrey-1100;
+     color-srf-warmgrey-1100a00: $color-srf-warmgrey-1100a00;
+     color-srf-warmgrey-1100a12: $color-srf-warmgrey-1100a12;
+     color-srf-warmgrey-1100a24: $color-srf-warmgrey-1100a24;
+     color-srf-warmgrey-1100a40: $color-srf-warmgrey-1100a40;
+     color-srf-warmgrey-1100a64: $color-srf-warmgrey-1100a64;
+     color-srf-warmgrey-1100a80: $color-srf-warmgrey-1100a80;
+     color-srf-warmgrey-1150: $color-srf-warmgrey-1150;
+     color-srf-warmgrey-1150a70: $color-srf-warmgrey-1150a70;
+  };
+  SRFColorNeutral: {
+     color-srf-neutral-white: $color-srf-neutral-white;
+     color-srf-neutral-whitea00: $color-srf-neutral-whitea00;
+     color-srf-neutral-whitea08: $color-srf-neutral-whitea08;
+     color-srf-neutral-whitea12: $color-srf-neutral-whitea12;
+     color-srf-neutral-whitea24: $color-srf-neutral-whitea24;
+     color-srf-neutral-whitea40: $color-srf-neutral-whitea40;
+     color-srf-neutral-whitea64: $color-srf-neutral-whitea64;
+     color-srf-neutral-whitea80: $color-srf-neutral-whitea80;
+     color-srf-neutral-whitea90: $color-srf-neutral-whitea90;
+     color-srf-neutral-offwhite: $color-srf-neutral-offwhite;
+     color-srf-neutral-offwhitea00: $color-srf-neutral-offwhitea00;
+     color-srf-neutral-600: $color-srf-neutral-600;
+     color-srf-neutral-800: $color-srf-neutral-800;
+     color-srf-neutral-900: $color-srf-neutral-900;
+     color-srf-neutral-900a90: $color-srf-neutral-900a90;
+     color-srf-neutral-1000: $color-srf-neutral-1000;
+     color-srf-neutral-black: $color-srf-neutral-black;
+     color-srf-neutral-blacka00: $color-srf-neutral-blacka00;
+     color-srf-neutral-blacka04: $color-srf-neutral-blacka04;
+     color-srf-neutral-blacka08: $color-srf-neutral-blacka08;
+     color-srf-neutral-blacka10: $color-srf-neutral-blacka10;
+     color-srf-neutral-blacka12: $color-srf-neutral-blacka12;
+     color-srf-neutral-blacka16: $color-srf-neutral-blacka16;
+     color-srf-neutral-blacka18: $color-srf-neutral-blacka18;
+     color-srf-neutral-blacka20: $color-srf-neutral-blacka20;
+     color-srf-neutral-blacka24: $color-srf-neutral-blacka24;
+     color-srf-neutral-blacka30: $color-srf-neutral-blacka30;
+     color-srf-neutral-blacka32: $color-srf-neutral-blacka32;
+     color-srf-neutral-blacka48: $color-srf-neutral-blacka48;
+     color-srf-neutral-blacka50: $color-srf-neutral-blacka50;
+     color-srf-neutral-blacka60: $color-srf-neutral-blacka60;
+     color-srf-neutral-blacka70: $color-srf-neutral-blacka70;
+     color-srf-neutral-blacka75: $color-srf-neutral-blacka75;
+     color-srf-neutral-blacka80: $color-srf-neutral-blacka80;
+  };
+  SRFBrandColors: {
+     color-brand-facebook: $color-brand-facebook;
+     color-brand-twitter: $color-brand-twitter;
+     color-brand-whatsapp: $color-brand-whatsapp;
+  };
 }

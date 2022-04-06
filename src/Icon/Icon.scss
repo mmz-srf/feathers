@@ -1,5 +1,7 @@
-@import "../variables.scss";
-@import "../typography.scss";
+@import '../foundation/colors.scss';
+@import '../foundation/variables.scss';
+@import '../foundation/mixins.scss';
+@import '../foundation/typography.scss';
 
 .f-icon {
   display: flex;
