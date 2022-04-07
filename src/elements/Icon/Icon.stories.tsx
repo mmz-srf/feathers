@@ -108,7 +108,7 @@ import {
 export default {
   title: "Icon",
   args: {
-    modifier: "",
+    modifier: undefined,
     alt: undefined,
   },
   argTypes: {
