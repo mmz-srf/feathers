@@ -20,7 +20,7 @@
     "chromatic": "npx chromatic"
   },
   "engines": {
-    "node": ">=12 <17"
+    "node": ">=12"
   },
   "repository": {
     "type": "git",
