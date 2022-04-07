@@ -16,7 +16,7 @@ Shared Frontend Components for SRF applications
 * enter directory where you installed it, e.g. `cd feathers`
 * install dependencies `npm install`
 
-ℹ️ If you have to update the _secrets_ (e.g. `CHROMATIC_PROJECT_TOKEN` for deployment to chromatic or `NPM_TOKEN` for deployong on NPM), you can change them on https://github.com/mmz-srf/feathers/settings/secrets/actions 
+ℹ️ If you have to update the _secrets_ (e.g. `CHROMATIC_PROJECT_TOKEN` for deployment to chromatic or `NPM_TOKEN` for deploying on NPM), you can change them on https://github.com/mmz-srf/feathers/settings/secrets/actions 
 
 ## Development
 
