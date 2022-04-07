@@ -68,7 +68,7 @@ This will generate:
 
 The default templates for each file can be modified under `util/templates`.
 
-⚠️ Don't forget to add the component to your `index.ts` exports if you want the library to export the component!
+⚠️ **Don't forget to add the component to your `index.ts` exports if you want the library to export the component!**
 
 ## Additional Help
 
