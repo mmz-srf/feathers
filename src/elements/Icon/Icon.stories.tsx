@@ -156,6 +156,10 @@ export const Rotated180Modifier = ModifierTemplate.bind({});
 Rotated180Modifier.args = {
   modifier: "rotated-180",
 };
+export const MultipleModifiers = ModifierTemplate.bind({});
+MultipleModifiers.args = {
+  modifier: ["info", "small"],
+};
 
 /* ALT-TEXT */
 export const ExampleWithAltText = (args) => <TwitterIcon {...args} />;

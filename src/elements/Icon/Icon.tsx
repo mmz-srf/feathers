@@ -124,14 +124,15 @@ export type IconModifiersType = typeof IconModifiers[number];
 const Icon: React.FC<IconProps> = ({ modifier, noStroke, children }) => (
   <div
     className={classNames("f-icon", {
-      "f-icon--success": modifier === "success",
-      "f-icon--danger": modifier === "danger",
-      "f-icon--info": modifier === "info",
-      "f-icon--branding": modifier === "branding",
-      "f-icon--small": modifier === "small",
-      "f-icon--tiny": modifier === "tiny",
-      "f-icon--rotatable": modifier === "rotatable",
-      "f-icon--rotatable f-icon--rotated-180": modifier === "rotated-180",
+      "f-icon--success": modifier?.includes("success"),
+      "f-icon--danger": modifier?.includes("danger"),
+      "f-icon--info": modifier?.includes("info"),
+      "f-icon--branding": modifier?.includes("branding"),
+      "f-icon--small": modifier?.includes("small"),
+      "f-icon--tiny": modifier?.includes("tiny"),
+      "f-icon--rotatable": modifier?.includes("rotatable"),
+      "f-icon--rotatable f-icon--rotated-180":
+        modifier?.includes("rotated-180"),
       "f-icon--no-stroke": noStroke,
     })}
   >
