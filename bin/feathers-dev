@@ -85,7 +85,7 @@ case "$1" in
     ;;
   generate)
     title "Starting the generator"
-    title "Don't forget to add move it to its correct location and to add it to src/index.ts"
+    title "Don't forget to move it to its correct location and to add it to src/index.ts"
     npm run generate $2
     ;;
   publish)
