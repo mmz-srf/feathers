@@ -63,6 +63,16 @@ export default {
           dest: "build/scss/foundation",
           rename: "mixins.scss",
         },
+        {
+          src: "src/foundation/fonts.scss",
+          dest: "build/scss/foundation",
+          rename: "fonts.scss",
+        },
+        {
+          src: "src/foundation/globals.scss",
+          dest: "build/scss/foundation",
+          rename: "global.scss",
+        },
       ],
     }),
   ],

@@ -2,7 +2,7 @@ import React from "react";
 import classNames from "classnames";
 
 import { ButtonProps } from "./Button.types";
-import Tooltip, { ToolTipModifiers } from "../Tooltip/Tooltip";
+import Tooltip from "../Tooltip/Tooltip";
 import { TooltipProps } from "../Tooltip/Tooltip.types";
 
 import "./Button.scss";
@@ -120,16 +120,12 @@ const Button: React.FC<ButtonProps> = ({
 
 // Shorthand component because buttons' tooltips should always be space filling & show up delayed
 export const ButtonTooltip: React.FC<TooltipProps> = ({
-  modifier,
   direction,
   content,
 }) => (
   <Tooltip
     content={content}
-    modifier={[
-      ToolTipModifiers.SpaceFilling,
-      ToolTipModifiers.ShowDelayed,
-    ].concat(modifier)}
+    modifier={["space_filling", "show_delayed"]}
     direction={direction}
   />
 );
