@@ -47,7 +47,7 @@ const Button: React.FC<ButtonProps> = ({
   text = "",
   disabled = false,
   tabIndex = 0,
-  title = "",
+  title,
   tooltip,
   dataId,
   dataCy,
