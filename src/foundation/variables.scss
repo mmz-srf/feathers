@@ -10,15 +10,13 @@ $secondary-line-height-ratio: 1.35 !default;
 $emphasize-line-height-ratio: 1.25 !default;
 
 
-
 /*** IMAGE SIZES ***/
 $image-size-preview: 92px !default;
 $image-size-preview-gallery: 68px !default;
 
 
-
 /*** SHADOWS ***/
-// References: https://app.zeplin.io/project/5850263ad407f4ca12956e5d/screen/5880e352ba72814f33f7cc9b
+// References: https://www.figma.com/file/xe1x6NHOojNKIQBvcx7qoY/SRF-Global-Library?node-id=256%3A9
 // => Bug in Safari/WebKit for elevation1. Design: «mir würded vorerscht mitem bug läbe» (2018-08)
 // => DEMO -> https://codepen.io/albuvee/full/qyJKMe/
 // => BUG -> https://bugs.webkit.org/show_bug.cgi?id=188446
@@ -40,30 +38,3 @@ $desktop-size: 1024px !default;
 $desktop-wide-size: 1280px !default;
 $content-width: 1200px !default; // max-width ($widedesktopsize = 1280) - 2 * 40px (Outside Gutter)
 $content-max-width: 1480px !default;
-
-/*** BREAKPOINT AND MAX CONTENT WIDTH (design grid) ***/
-$tablet-content-max-width: 705px;
-$desktop-content-max-width: 714px;
-$desktop-wide-content-max-width: 892px;
-
-/*** Z-INDEXES ***/
-$z-index-header: 100;
-
-/*** ANIMATIONS ***/
-$easing-in-out-standard: cubic-bezier(0.4, 0.0, 0.2, 1);
-
-/*** BREADCRUMB ***/
-$breadcrumb-touch-area-expansion: 8px !default;
-
-/*** COLLECTIONS ***/
-// defined here and not in collection.scss because they are also used in the critical css
-$collection-gap: 16px;
-$collection-gap-tablet-up: 32px;
-$collection-gap-desktop-wide: 40px;
-$teaser-col-gap-tablet-up: 24px;
-$teaser-col-gap-desktop-wide: 32px;
-$teaser-xl-medium-ratio: 65.75%;
-
-/*** ARTICLE ***/
-$article-offset: 24px;
-$article-offset-mobile: 16px;
