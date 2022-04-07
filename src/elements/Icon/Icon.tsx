@@ -111,7 +111,6 @@ import "./Icon.scss";
 
 const Icon: React.FC<IconProps> = ({ modifier, noStroke, children }) => (
   <div
-    data-testid="Icon"
     className={classNames("f-icon", {
       "f-icon--success": modifier === "success",
       "f-icon--danger": modifier === "danger",

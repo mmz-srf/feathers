@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import Button, { ButtonModifiers, ButtonTooltip } from "./Button";
 
 import { UpdateIcon } from "../Icon/Icon";

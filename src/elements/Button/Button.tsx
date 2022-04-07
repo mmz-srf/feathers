@@ -54,7 +54,6 @@ const Button: React.FC<ButtonProps> = ({
 }) => (
   <button
     type="button"
-    data-testid="Button"
     className={classNames("f-button", {
       "f-button--primary": modifier?.includes(ButtonModifiers.Primary),
       "f-button--save": modifier?.includes(ButtonModifiers.Save),

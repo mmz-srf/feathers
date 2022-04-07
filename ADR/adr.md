@@ -11,6 +11,9 @@
 * Business logic, e.g. calling some backend API
 * Demo data inside the components
 
+## Output
+* TBD - minified? completely readable? sources directly? - Will be determined after first implementation
+
 ## Versioning
 * "One version fits all": The version specified in `package.json` is the identifying version
 * Versioning is done according to the usual [semver](https://semver.org/)
