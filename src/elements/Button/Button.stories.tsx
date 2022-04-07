@@ -14,7 +14,7 @@ export default {
   argTypes: {
     modifier: {
       options: ["", ...ButtonModifiers],
-      control: { type: "select" },
+      control: { type: "multi-select" },
     },
     text: {
       control: { type: "text" },

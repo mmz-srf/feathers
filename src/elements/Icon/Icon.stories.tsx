@@ -115,7 +115,7 @@ export default {
   argTypes: {
     modifier: {
       options: ["", ...IconModifiers],
-      control: { type: "select" },
+      control: { type: "multi-select" },
     },
     alt: {
       control: {

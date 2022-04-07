@@ -5,17 +5,11 @@ import { TooltipProps } from "./Tooltip.types";
 
 import "./Tooltip.scss";
 
-export enum ToolTipModifiers {
-  AlwaysOpen = "always_open",
-  SpaceFilling = "space_filling",
-  NoMinWidth = "no_min_width",
-  ShowDelayed = "show_delayed",
-  Validation = "validation",
-  MaxParentWidth = "max_parent_width",
-  NoWordWrap = "no_word_wrap",
-  NoBorder = "no_border",
-  NoMargin = "no_margin",
-}
+export const TooltipModifiers = ["always_open", "space_filling", "no_min_width", "show_delayed", "validation", "max_parent_width", "no_word_wrap", "no_border", "no_margin"] as const;
+export type TooltipModifiersType = typeof TooltipModifiers[number];
+
+export const TooltipDirections = ["up", "right", "down", "left", "down-edge-left", "down-edge-right", ] as const;
+export type TooltipDirectionsType = typeof TooltipDirections[number];
 
 const Tooltip: React.FC<TooltipProps> = ({
   modifier,
@@ -29,30 +23,18 @@ const Tooltip: React.FC<TooltipProps> = ({
   return (
     <span
       className={classNames("f-tooltip", {
-        "f-tooltip--always-open": modifier?.includes(
-          ToolTipModifiers.AlwaysOpen
-        ),
-        "f-tooltip--space-filling": modifier?.includes(
-          ToolTipModifiers.SpaceFilling
-        ),
-        "f-tooltip--no-min-width": modifier?.includes(
-          ToolTipModifiers.NoMinWidth
-        ),
-        "f-tooltip--show-delayed": modifier?.includes(
-          ToolTipModifiers.ShowDelayed
-        ),
-        "f-tooltip--validation": modifier?.includes(
-          ToolTipModifiers.Validation
-        ),
-        "f-tooltip--max-parent-width": modifier?.includes(
-          ToolTipModifiers.MaxParentWidth
-        ),
+        "f-tooltip--always-open": modifier?.includes("always_open"),
+        "f-tooltip--space-filling": modifier?.includes("space_filling"),
+        "f-tooltip--no-min-width": modifier?.includes("no_min_width"),
+        "f-tooltip--show-delayed": modifier?.includes("show_delayed"),
+        "f-tooltip--validation": modifier?.includes("validation"),
+        "f-tooltip--max-parent-width": modifier?.includes("max_parent_width"),
         "f-tooltip--no-word-wrap":
-          modifier?.includes(ToolTipModifiers.NoWordWrap) ||
-          (modifier?.includes(ToolTipModifiers.NoMinWidth) &&
+          modifier?.includes("no_word_wrap") ||
+          (modifier?.includes("no_min_width") &&
             content.length < 30),
-        "f-tooltip--no-border": modifier?.includes(ToolTipModifiers.NoBorder),
-        "f-tooltip--no-margin": modifier?.includes(ToolTipModifiers.NoMargin),
+        "f-tooltip--no-border": modifier?.includes("no_border"),
+        "f-tooltip--no-margin": modifier?.includes("no_margin"),
         "f-tooltip--up": direction === "up",
         "f-tooltip--right": direction === "right",
         "f-tooltip--down": direction === "down",

@@ -1,15 +1,9 @@
 import React from "react";
-import { ToolTipModifiers } from "./Tooltip";
+import {TooltipDirectionsType, TooltipModifiersType} from "./Tooltip";
 
 export interface TooltipProps {
-  modifier?: ToolTipModifiers | Array<ToolTipModifiers>;
+  modifier?: TooltipModifiersType | Array<TooltipModifiersType>;
   text?: string | React.ReactNode;
-  direction?:
-    | "up"
-    | "right"
-    | "down"
-    | "left"
-    | "down-edge-left"
-    | "down-edge-right";
+  direction?: TooltipDirectionsType;
   content: string;
 }
