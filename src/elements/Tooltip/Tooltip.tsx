@@ -5,10 +5,27 @@ import { TooltipProps } from "./Tooltip.types";
 
 import "./Tooltip.scss";
 
-export const TooltipModifiers = ["always_open", "space_filling", "no_min_width", "show_delayed", "validation", "max_parent_width", "no_word_wrap", "no_border", "no_margin"] as const;
+export const TooltipModifiers = [
+  "always_open",
+  "space_filling",
+  "no_min_width",
+  "show_delayed",
+  "validation",
+  "max_parent_width",
+  "no_word_wrap",
+  "no_border",
+  "no_margin",
+] as const;
 export type TooltipModifiersType = typeof TooltipModifiers[number];
 
-export const TooltipDirections = ["up", "right", "down", "left", "down-edge-left", "down-edge-right", ] as const;
+export const TooltipDirections = [
+  "up",
+  "right",
+  "down",
+  "left",
+  "down-edge-left",
+  "down-edge-right",
+] as const;
 export type TooltipDirectionsType = typeof TooltipDirections[number];
 
 const Tooltip: React.FC<TooltipProps> = ({
@@ -31,8 +48,7 @@ const Tooltip: React.FC<TooltipProps> = ({
         "f-tooltip--max-parent-width": modifier?.includes("max_parent_width"),
         "f-tooltip--no-word-wrap":
           modifier?.includes("no_word_wrap") ||
-          (modifier?.includes("no_min_width") &&
-            content.length < 30),
+          (modifier?.includes("no_min_width") && content.length < 30),
         "f-tooltip--no-border": modifier?.includes("no_border"),
         "f-tooltip--no-margin": modifier?.includes("no_margin"),
         "f-tooltip--up": direction === "up",

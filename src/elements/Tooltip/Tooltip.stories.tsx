@@ -47,7 +47,7 @@ TooltipPlayground.argTypes = {
     control: {
       type: "text",
     },
-  }
+  },
 };
 
 export const AlwaysOpen = () => (
@@ -65,11 +65,7 @@ export const SpaceFilling = () => (
   />
 );
 export const NoMinWidth = () => (
-  <Tooltip
-    modifier="no_min_width"
-    content="smol"
-    text="Hover here"
-  />
+  <Tooltip modifier="no_min_width" content="smol" text="Hover here" />
 );
 export const ShowDelayed = () => (
   <Tooltip
@@ -79,11 +75,7 @@ export const ShowDelayed = () => (
   />
 );
 export const Validation = () => (
-  <Tooltip
-    modifier="validation"
-    content="SRF rulez"
-    text="Hover here"
-  />
+  <Tooltip modifier="validation" content="SRF rulez" text="Hover here" />
 );
 export const MaxParentWidth = () => (
   <Tooltip
@@ -107,11 +99,7 @@ export const NoBorder = () => (
   />
 );
 export const NoMargin = () => (
-  <Tooltip
-    modifier="no_margin"
-    content="SRF rulez"
-    text="Hover here"
-  />
+  <Tooltip modifier="no_margin" content="SRF rulez" text="Hover here" />
 );
 export const Up = () => (
   <Tooltip direction="up" content="👇" text="Hover here" />
