@@ -6,6 +6,7 @@ import postcss from "rollup-plugin-postcss";
 import copy from "rollup-plugin-copy";
 import svgr from "@svgr/rollup";
 import eslint from "@rollup/plugin-eslint";
+import minify from "postcss-minify";
 
 const packageJson = require("./package.json");
 
@@ -30,7 +31,11 @@ export default {
     eslint(),
     commonjs(),
     typescript({ useTsconfigDeclarationDir: true }),
-    postcss(),
+    postcss({
+      plugins: [
+        minify(),
+      ]
+    }),
     copy({
       targets: [
         {
