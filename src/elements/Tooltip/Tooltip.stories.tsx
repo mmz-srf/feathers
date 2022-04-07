@@ -1,6 +1,5 @@
 import React from "react";
 import Tooltip, { ToolTipModifiers } from "./Tooltip";
-import TOOLTIP_CONTENT from "./Tooltip-Content";
 
 export default {
   title: "Tooltip",
@@ -86,11 +85,6 @@ export const NoMargin = () => (
     text="Hover here"
   />
 );
-
-export const WithFileContents = () => (
-  <Tooltip content={TOOLTIP_CONTENT.STORYBOOK_HINT_DEMO} text="SRF rulez" />
-);
-
 export const Up = () => (
   <Tooltip direction="up" content="👇" text="Hover here" />
 );
