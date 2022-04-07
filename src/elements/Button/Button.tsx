@@ -8,36 +8,37 @@ import { TooltipProps } from "../Tooltip/Tooltip.types";
 import "./Button.scss";
 import "./../Tooltip/Tooltip.scss";
 
-export enum ButtonModifiers {
-  Primary = "primary",
-  Save = "save",
-  Publish = "publish",
-  Retire = "retire",
-  Danger = "danger",
-  White = "white",
-  Unobtrusive = "unobtrusive",
-  Fullwidth = "fullwidth",
-  MarginTop = "margin_top",
-  MarginBottom = "margin_bottom",
-  LeftAlign = "left_align",
-  IconRotated = "icon_rotated",
-  InvisibleContent = "invisible_content",
-  NoOutline = "no_outline",
-  ExtraBig = "extra_big",
-  Big = "big",
-  Small = "small",
-  ExtraTiny = "extra_tiny",
-  Tiny = "tiny",
-  Hidden = "hidden",
-  IconRight = "icon_right",
-  IconSticksToBorder = "icon_sticks_to_border",
-  SpreadContent = "spread_content",
-  Bold = "bold",
-  Selected = "selected",
-  Uppercase = "uppercase",
-  Link = "link",
-  Circle = "circle",
-}
+export const ButtonModifiers = [
+  "primary",
+  "save",
+  "publish",
+  "retire",
+  "danger",
+  "white",
+  "unobtrusive",
+  "fullwidth",
+  "margin_top",
+  "margin_bottom",
+  "left_align",
+  "icon_rotated",
+  "invisible_content",
+  "no_outline",
+  "extra_big",
+  "big",
+  "small",
+  "extra_tiny",
+  "tiny",
+  "hidden",
+  "icon_right",
+  "icon_sticks_to_border",
+  "spread_content",
+  "bold",
+  "selected",
+  "uppercase",
+  "link",
+  "circle",
+] as const;
+export type ButtonModifiersType = typeof ButtonModifiers[number];
 
 const Button: React.FC<ButtonProps> = ({
   modifier,
@@ -55,44 +56,36 @@ const Button: React.FC<ButtonProps> = ({
   <button
     type="button"
     className={classNames("f-button", {
-      "f-button--primary": modifier?.includes(ButtonModifiers.Primary),
-      "f-button--save": modifier?.includes(ButtonModifiers.Save),
-      "f-button--publish": modifier?.includes(ButtonModifiers.Publish),
-      "f-button--retire": modifier?.includes(ButtonModifiers.Retire),
-      "f-button--danger": modifier?.includes(ButtonModifiers.Danger),
-      "f-button--white": modifier?.includes(ButtonModifiers.White),
-      "f-button--unobtrusive": modifier?.includes(ButtonModifiers.Unobtrusive),
-      "f-button--fullwidth": modifier?.includes(ButtonModifiers.Fullwidth),
-      "f-button--margin-top": modifier?.includes(ButtonModifiers.MarginTop),
-      "f-button--margin-bottom": modifier?.includes(
-        ButtonModifiers.MarginBottom
-      ),
-      "f-button--left-align": modifier?.includes(ButtonModifiers.LeftAlign),
-      "f-button--icon-rotated": modifier?.includes(ButtonModifiers.IconRotated),
-      "f-button--invisible-content": modifier?.includes(
-        ButtonModifiers.InvisibleContent
-      ),
-      "f-button--no-outline": modifier?.includes(ButtonModifiers.NoOutline),
-      "f-button--extra-big": modifier?.includes(ButtonModifiers.ExtraBig),
-      "f-button--big": modifier?.includes(ButtonModifiers.Big),
-      "f-button--small": modifier?.includes(ButtonModifiers.Small),
-      "f-button--extra-tiny": modifier?.includes(ButtonModifiers.ExtraTiny),
-      "f-button--tiny": modifier?.includes(ButtonModifiers.Tiny),
-      "f-button--hidden": modifier?.includes(ButtonModifiers.Hidden),
-      "f-button--icon-on-the-right": modifier?.includes(
-        ButtonModifiers.IconRight
-      ),
+      "f-button--primary": modifier?.includes("primary"),
+      "f-button--save": modifier?.includes("save"),
+      "f-button--publish": modifier?.includes("publish"),
+      "f-button--retire": modifier?.includes("retire"),
+      "f-button--danger": modifier?.includes("danger"),
+      "f-button--white": modifier?.includes("white"),
+      "f-button--unobtrusive": modifier?.includes("unobtrusive"),
+      "f-button--fullwidth": modifier?.includes("fullwidth"),
+      "f-button--margin-top": modifier?.includes("margin_top"),
+      "f-button--margin-bottom": modifier?.includes("margin_bottom"),
+      "f-button--left-align": modifier?.includes("left_align"),
+      "f-button--icon-rotated": modifier?.includes("icon_rotated"),
+      "f-button--invisible-content": modifier?.includes("invisible_content"),
+      "f-button--no-outline": modifier?.includes("no_outline"),
+      "f-button--extra-big": modifier?.includes("extra_big"),
+      "f-button--big": modifier?.includes("big"),
+      "f-button--small": modifier?.includes("small"),
+      "f-button--extra-tiny": modifier?.includes("extra_tiny"),
+      "f-button--tiny": modifier?.includes("tiny"),
+      "f-button--hidden": modifier?.includes("hidden"),
+      "f-button--icon-on-the-right": modifier?.includes("icon_right"),
       "f-button--icon-sticks-to-border": modifier?.includes(
-        ButtonModifiers.IconSticksToBorder
+        "icon_sticks_to_border"
       ),
-      "f-button--spread-content": modifier?.includes(
-        ButtonModifiers.SpreadContent
-      ),
-      "f-button--bold": modifier?.includes(ButtonModifiers.Bold),
-      "f-button--selected": modifier?.includes(ButtonModifiers.Selected),
-      "f-button--uppercase": modifier?.includes(ButtonModifiers.Uppercase),
-      "f-button--link": modifier?.includes(ButtonModifiers.Link),
-      "f-button--circle": modifier?.includes(ButtonModifiers.Circle),
+      "f-button--spread-content": modifier?.includes("spread_content"),
+      "f-button--bold": modifier?.includes("bold"),
+      "f-button--selected": modifier?.includes("selected"),
+      "f-button--uppercase": modifier?.includes("uppercase"),
+      "f-button--link": modifier?.includes("link"),
+      "f-button--circle": modifier?.includes("circle"),
       "f-button--icon-only": icon && !text,
     })}
     disabled={disabled}

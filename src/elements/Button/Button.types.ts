@@ -1,14 +1,15 @@
 import { ReactElement } from "react";
-import { ButtonModifiers } from "./Button";
+import { ButtonModifiersType } from "./Button";
 import { IconProps } from "../Icon/Icon.types";
 import { TooltipProps } from "../Tooltip/Tooltip.types";
 
+/* eslint-disable @typescript-eslint/no-explicit-any */
 export interface ButtonProps {
-  modifier?: ButtonModifiers | Array<ButtonModifiers>;
+  modifier?: ButtonModifiersType | Array<ButtonModifiersType>;
   children?: JSX.Element;
   text?: string;
   title?: string;
-  onClick?: (any) => any; // TODO - specific parameters/return types
+  onClick?: (any) => any;
   icon?: ReactElement<IconProps>;
   disabled?: boolean;
   tabIndex?: number;
@@ -16,3 +17,4 @@ export interface ButtonProps {
   dataCy?: string;
   tooltip?: ReactElement<TooltipProps>;
 }
+/* eslint-enable @typescript-eslint/no-explicit-any */

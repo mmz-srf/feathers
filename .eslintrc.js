@@ -6,6 +6,7 @@ module.exports = {
     "jsx-a11y/accessible-emoji": "off",
     "import/no-anonymous-default-export": "off",
     "prettier/prettier": "error",
+    "@typescript-eslint/no-empty-function": "off",
   },
   plugins: [
     '@typescript-eslint',

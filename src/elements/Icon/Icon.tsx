@@ -109,6 +109,18 @@ import ZoomOut from "./Images/ZoomOut.svg";
 
 import "./Icon.scss";
 
+export const IconModifiers = [
+  "success",
+  "danger",
+  "info",
+  "branding",
+  "small",
+  "tiny",
+  "rotatable",
+  "rotated-180",
+] as const;
+export type IconModifiersType = typeof IconModifiers[number];
+
 const Icon: React.FC<IconProps> = ({ modifier, noStroke, children }) => (
   <div
     className={classNames("f-icon", {

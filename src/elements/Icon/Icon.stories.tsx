@@ -44,6 +44,7 @@ import {
   GlobiLogoIcon,
   HeadingIcon,
   HtmlEmbedIcon,
+  IconModifiers,
   ImageGalleryIcon,
   ImageIcon,
   ImportImageIcon,
@@ -113,17 +114,7 @@ export default {
   },
   argTypes: {
     modifier: {
-      options: [
-        "",
-        "success",
-        "danger",
-        "info",
-        "branding",
-        "small",
-        "tiny",
-        "rotatable",
-        "rotated-180",
-      ],
+      options: ["", ...IconModifiers],
       control: { type: "select" },
     },
     alt: {

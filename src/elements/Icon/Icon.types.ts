@@ -1,13 +1,7 @@
+import { IconModifiersType } from "./Icon";
+
 export interface IconProps {
-  modifier?:
-    | "success"
-    | "danger"
-    | "info"
-    | "branding"
-    | "small"
-    | "tiny"
-    | "rotatable"
-    | "rotated-180";
+  modifier?: IconModifiersType | Array<IconModifiersType>;
   children?: JSX.Element;
   alt?: string;
   noStroke?: boolean;
