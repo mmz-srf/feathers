@@ -116,6 +116,7 @@ export const IconModifiers = [
   "branding",
   "small",
   "tiny",
+  "white",
   "rotatable",
   "rotated-180",
 ] as const;
