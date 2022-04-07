@@ -39,39 +39,14 @@ export default {
     copy({
       targets: [
         {
-          src: "src/foundation/variables.scss",
+          src: "src/foundation/*.scss",
           dest: "build/scss/foundation",
-          rename: "variables.scss",
+          rename: (name, extension) => `${name}.${extension}`,
         },
         {
-          src: "src/foundation/typography.scss",
-          dest: "build/scss/foundation",
-          rename: "typography.scss",
-        },
-        {
-          src: "src/foundation/breakpoints.scss",
-          dest: "build/scss/foundation",
-          rename: "breakpoints.scss",
-        },
-        {
-          src: "src/foundation/colors.scss",
-          dest: "build/scss/foundation",
-          rename: "colors.scss",
-        },
-        {
-          src: "src/foundation/mixins.scss",
-          dest: "build/scss/foundation",
-          rename: "mixins.scss",
-        },
-        {
-          src: "src/foundation/fonts.scss",
-          dest: "build/scss/foundation",
-          rename: "fonts.scss",
-        },
-        {
-          src: "src/foundation/globals.scss",
-          dest: "build/scss/foundation",
-          rename: "global.scss",
+          src: "src/assets/fonts/**/*.*",
+          dest: "build/assets/",
+          rename: (name, extension) => `${name}.${extension}`,
         },
       ],
     }),
