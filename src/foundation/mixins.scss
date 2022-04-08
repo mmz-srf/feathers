@@ -1,0 +1,64 @@
+@import 'variables';
+@import 'breakpoints';
+
+/* FONT-RELATED MIXINS */
+@mixin fontFamilyText {
+  font-family: 'SRG_SSR_Text_VF', sans-serif;
+}
+
+@mixin fontFamilyDisplay {
+  font-family: 'SRG_SSR_Display_VF', sans-serif;
+}
+
+@mixin fontFamilySystem {
+  // System UI font stack, for details see
+  // https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",  sans-serif;
+}
+
+@mixin fontFamilySerif {
+  font-family: 'SRG_SSR_Serif_Regular', serif;
+}
+
+@mixin fontFamilySerifDisplayMedium {
+  font-family: 'SRG_SSR_Serif_Display_Medium', serif;
+}
+
+@mixin fontFamilyFauxItalic {
+  font-family: 'SRG_SSR_Text_FauxItalic_VF', sans-serif;
+  font-style: italic;
+  font-synthesis: style;
+}
+
+@mixin fontWeight($weight: 400, $important: false) {
+  $importantStatement: null;
+  @if $important {
+    $importantStatement: !important;
+  }
+
+  font-weight: $weight $importantStatement; // for static fonts
+  font-variation-settings: "wght" $weight $importantStatement; // for variable fonts
+}
+
+@mixin font-smoothing {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin fontSize($font-size) {
+  font-size: $font-size + 0px;
+
+  @if ($font-size > 24) {
+    letter-spacing: normal;
+  } @else if($font-size >= 20) {
+    letter-spacing: 0.2px;
+  } @else if($font-size >= 12) {
+    letter-spacing: 0.4px;
+  }
+}
+
+@mixin breakLongWords {
+  word-break: break-word;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}

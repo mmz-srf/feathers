@@ -1,6 +1,4 @@
-// Generated with util/create-component.js
-@import "../variables.scss";
-@import "../typography.scss";
+@import '../../foundation/globals';
 
 .f-icon {
   display: flex;
@@ -52,4 +50,7 @@
 }
 .f-icon--white {
   color: $color-srf-neutral-white;
+}
+.f-icon--branding {
+  color: $color-srf-red-500;
 }

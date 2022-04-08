@@ -1,0 +1,16 @@
+<svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+>
+    <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            stroke="#4E4D47"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M18.768 7.5H14.5V5.6C14.4616 5.31374 14.5525 5.02524 14.748 4.81268C14.9436 4.60013 15.2235 4.48555 15.512 4.5C15.93 4.5 18.5 4.51 18.5 4.51V0.5H14.171C10.244 0.5 9.5 3.474 9.5 5.355V7.5H6.5V11.5H9.5V23.5H14.5V11.5H18.351L18.768 7.5Z"
+    />
+</svg>

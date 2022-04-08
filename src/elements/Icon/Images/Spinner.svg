@@ -1,0 +1,63 @@
+<svg
+        class="f-icon-spinner"
+        width="44"
+        height="44"
+        viewBox="22 22 44 44"
+>
+
+    <style type="text/css">
+        .f-icon-spinner {
+          color: #999;
+          animation: rotate360Animation 2s linear infinite;
+        }
+
+        .f-icon-spinner__circle {
+          stroke-width: 2;
+          fill: none;
+        }
+
+        .f-icon-spinner__circle--bg {
+          opacity: .4;
+        }
+
+        .f-icon-spinner__circle--dash {
+          stroke-linecap: round;
+          stroke-miterlimit: 10;
+          animation: spinnerDashAnimation 1.5s ease-in-out infinite;
+        }
+
+        .f-icon-spinner--with-brand-color .f-icon-spinner__circle--dash {
+            stroke: #e31f2b; /* $color-srf-red-500 */
+        }
+
+        @keyframes spinnerDashAnimation {
+          0% {
+            stroke-dasharray: 1, 200;
+            stroke-dashoffset: 0;
+          }
+
+          50% {
+            stroke-dasharray: 89, 200;
+            stroke-dashoffset: -35;
+          }
+
+          100% {
+            stroke-dasharray: 89, 200;
+            stroke-dashoffset: -124;
+          }
+        }
+    </style>
+
+    <circle
+            class="f-icon-spinner__circle f-icon-spinner__circle--bg"
+            cx="44"
+            cy="44"
+            r="20"
+    />
+    <circle
+            class="f-icon-spinner__circle f-icon-spinner__circle--dash"
+            cx="44"
+            cy="44"
+            r="20"
+    />
+</svg>

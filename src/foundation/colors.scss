@@ -1,11 +1,21 @@
-// Variables
-$harvey-black: #131111;
-$harvey-white: #e0e0e0;
-$harvey-red: #ff2323;
-$harvey-green: #005f20;
-$harvey-blue: #070bce;
-
 /*** COLORS ***/
+//
+// # How To Color-Variables @ SRF
+//
+// 1. Global Color Variables
+//    Name all the colors and keep 'em neutral (e.g. don't use «light», use «secondary» or a value like 100, since in dark-themes a «light»-color might be something «dark»)
+//
+// 2. Element-Variables
+//    Add variables on a element-basis
+//
+// 3. Variable to Variable
+//    Reference element-variables to corresponding global color variables
+//
+// (Optional)
+// 4. Add Themes (like a Dark-Theme)
+//    Just overwrite element-variables inside theme-media-queries (ideally no new colors needed in this step)
+//
+
 // SRF Color RED
 $color-srf-red-50:                            rgba(255,230,230,1);   // #ffe6e6
 $color-srf-red-100:                           rgba(255,187,188,1);   // #ffbbbc
@@ -169,15 +179,3 @@ $color-srf-neutral-blacka80:                  rgba(0,0,0,.8);        // #000000 
 $color-brand-facebook:                        rgba(52,100,165,1);    // #3464a5
 $color-brand-twitter:                         rgba(90,168,223,1);    // #5aa8df
 $color-brand-whatsapp:                        rgba(78,206,91,1);     // #4ece5b
-
-:root {
-  --background: #fff;
-  --font-color: #494949;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #3c3c3c;
-    --font-color: #fafafa;
-  }
-}

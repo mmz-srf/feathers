@@ -1,0 +1,107 @@
+@import './mixins';
+@import './breakpoints';
+@import './variables';
+@import './colors';
+@import './fonts';
+
+/*
+the following rule is - unfortunately - neccessary for consistency reasons with patternlab
+since their styleguide kit uses it as well and their rule is applied to ALL styles (also
+our own) within the patternlab...
+*/
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: $color-srf-neutral-blacka00;
+}
+
+html {
+  overflow-x: hidden; // because of scrollbars caused by fullwith (100vw) elements
+}
+
+body {
+  margin: 0;
+  font-family: 'SRG_SSR_Text_Static', sans-serif;
+  @supports (font-variation-settings: normal) {
+    font-family: 'SRG_SSR_Text_VF', sans-serif;
+  }
+  @include fontWeight(300);
+  background-color: var(--t-body-bg);
+}
+
+html,
+body {
+  line-height: $default-line-height-ratio;
+}
+
+nav {
+  display: inline;
+}
+
+ul,
+ol {
+  counter-reset: item;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  @include fontWeight(500);
+}
+
+a {
+  text-decoration: none;
+  color: $color-srf-red-600;
+
+  &:hover {
+    color: $color-srf-red-700;
+  }
+
+  &:active {
+    color: $color-srf-red-800;
+  }
+}
+
+img {
+  border-style: none;
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+iframe {
+  border: 0;
+  width: 100%;
+}
+
+cite {
+  font-style: normal;
+}
+
+b,
+strong {
+  @include fontWeight(500);
+}
+
+em {
+  @include fontFamilyFauxItalic;
+}
+
+th {
+  @include fontWeight(400);
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+}
+
+:focus {
+  outline: none;
+}

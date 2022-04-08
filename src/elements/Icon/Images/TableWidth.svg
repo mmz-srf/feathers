@@ -1,0 +1,75 @@
+<svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+>
+    <g clipPath="url(#clip0_4674:177006)">
+        <mask id="path-1-inside-1_4674:177006" fill="white">
+            <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M15 0.5C15 0.223857 14.7761 -9.78512e-09 14.5 -2.18557e-08L9.5 -2.40413e-07C9.22386 -2.52483e-07 9 0.223857 9 0.499999L9 23.5C9 23.7761 9.22386 24 9.5 24L14.5 24C14.7761 24 15 23.7761 15 23.5L15 0.5ZM14 8L14 1L10 1L10 8L14 8ZM14 9L14 15L10 15L10 9L14 9ZM14 23L14 16L10 16L10 23L14 23Z"
+            />
+        </mask>
+        <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M15 0.5C15 0.223857 14.7761 -9.78512e-09 14.5 -2.18557e-08L9.5 -2.40413e-07C9.22386 -2.52483e-07 9 0.223857 9 0.499999L9 23.5C9 23.7761 9.22386 24 9.5 24L14.5 24C14.7761 24 15 23.7761 15 23.5L15 0.5ZM14 8L14 1L10 1L10 8L14 8ZM14 9L14 15L10 15L10 9L14 9ZM14 23L14 16L10 16L10 23L14 23Z"
+                fill="#22211D"
+        />
+        <path
+                d="M14 1L15 1L15 0L14 -4.37132e-08L14 1ZM14 8L14 9L15 9L15 8L14 8ZM10 1L10 -2.18557e-07L9 -2.62268e-07L9 1L10 1ZM10 8L9 8L9 9L10 9L10 8ZM14 15L14 16L15 16L15 15L14 15ZM14 9L15 9L15 8L14 8L14 9ZM10 15L9 15L9 16L10 16L10 15ZM10 9L10 8L9 8L9 9L10 9ZM14 16L15 16L15 15L14 15L14 16ZM14 23L14 24L15 24L15 23L14 23ZM10 16L10 15L9 15L9 16L10 16ZM10 23L9 23L9 24L10 24L10 23ZM14.5 1C14.2239 1 14 0.776142 14 0.5L16 0.5C16 -0.328427 15.3284 -1 14.5 -1L14.5 1ZM9.5 1L14.5 1L14.5 -1L9.5 -1L9.5 1ZM10 0.499999C10 0.776143 9.77614 1 9.5 1L9.5 -1C8.67158 -1 8 -0.328429 8 0.499999L10 0.499999ZM10 23.5L10 0.499999L8 0.499999L8 23.5L10 23.5ZM9.5 23C9.77614 23 10 23.2239 10 23.5L8 23.5C8 24.3284 8.67157 25 9.5 25L9.5 23ZM14.5 23L9.5 23L9.5 25L14.5 25L14.5 23ZM14 23.5C14 23.2239 14.2239 23 14.5 23L14.5 25C15.3284 25 16 24.3284 16 23.5L14 23.5ZM14 0.5L14 23.5L16 23.5L16 0.5L14 0.5ZM13 1L13 8L15 8L15 1L13 1ZM10 2L14 2L14 -4.37132e-08L10 -2.18557e-07L10 2ZM11 8L11 1L9 1L9 8L11 8ZM14 7L10 7L10 9L14 9L14 7ZM15 15L15 9L13 9L13 15L15 15ZM10 16L14 16L14 14L10 14L10 16ZM9 9L9 15L11 15L11 9L9 9ZM14 8L10 8L10 10L14 10L14 8ZM13 16L13 23L15 23L15 16L13 16ZM10 17L14 17L14 15L10 15L10 17ZM11 23L11 16L9 16L9 23L11 23ZM14 22L10 22L10 24L14 24L14 22Z"
+                fill="#22211D"
+                mask="url(#path-1-inside-1_4674:177006)"
+        />
+        <path
+                d="M19.25 9L22.25 12"
+                stroke="#22211D"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+        />
+        <path
+                d="M19.25 15L22.25 12"
+                stroke="#22211D"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+        />
+        <path
+                d="M16.25 12L22.25 12"
+                stroke="#22211D"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+        />
+        <path
+                d="M4 15L1 12"
+                stroke="#22211D"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+        />
+        <path
+                d="M4 9L1 12"
+                stroke="#22211D"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+        />
+        <path
+                d="M7 12L1 12"
+                stroke="#22211D"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+        />
+    </g>
+    <defs>
+        <clipPath id="clip0_4674:177006">
+            <rect width="24" height="24" fill="white" />
+        </clipPath>
+    </defs>
+</svg>

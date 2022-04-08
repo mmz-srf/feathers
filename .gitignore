@@ -3,4 +3,6 @@ build/
 .idea/
 storybook-static/
 .DS_Store
+.vscode/*
+.nova/*
 *.log
