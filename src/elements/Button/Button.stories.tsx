@@ -138,3 +138,7 @@ WithTooltip.args = {
 export const ModifierAsArray = () => (
   <Button text="My modifiers are an array!" modifier={["primary", "big"]} />
 );
+
+export const WithCallback = () => (
+  <Button text="Alert trigger" modifier={["primary", "big"]} onClick={() => alert('Alarm! Alaarm!')} />
+);
