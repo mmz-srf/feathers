@@ -104,7 +104,7 @@ import {
   ZoomOutIcon,
 } from "./elements/Icon/Icon";
 import Button from "./elements/Button/Button";
-import ToolTip from "./elements/Tooltip/Tooltip";
+import Tooltip from "./elements/Tooltip/Tooltip";
 
 export {
   AddColumnIcon,
@@ -199,7 +199,7 @@ export {
   TeaserIcon,
   TextboxIcon,
   TimeIcon,
-  ToolTip,
+  Tooltip,
   TrashcanIcon,
   TwitterIcon,
   UnlinkIcon,
