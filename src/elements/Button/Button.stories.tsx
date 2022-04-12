@@ -47,6 +47,9 @@ CircleModifier.args = { modifier: "circle" };
 export const DangerModifier = ModifierTemplate.bind({});
 DangerModifier.args = { modifier: "danger" };
 
+export const FavoriteModifier = ModifierTemplate.bind({});
+FavoriteModifier.args = { modifier: "favorite" };
+
 export const ExtraBigModifier = ModifierTemplate.bind({});
 ExtraBigModifier.args = { modifier: "extra_big" };
 

@@ -15,6 +15,7 @@ export const TooltipModifiers = [
   "no_word_wrap",
   "no_border",
   "no_margin",
+  "clickable"
 ] as const;
 export type TooltipModifiersType = typeof TooltipModifiers[number];
 
@@ -57,6 +58,7 @@ const Tooltip: React.FC<TooltipProps> = ({
         "f-tooltip--left": direction === "left",
         "f-tooltip--down-edge-left": direction === "down-edge-left",
         "f-tooltip--down-edge-right": direction === "down-edge-right",
+        "f-tooltip--clickable": modifier?.includes("clickable"),
       })}
     >
       {text}

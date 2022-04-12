@@ -15,6 +15,7 @@
 }
 
 .f-tooltip__content {
+  pointer-events: none;
   visibility: hidden;
   position: absolute;
   z-index: 9999999;
@@ -147,4 +148,8 @@
 
 .f-tooltip--no-margin {
   margin: 0;
+}
+
+.f-tooltip--clickable .f-tooltip__content {
+  pointer-events: auto;
 }
