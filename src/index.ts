@@ -103,7 +103,7 @@ import {
   ZoomInIcon,
   ZoomOutIcon,
 } from "./elements/Icon/Icon";
-import Button from "./elements/Button/Button";
+import Button, {ButtonTooltip} from "./elements/Button/Button";
 import Tooltip from "./elements/Tooltip/Tooltip";
 
 export {
@@ -118,6 +118,7 @@ export {
   AudioeditorIcon,
   BoldIcon,
   Button,
+  ButtonTooltip,
   CHMapIcon,
   CaretIcon,
   CheckIcon,

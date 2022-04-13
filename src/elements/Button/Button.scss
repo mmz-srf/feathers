@@ -25,6 +25,12 @@ $button-animation-duration: 0.3s;
   --f-button-danger-hover-background: #{$color-srf-red-500};
   --f-button-danger-focus-background: #{$color-srf-red-600};
 
+  // f-button--favorite
+  --f-button-favorite-default-color: #{$color-srf-neutral-white};
+  --f-button-favorite-default-background: #{$color-srf-purple-700};
+  --f-button-favorite-hover-background: #{$color-srf-purple-800};
+  --f-button-favorite-focus-background: #{$color-srf-purple-900};
+
   // f-button--save
   --f-button-save-default-background: #{$color-srf-green-500};
   --f-button-save-default-color: #{$color-srf-neutral-white};
@@ -169,6 +175,13 @@ $button-animation-duration: 0.3s;
   --f-button-default-background: var(--f-button-danger-default-background);
   --f-button-hover-background:   var(--f-button-danger-hover-background);
   --f-button-focus-background:   var(--f-button-danger-focus-background);
+}
+
+.f-button--favorite {
+  --f-button-text-color:         var(--f-button-favorite-default-color);
+  --f-button-default-background: var(--f-button-favorite-default-background);
+  --f-button-hover-background:   var(--f-button-favorite-hover-background);
+  --f-button-focus-background:   var(--f-button-favorite-focus-background);
 }
 
 .f-button--save {

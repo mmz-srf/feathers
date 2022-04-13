@@ -119,3 +119,6 @@ export const DownEdgeLeft = () => (
 export const DownEdgeRight = () => (
   <Tooltip direction="down-edge-right" content="↖️" text="Hover here" />
 );
+export const Clickable = () => (
+  <Tooltip modifier={["clickable", "always_open"]} content={"<a href=\"#\">I am clickable</a>"} text="Hover here" />
+);
