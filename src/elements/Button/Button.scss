@@ -99,7 +99,7 @@ $button-animation-duration: 0.3s;
   &,
   &:hover,
   &:active,
-  &:focus {
+  &:focus-visible {
     color: var(--f-button-text-color);
   }
 
@@ -109,7 +109,7 @@ $button-animation-duration: 0.3s;
       background: var(--f-button-hover-background);
     }
 
-    &:focus {
+    &:focus-visible {
       background: var(--f-button-focus-background);
       outline: none;
     }
@@ -150,7 +150,7 @@ $button-animation-duration: 0.3s;
   background: transparent;
 
   &:hover,
-  &:focus,
+  &:focus-visible,
   &:active {
     background-color: transparent;
     color: var(--f-button-link-hover-color);
@@ -205,7 +205,7 @@ $button-animation-duration: 0.3s;
 
   &,
   &:hover,
-  &:focus,
+  &:focus-visible,
   &:active {
     background: transparent;
   }
