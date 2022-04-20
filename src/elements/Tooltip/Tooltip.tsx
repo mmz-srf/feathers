@@ -15,7 +15,7 @@ export const TooltipModifiers = [
   "no_word_wrap",
   "no_border",
   "no_margin",
-  "clickable"
+  "clickable",
 ] as const;
 export type TooltipModifiersType = typeof TooltipModifiers[number];
 
