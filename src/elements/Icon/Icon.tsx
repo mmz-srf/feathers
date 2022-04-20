@@ -15,6 +15,7 @@ import Audioeditor from "./Images/Audioeditor.svg";
 import Bold from "./Images/Bold.svg";
 import CHMap from "./Images/CHMap.svg";
 import Caret from "./Images/Caret.svg";
+import Chat from "./Images/Chat.svg";
 import Check from "./Images/Check.svg";
 import ChecklistFailed from "./Images/ChecklistFailed.svg";
 import ChecklistPassed from "./Images/ChecklistPassed.svg";
@@ -39,6 +40,8 @@ import Error from "./Images/Error.svg";
 import ExclamationMark from "./Images/ExclamationMark.svg";
 import ExternalLink from "./Images/ExternalLink.svg";
 import Facebook from "./Images/Facebook.svg";
+import Favorite from "./Images/Favorite.svg";
+import FavoriteRemoved from "./Images/FavoriteRemoved.svg";
 import FederalVotes from "./Images/FederalVotes.svg";
 import Feed from "./Images/Feed.svg";
 import Focus from "./Images/Focus.svg";
@@ -57,9 +60,12 @@ import Link from "./Images/Link.svg";
 import Linkbox from "./Images/Linkbox.svg";
 import Live from "./Images/Live.svg";
 import Liveticker from "./Images/Liveticker.svg";
+import Lock from "./Images/Lock.svg";
 import Longform from "./Images/Longform.svg";
 import MaterialBox from "./Images/MaterialBox.svg";
+import Megaphon from "./Images/Megaphon.svg";
 import MeteoMap from "./Images/MeteoMap.svg";
+import Moderate from "./Images/Moderate.svg";
 import NewsGraphic from "./Images/NewsGraphic.svg";
 import Opinion from "./Images/Opinion.svg";
 import OrderedList from "./Images/OrderedList.svg";
@@ -76,8 +82,13 @@ import Push from "./Images/Push.svg";
 import QuestionMark from "./Images/QuestionMark.svg";
 import Quote from "./Images/Quote.svg";
 import RawHTML from "./Images/RawHTML.svg";
+import Remove from "./Images/Remove.svg";
+import Reply from "./Images/Reply.svg";
+import Respond from "./Images/Respond.svg";
 import Retire from "./Images/Retire.svg";
 import Revert from "./Images/Revert.svg";
+import Review from "./Images/Review.svg";
+import ReviewRemoved from "./Images/ReviewRemoved.svg";
 import RotateBack from "./Images/RotateBack.svg";
 import RotateForward from "./Images/RotateForward.svg";
 import Save from "./Images/Save.svg";
@@ -85,6 +96,7 @@ import SaveAndLeave from "./Images/SaveAndLeave.svg";
 import SchorschLogo from "./Images/SchorschLogo.svg";
 import Search from "./Images/Search.svg";
 import Settings from "./Images/Settings.svg";
+import SortArrows from "./Images/SortArrows.svg";
 import Spinner from "./Images/Spinner.svg";
 import Success from "./Images/Success.svg";
 import TV from "./Images/TV.svg";
@@ -93,6 +105,7 @@ import TableHead from "./Images/TableHead.svg";
 import TableWidth from "./Images/TableWidth.svg";
 import Teaser from "./Images/Teaser.svg";
 import Textbox from "./Images/Textbox.svg";
+import Thread from "./Images/Thread.svg";
 import Time from "./Images/Time.svg";
 import Trashcan from "./Images/Trashcan.svg";
 import Twitter from "./Images/Twitter.svg";
@@ -112,6 +125,7 @@ import "./Icon.scss";
 export const IconModifiers = [
   "success",
   "danger",
+  "retire",
   "info",
   "branding",
   "small",
@@ -127,6 +141,7 @@ const Icon: React.FC<IconProps> = ({ modifier, noStroke, children }) => (
     className={classNames("f-icon", {
       "f-icon--success": modifier?.includes("success"),
       "f-icon--danger": modifier?.includes("danger"),
+      "f-icon--retire": modifier?.includes("retire"),
       "f-icon--info": modifier?.includes("info"),
       "f-icon--branding": modifier?.includes("branding"),
       "f-icon--small": modifier?.includes("small"),
@@ -826,6 +841,84 @@ export const InstagramIcon: React.FC<IconProps> = ({
 }) => (
   <Icon {...{ modifier }}>
     <Instagram title={alt} />
+  </Icon>
+);
+
+export const ChatIcon: React.FC<IconProps> = ({ modifier }) => (
+  <Icon {...{ modifier }}>
+    <Chat />
+  </Icon>
+);
+
+export const FavoriteIcon: React.FC<IconProps> = ({ modifier }) => (
+  <Icon {...{ modifier }}>
+    <Favorite />
+  </Icon>
+);
+
+export const FavoriteRemovedIcon: React.FC<IconProps> = ({ modifier }) => (
+  <Icon {...{ modifier }}>
+    <FavoriteRemoved />
+  </Icon>
+);
+
+export const LockIcon: React.FC<IconProps> = ({ modifier }) => (
+  <Icon {...{ modifier }}>
+    <Lock />
+  </Icon>
+);
+
+export const MegaphonIcon: React.FC<IconProps> = ({ modifier }) => (
+  <Icon {...{ modifier }}>
+    <Megaphon />
+  </Icon>
+);
+
+export const ModerateIcon: React.FC<IconProps> = ({ modifier }) => (
+  <Icon {...{ modifier }}>
+    <Moderate />
+  </Icon>
+);
+
+export const RemoveIcon: React.FC<IconProps> = ({ modifier }) => (
+  <Icon {...{ modifier }}>
+    <Remove />
+  </Icon>
+);
+
+export const ReplyIcon: React.FC<IconProps> = ({ modifier }) => (
+  <Icon {...{ modifier }}>
+    <Reply />
+  </Icon>
+);
+
+export const RespondIcon: React.FC<IconProps> = ({ modifier }) => (
+  <Icon {...{ modifier }}>
+    <Respond />
+  </Icon>
+);
+
+export const ReviewIcon: React.FC<IconProps> = ({ modifier }) => (
+  <Icon {...{ modifier }}>
+    <Review />
+  </Icon>
+);
+
+export const ReviewRemovedIcon: React.FC<IconProps> = ({ modifier }) => (
+  <Icon {...{ modifier }}>
+    <ReviewRemoved />
+  </Icon>
+);
+
+export const SortArrowsIcon: React.FC<IconProps> = ({ modifier }) => (
+  <Icon {...{ modifier }}>
+    <SortArrows />
+  </Icon>
+);
+
+export const ThreadIcon: React.FC<IconProps> = ({ modifier }) => (
+  <Icon {...{ modifier }}>
+    <Thread />
   </Icon>
 );
 
