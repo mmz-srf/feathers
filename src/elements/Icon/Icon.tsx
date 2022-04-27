@@ -131,6 +131,7 @@ export const IconModifiers = [
   "small",
   "tiny",
   "white",
+  "light",
   "rotatable",
   "rotated-180",
 ] as const;
@@ -143,6 +144,8 @@ const Icon: React.FC<IconProps> = ({ modifier, noStroke, children }) => (
       "f-icon--danger": modifier?.includes("danger"),
       "f-icon--retire": modifier?.includes("retire"),
       "f-icon--info": modifier?.includes("info"),
+      "f-icon--white": modifier?.includes("white"),
+      "f-icon--light": modifier?.includes("light"),
       "f-icon--branding": modifier?.includes("branding"),
       "f-icon--small": modifier?.includes("small"),
       "f-icon--tiny": modifier?.includes("tiny"),
