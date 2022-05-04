@@ -116,8 +116,11 @@ import {
   ZoomInIcon,
   ZoomOutIcon,
 } from "./elements/Icon/Icon";
+import { IconProps } from "./elements/Icon/Icon.types";
 import Button, { ButtonTooltip } from "./elements/Button/Button";
+import { ButtonProps } from "./elements/Button/Button.types";
 import Tooltip from "./elements/Tooltip/Tooltip";
+import { TooltipProps } from "./elements/Tooltip/Tooltip.types";
 
 export {
   AddColumnIcon,
@@ -131,6 +134,7 @@ export {
   AudioeditorIcon,
   BoldIcon,
   Button,
+  ButtonProps,
   ButtonTooltip,
   CHMapIcon,
   CaretIcon,
@@ -169,6 +173,7 @@ export {
   GlobiLogoIcon,
   HeadingIcon,
   HtmlEmbedIcon,
+  IconProps,
   ImageGalleryIcon,
   ImageIcon,
   ImportImageIcon,
@@ -227,6 +232,7 @@ export {
   ThreadIcon,
   TimeIcon,
   Tooltip,
+  TooltipProps,
   TrashcanIcon,
   TwitterIcon,
   UnlinkIcon,
