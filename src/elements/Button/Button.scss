@@ -303,10 +303,6 @@ $button-animation-duration: 0.3s;
   }
 }
 
-.f-button--fullwidth {
-  width: 100%;
-}
-
 .f-button--margin-top {
   margin-top: 24px;
 }
@@ -389,4 +385,13 @@ $button-animation-duration: 0.3s;
 
 .f-button--uppercase {
   text-transform: uppercase;
+}
+
+.f-button--fullwidth {
+  width: 100%;
+}
+
+// please do not move this class around, it should be after other classes that modify the height custom prop
+.f-button--fullheight {
+  --f-button-height: 100%;
 }
