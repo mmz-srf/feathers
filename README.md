@@ -10,15 +10,32 @@ Shared Frontend Components for SRF applications
 - [Storybook](https://storybook.js.org/) to help you create and show off your components
 - [Jest](https://jestjs.io/) and [React Testing Library](https://github.com/testing-library/react-testing-library) enabling testing of the components
 
-## Installation
+## Usage
+
+Run `npm install srf-feathers --save` in your project root.
+
+Import and use components in your code:
+
+```js
+import { Button } from "srf-feathers";
+
+const MyComponent = () => (
+  <div>
+    <Button />
+  </div>
+);
+
+```
+
+## Development
+
+### Installation
 
 * check out srf-feathers `git clone git@github.com:mmz-srf/feathers.git`
 * enter directory where you installed it, e.g. `cd feathers`
 * install dependencies `npm install`
 
 ℹ️ If you have to update the _secrets_ (e.g. `CHROMATIC_PROJECT_TOKEN` for deployment to chromatic or `NPM_TOKEN` for deploying on NPM), you can change them on https://github.com/mmz-srf/feathers/settings/secrets/actions 
-
-## Development
 
 ### Testing
 
