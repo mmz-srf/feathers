@@ -44,6 +44,11 @@ export default {
           rename: (name, extension) => `${name}.${extension}`,
         },
         {
+          src: "src/elements/**/*.scss",
+          dest: "build/scss/elements",
+          rename: (name, extension) => `${name}.${extension}`,
+        },
+        {
           src: "src/assets/fonts/**/*.*",
           dest: "build/assets/",
           rename: (name, extension) => `${name}.${extension}`,
