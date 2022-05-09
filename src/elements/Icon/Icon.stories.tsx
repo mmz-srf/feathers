@@ -152,6 +152,10 @@ export const RotatableModifier = ModifierTemplate.bind({});
 RotatableModifier.args = {
   modifier: "rotatable",
 };
+export const Rotated45Modifier = ModifierTemplate.bind({});
+Rotated45Modifier.args = {
+  modifier: "rotated-45",
+};
 export const Rotated180Modifier = ModifierTemplate.bind({});
 Rotated180Modifier.args = {
   modifier: "rotated-180",

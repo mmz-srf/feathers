@@ -29,6 +29,10 @@
   transition: transform .2s ease-in-out;
 }
 
+.f-icon--rotated-45 {
+  transform: rotate(45deg);
+}
+
 .f-icon--rotated-180 {
   transform: rotate(180deg);
 }
