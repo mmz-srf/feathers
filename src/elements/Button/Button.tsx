@@ -128,7 +128,7 @@ const Button: React.FC<ButtonProps> = ({
 export const ButtonTooltip: React.FC<TooltipProps> = ({
   direction,
   content,
-  modifier,
+  modifier = [],
 }) => (
   <Tooltip
     content={content}
