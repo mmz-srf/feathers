@@ -18,6 +18,7 @@ export const ButtonModifiers = [
   "white",
   "unobtrusive",
   "fullwidth",
+  "fullheight",
   "margin_top",
   "margin_bottom",
   "left_align",
@@ -42,6 +43,7 @@ export const ButtonModifiers = [
 export type ButtonModifiersType = typeof ButtonModifiers[number];
 
 const Button: React.FC<ButtonProps> = ({
+  key,
   modifier,
   children,
   onClick = () => {},
@@ -55,6 +57,7 @@ const Button: React.FC<ButtonProps> = ({
   dataCy,
 }) => (
   <button
+    key={key}
     type="button"
     className={classNames("f-button", {
       "f-button--primary": modifier?.includes("primary"),
@@ -66,6 +69,7 @@ const Button: React.FC<ButtonProps> = ({
       "f-button--white": modifier?.includes("white"),
       "f-button--unobtrusive": modifier?.includes("unobtrusive"),
       "f-button--fullwidth": modifier?.includes("fullwidth"),
+      "f-button--fullheight": modifier?.includes("fullheight"),
       "f-button--margin-top": modifier?.includes("margin_top"),
       "f-button--margin-bottom": modifier?.includes("margin_bottom"),
       "f-button--left-align": modifier?.includes("left_align"),
@@ -124,10 +128,11 @@ const Button: React.FC<ButtonProps> = ({
 export const ButtonTooltip: React.FC<TooltipProps> = ({
   direction,
   content,
+  modifier = [],
 }) => (
   <Tooltip
     content={content}
-    modifier={["space_filling", "show_delayed"]}
+    modifier={["space_filling", "show_delayed", ...modifier]}
     direction={direction}
   />
 );

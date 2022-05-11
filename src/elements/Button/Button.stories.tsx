@@ -59,6 +59,16 @@ ExtraTinyModifier.args = { modifier: "extra_tiny" };
 export const FullwidthModifier = ModifierTemplate.bind({});
 FullwidthModifier.args = { modifier: "fullwidth" };
 
+export const FullheightModifier = ModifierTemplate.bind({});
+FullheightModifier.args = { modifier: "fullheight" };
+FullheightModifier.decorators = [
+  (Story) => (
+    <div style={{ height: "420px" }}>
+      <Story />
+    </div>
+  ),
+];
+
 export const HiddenModifier = ModifierTemplate.bind({});
 HiddenModifier.args = { modifier: "hidden" };
 
@@ -143,5 +153,10 @@ export const ModifierAsArray = () => (
 );
 
 export const WithCallback = () => (
-  <Button text="Alert trigger" modifier={["primary", "big"]} onClick={() => alert('Alarm! Alaarm!')} />
+  <Button
+    text="Alert trigger"
+    key={"test"}
+    modifier={["primary", "big"]}
+    onClick={() => alert("Alarm! Alaarm!")}
+  />
 );

@@ -52,54 +52,54 @@ TooltipPlayground.argTypes = {
 
 export const AlwaysOpen = () => (
   <Tooltip
-    modifier="always_open"
+    modifier={["always_open"]}
     content="I'm always visible 👋"
     text="Hover here"
   />
 );
 export const SpaceFilling = () => (
   <Tooltip
-    modifier="space_filling"
+    modifier={["space_filling"]}
     content="You can hover on the whole 400x400 area!"
     text="Hover here"
   />
 );
 export const NoMinWidth = () => (
-  <Tooltip modifier="no_min_width" content="smol" text="Hover here" />
+  <Tooltip modifier={["no_min_width"]} content="smol" text="Hover here" />
 );
 export const ShowDelayed = () => (
   <Tooltip
-    modifier="show_delayed"
+    modifier={["show_delayed"]}
     content="I'll show up a bit later than others 🦥"
     text="Hover here"
   />
 );
 export const Validation = () => (
-  <Tooltip modifier="validation" content="SRF rulez" text="Hover here" />
+  <Tooltip modifier={["validation"]} content="SRF rulez" text="Hover here" />
 );
 export const MaxParentWidth = () => (
   <Tooltip
-    modifier="max_parent_width"
+    modifier={["max_parent_width"]}
     content="I'm only as wide as the parent!"
     text="Hover here"
   />
 );
 export const NoWordWrap = () => (
   <Tooltip
-    modifier="no_word_wrap"
+    modifier={["no_word_wrap"]}
     content="Word wrapping? Not for me, homieeeeeeeeeeeeeeeeeeeeeeee! All in one line, yeah! 📏"
     text="Hover here"
   />
 );
 export const NoBorder = () => (
   <Tooltip
-    modifier="no_border"
+    modifier={["no_border"]}
     content="I see no borders from up here"
     text="Hover here"
   />
 );
 export const NoMargin = () => (
-  <Tooltip modifier="no_margin" content="SRF rulez" text="Hover here" />
+  <Tooltip modifier={["no_margin"]} content="SRF rulez" text="Hover here" />
 );
 export const Up = () => (
   <Tooltip direction="up" content="👇" text="Hover here" />
@@ -120,5 +120,9 @@ export const DownEdgeRight = () => (
   <Tooltip direction="down-edge-right" content="↖️" text="Hover here" />
 );
 export const Clickable = () => (
-  <Tooltip modifier={["clickable", "always_open"]} content={"<a href=\"#\">I am clickable</a>"} text="Hover here" />
+  <Tooltip
+    modifier={["clickable", "always_open"]}
+    content={'<a href="#">I am clickable</a>'}
+    text="Hover here"
+  />
 );
