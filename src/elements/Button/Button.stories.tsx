@@ -10,6 +10,7 @@ export default {
     text: "SRF rulez",
     icon: undefined,
     tooltip: undefined,
+    disabled: false,
   },
   argTypes: {
     modifier: {

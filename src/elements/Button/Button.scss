@@ -4,7 +4,7 @@ $button-animation-duration: 0.3s;
 
 // Theming
 :root {
-  // f-button ("secondary", default - because most buttons in GlobiEdithSchorsch are secondary buttons)
+  // f-button ("secondary", default - because most buttons are secondary buttons)
   --f-button-default-background: #{$color-srf-warmgrey-50};
   --f-button-default-color: #{$color-srf-warmgrey-900};
 
@@ -38,30 +38,31 @@ $button-animation-duration: 0.3s;
   // f-button--retire
   --f-button-retire-default-background: #{$color-srf-yellow-600};
   --f-button-retire-default-color: #{$color-srf-neutral-white};
-
   --f-button-retire-hover-background: #{$color-srf-yellow-700};
   --f-button-retire-focus-background: #{$color-srf-yellow-800};
 
+  // f-button--save
   --f-button-save-hover-background: #{$color-srf-green-600};
   --f-button-save-focus-background: #{$color-srf-green-700};
 
   // f-button--publish
   --f-button-publish-default-background: #{$color-srf-blue-600};
   --f-button-publish-default-color: #{$color-srf-neutral-white};
-
   --f-button-publish-hover-background: #{$color-srf-blue-700};
   --f-button-publish-focus-background: #{$color-srf-blue-800};
 
   // f-button--white
   --f-button-white-default-background: #{$color-srf-warmgrey-10};
   --f-button-white-default-color: #{$color-srf-warmgrey-900};
-
   --f-button-white-hover-background: #{$color-srf-warmgrey-100};
   --f-button-white-focus-background: #{$color-srf-warmgrey-200};
 
   // f-button--link
   --f-button-link-default-color: #{$color-srf-red-400};
+  --f-button-link-default-background: transparent;
   --f-button-link-hover-color: #{$color-srf-red-600};
+  --f-button-link-hover-background: transparent;
+  --f-button-link-focus-background: transparent;
 }
 
 .f-button {
@@ -113,6 +114,8 @@ $button-animation-duration: 0.3s;
     &:hover {
       cursor: pointer;
       background: var(--f-button-hover-background);
+      /* enable overriding hover text color, fallback to normal text color */
+      color: var(--f-button-hover-text-color, var(--f-button-text-color));
     }
 
     &:focus-visible {
@@ -151,16 +154,13 @@ $button-animation-duration: 0.3s;
 
 // Button that looks like a link
 .f-button--link {
-  --f-button-text-color: var(--f-button-link-default-color);
-  box-shadow: none;
-  background: transparent;
+  --f-button-text-color:         var(--f-button-link-default-color);
+  --f-button-hover-text-color:   var(--f-button-link-hover-color);
+  --f-button-default-background: var(--f-button-link-default-background);
+  --f-button-hover-background:   var(--f-button-link-hover-background);
+  --f-button-focus-background:   var(--f-button-link-focus-background);
 
-  &:hover,
-  &:focus-visible,
-  &:active {
-    background-color: transparent;
-    color: var(--f-button-link-hover-color);
-  }
+  box-shadow: none;
 }
 
 .f-button--primary {
