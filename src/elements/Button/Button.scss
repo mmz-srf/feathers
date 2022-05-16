@@ -106,7 +106,10 @@ $button-animation-duration: 0.3s;
 
   &,
   &:hover,
-  &:active,
+  &:active {
+    color: var(--f-button-text-color);
+  }
+  // separate rule to prevent older safari versions from crashing
   &:focus-visible {
     color: var(--f-button-text-color);
   }
@@ -219,8 +222,11 @@ $button-animation-duration: 0.3s;
 
   &,
   &:hover,
-  &:focus-visible,
   &:active {
+    background: transparent;
+  }
+  // separate rule to prevent older safari versions from crashing
+  &:focus-visible {
     background: transparent;
   }
 }
