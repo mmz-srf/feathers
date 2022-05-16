@@ -81,6 +81,7 @@ $button-animation-duration: 0.3s;
   height: var(--f-button-height);
   max-width: 100%; // button shouldn't get bigger than its parent
   padding: 0 var(--f-button-gutter);
+  margin: 0;
   letter-spacing: .4px;
   background: var(--f-button-default-background);
   box-shadow: $shadow-elevation2;
