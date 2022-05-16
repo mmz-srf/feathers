@@ -81,6 +81,7 @@ $button-animation-duration: 0.3s;
   height: var(--f-button-height);
   max-width: 100%; // button shouldn't get bigger than its parent
   padding: 0 var(--f-button-gutter);
+  margin: 0;
   letter-spacing: .4px;
   background: var(--f-button-default-background);
   box-shadow: $shadow-elevation2;
@@ -105,7 +106,10 @@ $button-animation-duration: 0.3s;
 
   &,
   &:hover,
-  &:active,
+  &:active {
+    color: var(--f-button-text-color);
+  }
+  // separate rule to prevent older safari versions from crashing
   &:focus-visible {
     color: var(--f-button-text-color);
   }
@@ -218,8 +222,11 @@ $button-animation-duration: 0.3s;
 
   &,
   &:hover,
-  &:focus-visible,
   &:active {
+    background: transparent;
+  }
+  // separate rule to prevent older safari versions from crashing
+  &:focus-visible {
     background: transparent;
   }
 }
