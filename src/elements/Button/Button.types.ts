@@ -1,10 +1,9 @@
-import { Key, MouseEventHandler, ReactElement } from "react";
+import { MouseEventHandler, ReactElement } from "react";
 import { ButtonModifiersType } from "./Button";
 import { IconProps } from "../Icon/Icon.types";
 import { TooltipProps } from "../Tooltip/Tooltip.types";
 
 export interface ButtonProps {
-  key?: Key;
   modifier?: ButtonModifiersType | Array<ButtonModifiersType>;
   children?: JSX.Element;
   text?: string;

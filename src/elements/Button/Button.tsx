@@ -43,7 +43,6 @@ export const ButtonModifiers = [
 export type ButtonModifiersType = typeof ButtonModifiers[number];
 
 const Button: React.FC<ButtonProps> = ({
-  key,
   modifier,
   children,
   onClick = () => {},
@@ -57,7 +56,6 @@ const Button: React.FC<ButtonProps> = ({
   dataCy,
 }) => (
   <button
-    key={key}
     type="button"
     className={classNames("f-button", {
       "f-button--primary": modifier?.includes("primary"),
