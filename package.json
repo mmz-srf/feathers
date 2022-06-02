@@ -1,6 +1,6 @@
 {
   "name": "srf-feathers",
-  "version": "1.1.9",
+  "version": "1.1.10",
   "main": "build/index.js",
   "module": "build/index.esm.js",
   "files": [
