@@ -59,7 +59,7 @@ npm run storybook
 
 ## Publishing
 
-`srf-feathers` is published on [NPM](https://www.npmjs.com/package/srf-feathers). A github workflow is used to auto-publish on NPM when the version number in `package.json` is increased on the master branch.
+`srf-feathers` is published on [NPM](https://www.npmjs.com/package/srf-feathers). A github workflow is used to auto-publish on NPM when the version number in `package.json` is increased on the main branch.
 
 In case this fails, publish via `npm publish` (you must be logged into npm in the CLI).
 
