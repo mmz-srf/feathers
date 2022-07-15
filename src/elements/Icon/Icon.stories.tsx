@@ -36,6 +36,8 @@ import {
   ExclamationMarkIcon,
   ExternalLinkIcon,
   FacebookIcon,
+  FavoriteIcon,
+  FavoriteRemovedIcon,
   FederalVotesIcon,
   FeedIcon,
   FocusIcon,
@@ -55,9 +57,12 @@ import {
   LinkboxIcon,
   LiveIcon,
   LivetickerIcon,
+  LockIcon,
   LongformIcon,
   MaterialBoxIcon,
+  MegaphonIcon,
   MeteoMapIcon,
+  ModerateIcon,
   NewsGraphicIcon,
   OpinionIcon,
   OrderedListIcon,
@@ -74,8 +79,13 @@ import {
   QuestionMarkIcon,
   QuoteIcon,
   RawHTMLIcon,
+  RemoveIcon,
+  ReplyIcon,
+  RespondIcon,
   RetireIcon,
   RevertIcon,
+  ReviewIcon,
+  ReviewRemovedIcon,
   RotateBackIcon,
   RotateForwardIcon,
   SaveAndLeaveIcon,
@@ -83,6 +93,7 @@ import {
   SchorschLogoIcon,
   SearchIcon,
   SettingsIcon,
+  SortArrowsIcon,
   SpinnerIcon,
   SuccessIcon,
   TVIcon,
@@ -91,6 +102,7 @@ import {
   TableWidthIcon,
   TeaserIcon,
   TextboxIcon,
+  ThreadIcon,
   TimeIcon,
   TrashcanIcon,
   TwitterIcon,
@@ -208,6 +220,8 @@ export const Error = (args) => <ErrorIcon {...args} />;
 export const ExclamationMark = (args) => <ExclamationMarkIcon {...args} />;
 export const ExternalLink = (args) => <ExternalLinkIcon {...args} />;
 export const Facebook = (args) => <FacebookIcon {...args} />;
+export const Favorite = (args) => <FavoriteIcon {...args} />;
+export const FavoriteRemoved = (args) => <FavoriteRemovedIcon {...args} />;
 export const FederalVotes = (args) => <FederalVotesIcon {...args} />;
 export const Feed = (args) => <FeedIcon {...args} />;
 export const Focus = (args) => <FocusIcon {...args} />;
@@ -226,9 +240,12 @@ export const Link = (args) => <LinkIcon {...args} />;
 export const Linkbox = (args) => <LinkboxIcon {...args} />;
 export const Live = (args) => <LiveIcon {...args} />;
 export const Liveticker = (args) => <LivetickerIcon {...args} />;
+export const Lock = (args) => <LockIcon {...args} />;
 export const Longform = (args) => <LongformIcon {...args} />;
 export const MaterialBox = (args) => <MaterialBoxIcon {...args} />;
+export const Megaphon = (args) => <MegaphonIcon {...args} />;
 export const MeteoMap = (args) => <MeteoMapIcon {...args} />;
+export const Moderate = (args) => <ModerateIcon {...args} />;
 export const NewsGraphic = (args) => <NewsGraphicIcon {...args} />;
 export const Opinion = (args) => <OpinionIcon {...args} />;
 export const OrderedList = (args) => <OrderedListIcon {...args} />;
@@ -245,8 +262,13 @@ export const Push = (args) => <PushIcon {...args} />;
 export const QuestionMark = (args) => <QuestionMarkIcon {...args} />;
 export const Quote = (args) => <QuoteIcon {...args} />;
 export const RawHTML = (args) => <RawHTMLIcon {...args} />;
+export const Remove = (args) => <RemoveIcon {...args} />;
+export const Reply = (args) => <ReplyIcon {...args} />;
+export const Respond = (args) => <RespondIcon {...args} />;
 export const Retire = (args) => <RetireIcon {...args} />;
 export const Revert = (args) => <RevertIcon {...args} />;
+export const Review = (args) => <ReviewIcon {...args} />;
+export const ReviewRemoved = (args) => <ReviewRemovedIcon {...args} />;
 export const RotateBack = (args) => <RotateBackIcon {...args} />;
 export const RotateForward = (args) => <RotateForwardIcon {...args} />;
 export const Save = (args) => <SaveIcon {...args} />;
@@ -254,6 +276,7 @@ export const SaveandLeave = (args) => <SaveAndLeaveIcon {...args} />;
 export const SchorschLogo = (args) => <SchorschLogoIcon {...args} />;
 export const Search = (args) => <SearchIcon {...args} />;
 export const Settings = (args) => <SettingsIcon {...args} />;
+export const SortArrows = (args) => <SortArrowsIcon {...args} />;
 export const Spinner = (args) => <SpinnerIcon {...args} />;
 export const SpinnerWithBrandColor = (args) => <SpinnerIcon {...args} />;
 SpinnerWithBrandColor.args = { modifier: "branding" };
@@ -264,6 +287,7 @@ export const TableHead = (args) => <TableHeadIcon {...args} />;
 export const TableWidth = (args) => <TableWidthIcon {...args} />;
 export const Teaser = (args) => <TeaserIcon {...args} />;
 export const Textbox = (args) => <TextboxIcon {...args} />;
+export const Thread = (args) => <ThreadIcon {...args} />;
 export const Time = (args) => <TimeIcon {...args} />;
 export const Trashcan = (args) => <TrashcanIcon {...args} />;
 export const Twitter = (args) => <TwitterIcon {...args} />;
