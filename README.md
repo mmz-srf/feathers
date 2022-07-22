@@ -106,6 +106,14 @@ npm i --save ../feathers
 
 ⚠️ If you've previously installed srf-feathers via NPM, you might have to remove the folder in your `node_modules`.
 
+### Install feathers from GitHub branch
+
+Alternatively to installing a local version of feathers you can also install it from a GitHub branch. This option is useful if you want to provide a deployable review application for testing:
+
+```
+npm i --save mmz-srf/feathers#my-branch
+```
+
 ### dev-tools (feathers-dev)
 
 For a smoother experience, a collection of the most used commands has been added to a dev-script in `/bin/feathers-dev`. List the available commands with
