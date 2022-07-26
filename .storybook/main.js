@@ -15,12 +15,7 @@ module.exports = {
       use: [
         "style-loader",
         "css-loader",
-        {
-          loader: "resolve-url-loader",
-          options: {
-            sourceMap: true
-          }
-        },
+        "resolve-url-loader",
         "sass-loader"
       ],
       include: path.resolve(__dirname, "../")
