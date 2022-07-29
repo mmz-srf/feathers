@@ -44,23 +44,23 @@
 }
 
 .f-icon--success {
-  color: $color-srf-green-500;
+  color: globals.$color-srf-green-500;
 }
 .f-icon--danger {
-  color: $color-srf-red-400;
+  color: globals.$color-srf-red-400;
 }
 .f-icon--retire {
-  color: $color-srf-yellow-500;
+  color: globals.$color-srf-yellow-500;
 }
 .f-icon--info {
-  color: $color-srf-blue-600;
+  color: globals.$color-srf-blue-600;
 }
 .f-icon--white {
-  color: $color-srf-neutral-white;
+  color: globals.$color-srf-neutral-white;
 }
 .f-icon--light {
-  color: $color-srf-warmgrey-300;
+  color: globals.$color-srf-warmgrey-300;
 }
 .f-icon--branding {
-  color: $color-srf-red-500;
+  color: globals.$color-srf-red-500;
 }
