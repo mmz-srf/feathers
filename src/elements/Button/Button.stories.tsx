@@ -3,6 +3,8 @@ import Button, { ButtonTooltip, ButtonModifiers } from "./Button";
 
 import { UpdateIcon } from "../Icon/Icon";
 
+import '../../foundation/globals.scss';
+
 export default {
   title: "Button",
   args: {
