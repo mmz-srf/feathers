@@ -1,3 +1,4 @@
+@use '../../foundation/colors';
 @use '../../foundation/globals';
 
 .f-icon {
@@ -44,23 +45,23 @@
 }
 
 .f-icon--success {
-  color: globals.$color-srf-green-500;
+  color: colors.$color-srf-green-500;
 }
 .f-icon--danger {
-  color: globals.$color-srf-red-400;
+  color: colors.$color-srf-red-400;
 }
 .f-icon--retire {
-  color: globals.$color-srf-yellow-500;
+  color: colors.$color-srf-yellow-500;
 }
 .f-icon--info {
-  color: globals.$color-srf-blue-600;
+  color: colors.$color-srf-blue-600;
 }
 .f-icon--white {
-  color: globals.$color-srf-neutral-white;
+  color: colors.$color-srf-neutral-white;
 }
 .f-icon--light {
-  color: globals.$color-srf-warmgrey-300;
+  color: colors.$color-srf-warmgrey-300;
 }
 .f-icon--branding {
-  color: globals.$color-srf-red-500;
+  color: colors.$color-srf-red-500;
 }

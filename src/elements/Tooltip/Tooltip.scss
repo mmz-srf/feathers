@@ -1,3 +1,5 @@
+@use '../../foundation/variables';
+@use '../../foundation/mixins';
 @use '../../foundation/globals';
 
 .f-tooltip {
@@ -22,13 +24,13 @@
   box-sizing: border-box;
   min-width: 125px;
   padding: 6px 8px;
-  @include globals.fontWeight(400);
+  @include mixins.fontWeight(400);
   font-size: 12px;
-  line-height: globals.$secondary-line-height-ratio;
+  line-height: variables.$secondary-line-height-ratio;
   color: var(--tooltip-text-color);
   background-color: var(--tooltip-background-color);
   border-radius: 2px;
-  box-shadow: globals.$shadow-elevation2;
+  box-shadow: variables.$shadow-elevation2;
   opacity: 0;
   transition: opacity 0.8s;
   white-space: initial;
@@ -129,9 +131,9 @@
     padding: 8px;
     color: var(--tooltip-text-color);
     background-color: var(--tooltip-validation-background-color);
-    @include globals.fontWeight(400);
+    @include mixins.fontWeight(400);
     font-size: 14px;
-    line-height: globals.$default-line-height-ratio;
+    line-height: variables.$default-line-height-ratio;
     border-radius: 2px;
   }
 }
