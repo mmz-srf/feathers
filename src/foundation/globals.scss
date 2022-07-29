@@ -1,8 +1,8 @@
-@import './mixins';
-@import './breakpoints';
-@import './variables';
-@import './colors';
-@import './fonts';
+@use 'mixins';
+@use 'breakpoints';
+@use 'variables';
+@use 'colors';
+@use 'fonts';
 
 /*
 the following rule is - unfortunately - neccessary for consistency reasons with patternlab
@@ -11,7 +11,7 @@ our own) within the patternlab...
 */
 * {
   box-sizing: border-box;
-  -webkit-tap-highlight-color: $color-srf-neutral-blacka00;
+  -webkit-tap-highlight-color: colors.$color-srf-neutral-blacka00;
 }
 
 html {
@@ -24,13 +24,13 @@ body {
   @supports (font-variation-settings: normal) {
     font-family: 'SRG_SSR_Text_VF', sans-serif;
   }
-  @include fontWeight(300);
+  @include mixins.fontWeight(300);
   background-color: var(--t-body-bg);
 }
 
 html,
 body {
-  line-height: $default-line-height-ratio;
+  line-height: variables.$default-line-height-ratio;
 }
 
 nav {
@@ -49,19 +49,19 @@ h1,
 h2,
 h3,
 h4 {
-  @include fontWeight(500);
+  @include mixins.fontWeight(500);
 }
 
 a {
   text-decoration: none;
-  color: $color-srf-red-600;
+  color: colors.$color-srf-red-600;
 
   &:hover {
-    color: $color-srf-red-700;
+    color: colors.$color-srf-red-700;
   }
 
   &:active {
-    color: $color-srf-red-800;
+    color: colors.$color-srf-red-800;
   }
 }
 
@@ -83,15 +83,15 @@ cite {
 
 b,
 strong {
-  @include fontWeight(500);
+  @include mixins.fontWeight(500);
 }
 
 em {
-  @include fontFamilyFauxItalic;
+  @include mixins.fontFamilyFauxItalic;
 }
 
 th {
-  @include fontWeight(400);
+  @include mixins.fontWeight(400);
 }
 
 button,
