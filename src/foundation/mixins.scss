@@ -1,5 +1,5 @@
-@import 'variables';
-@import 'breakpoints';
+@use 'variables';
+@use 'breakpoints';
 
 /* FONT-RELATED MIXINS */
 @mixin fontFamilyText {

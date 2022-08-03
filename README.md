@@ -54,12 +54,12 @@ module.exports = {
 Import Feathers Modules in your stylesheet:
 
 ```scss
-@import "@Feathers/foundation/breakpoints";
-@import "@Feathers/foundation/colors";
-@import "@Feathers/foundation/fonts";
-@import "@Feathers/foundation/globals";
-@import "@Feathers/foundation/mixins";
-@import "@Feathers/foundation/variables";
+@use "@Feathers/foundation/breakpoints";
+@use "@Feathers/foundation/colors";
+@use "@Feathers/foundation/fonts";
+@use "@Feathers/foundation/globals";
+@use "@Feathers/foundation/mixins";
+@use "@Feathers/foundation/variables";
 ```
 
 #### Fonts
@@ -69,8 +69,9 @@ Importing the font module requires to add the [resolve-url-loader](https://githu
 In case this solution doesn't work for your usecase. It is possible to adjust the path of the fonts by overwriting the `$font-path` variable:
 
 ```scss
-$font-path: "/path/to/fonts/";
-@import "@Feathers/fonts";
+@use "@Feathers/fonts" with (
+  $font-path: "/path/to/fonts/"
+);
 ```
 
 ## Development

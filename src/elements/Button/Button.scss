@@ -1,68 +1,68 @@
-@import '../../foundation/colors';
-@import '../../foundation/variables';
-@import '../../foundation/mixins';
+@use '../../foundation/colors';
+@use '../../foundation/variables';
+@use '../../foundation/mixins';
 
 $button-animation-duration: 0.3s;
 
 // Theming
 :root {
   // f-button ("secondary", default - because most buttons are secondary buttons)
-  --f-button-default-background: #{$color-srf-warmgrey-50};
-  --f-button-default-color: #{$color-srf-warmgrey-900};
+  --f-button-default-background: #{colors.$color-srf-warmgrey-50};
+  --f-button-default-color: #{colors.$color-srf-warmgrey-900};
 
-  --f-button-hover-background: #{$color-srf-warmgrey-100};
-  --f-button-focus-background: #{$color-srf-warmgrey-200};
+  --f-button-hover-background: #{colors.$color-srf-warmgrey-100};
+  --f-button-focus-background: #{colors.$color-srf-warmgrey-200};
 
   // f-button--primary
-  --f-button-primary-default-background: #{$color-srf-warmgrey-900};
-  --f-button-primary-default-color: #{$color-srf-neutral-white};
+  --f-button-primary-default-background: #{colors.$color-srf-warmgrey-900};
+  --f-button-primary-default-color: #{colors.$color-srf-neutral-white};
 
-  --f-button-primary-hover-background: #{$color-srf-warmgrey-800};
-  --f-button-primary-focus-background: #{$color-srf-warmgrey-700};
+  --f-button-primary-hover-background: #{colors.$color-srf-warmgrey-800};
+  --f-button-primary-focus-background: #{colors.$color-srf-warmgrey-700};
 
   // f-button--danger
-  --f-button-danger-default-background: #{$color-srf-red-400};
-  --f-button-danger-default-color: #{$color-srf-neutral-white};
+  --f-button-danger-default-background: #{colors.$color-srf-red-400};
+  --f-button-danger-default-color: #{colors.$color-srf-neutral-white};
 
-  --f-button-danger-hover-background: #{$color-srf-red-500};
-  --f-button-danger-focus-background: #{$color-srf-red-600};
+  --f-button-danger-hover-background: #{colors.$color-srf-red-500};
+  --f-button-danger-focus-background: #{colors.$color-srf-red-600};
 
   // f-button--favorite
-  --f-button-favorite-default-color: #{$color-srf-neutral-white};
-  --f-button-favorite-default-background: #{$color-srf-purple-700};
-  --f-button-favorite-hover-background: #{$color-srf-purple-800};
-  --f-button-favorite-focus-background: #{$color-srf-purple-900};
+  --f-button-favorite-default-color: #{colors.$color-srf-neutral-white};
+  --f-button-favorite-default-background: #{colors.$color-srf-purple-700};
+  --f-button-favorite-hover-background: #{colors.$color-srf-purple-800};
+  --f-button-favorite-focus-background: #{colors.$color-srf-purple-900};
 
   // f-button--save
-  --f-button-save-default-background: #{$color-srf-green-500};
-  --f-button-save-default-color: #{$color-srf-neutral-white};
+  --f-button-save-default-background: #{colors.$color-srf-green-500};
+  --f-button-save-default-color: #{colors.$color-srf-neutral-white};
 
   // f-button--retire
-  --f-button-retire-default-background: #{$color-srf-yellow-600};
-  --f-button-retire-default-color: #{$color-srf-neutral-white};
-  --f-button-retire-hover-background: #{$color-srf-yellow-700};
-  --f-button-retire-focus-background: #{$color-srf-yellow-800};
+  --f-button-retire-default-background: #{colors.$color-srf-yellow-600};
+  --f-button-retire-default-color: #{colors.$color-srf-neutral-white};
+  --f-button-retire-hover-background: #{colors.$color-srf-yellow-700};
+  --f-button-retire-focus-background: #{colors.$color-srf-yellow-800};
 
   // f-button--save
-  --f-button-save-hover-background: #{$color-srf-green-600};
-  --f-button-save-focus-background: #{$color-srf-green-700};
+  --f-button-save-hover-background: #{colors.$color-srf-green-600};
+  --f-button-save-focus-background: #{colors.$color-srf-green-700};
 
   // f-button--publish
-  --f-button-publish-default-background: #{$color-srf-blue-600};
-  --f-button-publish-default-color: #{$color-srf-neutral-white};
-  --f-button-publish-hover-background: #{$color-srf-blue-700};
-  --f-button-publish-focus-background: #{$color-srf-blue-800};
+  --f-button-publish-default-background: #{colors.$color-srf-blue-600};
+  --f-button-publish-default-color: #{colors.$color-srf-neutral-white};
+  --f-button-publish-hover-background: #{colors.$color-srf-blue-700};
+  --f-button-publish-focus-background: #{colors.$color-srf-blue-800};
 
   // f-button--white
-  --f-button-white-default-background: #{$color-srf-warmgrey-10};
-  --f-button-white-default-color: #{$color-srf-warmgrey-900};
-  --f-button-white-hover-background: #{$color-srf-warmgrey-100};
-  --f-button-white-focus-background: #{$color-srf-warmgrey-200};
+  --f-button-white-default-background: #{colors.$color-srf-warmgrey-10};
+  --f-button-white-default-color: #{colors.$color-srf-warmgrey-900};
+  --f-button-white-hover-background: #{colors.$color-srf-warmgrey-100};
+  --f-button-white-focus-background: #{colors.$color-srf-warmgrey-200};
 
   // f-button--link
-  --f-button-link-default-color: #{$color-srf-red-400};
+  --f-button-link-default-color: #{colors.$color-srf-red-400};
   --f-button-link-default-background: transparent;
-  --f-button-link-hover-color: #{$color-srf-red-600};
+  --f-button-link-hover-color: #{colors.$color-srf-red-600};
   --f-button-link-hover-background: transparent;
   --f-button-link-focus-background: transparent;
 }
@@ -86,7 +86,7 @@ $button-animation-duration: 0.3s;
   margin: 0;
   letter-spacing: .4px;
   background: var(--f-button-default-background);
-  box-shadow: $shadow-elevation2;
+  box-shadow: variables.$shadow-elevation2;
   border: none;
   border-radius: 2px;
   transition: background-color $button-animation-duration ease-in-out,
@@ -143,11 +143,11 @@ $button-animation-duration: 0.3s;
 }
 
 .f-button__text {
-  @include fontWeight(400);
+  @include mixins.fontWeight(400);
   --f-button-text-font-size: 16px;
   font-size: var(--f-button-text-font-size);
   line-height: 20px;
-  @include font-smoothing;
+  @include mixins.font-smoothing;
   text-align: left;
   white-space: nowrap;
   overflow: hidden;
@@ -272,7 +272,7 @@ $button-animation-duration: 0.3s;
   }
 
   .f-button__text {
-    @include fontWeight(400);
+    @include mixins.fontWeight(400);
     --f-button-text-font-size: 14px;
     line-height: 16px;
   }
@@ -285,7 +285,7 @@ $button-animation-duration: 0.3s;
   --f-button-icon-text-gap: 4px;
 
   .f-button__text {
-    @include fontWeight(400);
+    @include mixins.fontWeight(400);
     --f-button-text-font-size: 12px;
     line-height: 16px;
   }
@@ -379,7 +379,7 @@ $button-animation-duration: 0.3s;
 
 .f-button--bold {
   .f-button__text {
-    @include fontWeight(700);
+    @include mixins.fontWeight(700);
   }
 }
 
@@ -388,7 +388,7 @@ $button-animation-duration: 0.3s;
   background: var(--f-button-focus-background);
 
   .f-button__text {
-    @include fontWeight(700);
+    @include mixins.fontWeight(700);
   }
 }
 
