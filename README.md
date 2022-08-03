@@ -27,6 +27,52 @@ const MyComponent = () => (
 
 ```
 
+### Importing Sass Modules
+
+Example using Webpack:
+
+```js
+module.exports = {
+  ...,
+  resolve: {
+    alias: {
+      "@Feathers": path.resolve(__dirname, "node_modules/srf-feathers/build")
+    },
+    extensions: [".scss"],
+    module: {
+      rules: [
+        {
+          test: /\.(scss)$/i,
+          use: ["style-loader", "css-loader", "resolve-url-loader", "sass-loader"],
+        }
+      ]
+    }
+  }
+}
+```
+
+Import Feathers Modules in your stylesheet:
+
+```scss
+@import "@Feathers/foundation/breakpoints";
+@import "@Feathers/foundation/colors";
+@import "@Feathers/foundation/fonts";
+@import "@Feathers/foundation/globals";
+@import "@Feathers/foundation/mixins";
+@import "@Feathers/foundation/variables";
+```
+
+#### Fonts
+
+Importing the font module requires to add the [resolve-url-loader](https://github.com/bholloway/resolve-url-loader/blob/v5/packages/resolve-url-loader/README.md) to your webpack config. It allows webpack to resolve the relative paths of fonts. Check the [webpack documentation](https://webpack.js.org/loaders/sass-loader/#problems-with-url) for more details on this issue.
+
+In case this solution doesn't work for your usecase. It is possible to adjust the path of the fonts by overwriting the `$font-path` variable:
+
+```scss
+$font-path: "/path/to/fonts/";
+@import "@Feathers/fonts";
+```
+
 ## Development
 
 ### Installation

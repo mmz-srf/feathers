@@ -3,6 +3,8 @@ module.exports = (componentName) => ({
 import React from "react";
 import ${componentName} from "./${componentName}";
 
+import '../../foundation/globals.scss';
+
 export default {
     title: "${componentName}"
 };

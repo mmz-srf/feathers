@@ -40,12 +40,12 @@ export default {
       targets: [
         {
           src: "src/foundation/*.scss",
-          dest: "build/scss/foundation",
+          dest: "build/foundation",
           rename: (name, extension) => `${name}.${extension}`,
         },
         {
-          src: "src/assets/fonts/**/*.*",
-          dest: "build/assets/",
+          src: "src/assets/fonts/*.woff2",
+          dest: "build/assets/fonts",
           rename: (name, extension) => `${name}.${extension}`,
         },
       ],
