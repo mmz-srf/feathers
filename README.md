@@ -36,7 +36,7 @@ module.exports = {
   ...,
   resolve: {
     alias: {
-      "@Feathers": path.resolve(__dirname, "node_modules/srf-feathers/build/foundation")
+      "@Feathers": path.resolve(__dirname, "node_modules/srf-feathers/build")
     },
     extensions: [".scss"],
     module: {
@@ -54,12 +54,12 @@ module.exports = {
 Import Feathers Modules in your stylesheet:
 
 ```scss
-@use "@Feathers/breakpoints";
-@use "@Feathers/colors";
-@use "@Feathers/fonts";
-@use "@Feathers/globals";
-@use "@Feathers/mixins";
-@use "@Feathers/variables";
+@use "@Feathers/foundation/breakpoints";
+@use "@Feathers/foundation/colors";
+@use "@Feathers/foundation/fonts";
+@use "@Feathers/foundation/globals";
+@use "@Feathers/foundation/mixins";
+@use "@Feathers/foundation/variables";
 ```
 
 #### Fonts
