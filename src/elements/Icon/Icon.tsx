@@ -69,6 +69,7 @@ import Moderate from "./Images/Moderate.svg";
 import NewsGraphic from "./Images/NewsGraphic.svg";
 import Opinion from "./Images/Opinion.svg";
 import OrderedList from "./Images/OrderedList.svg";
+import Parking from "./Images/Parking.svg";
 import People from "./Images/People.svg";
 import Plus from "./Images/Plus.svg";
 import PlusCircle from "./Images/PlusCircle.svg";
@@ -924,6 +925,12 @@ export const SortArrowsIcon: React.FC<IconProps> = ({ modifier }) => (
 export const ThreadIcon: React.FC<IconProps> = ({ modifier }) => (
   <Icon {...{ modifier }}>
     <Thread />
+  </Icon>
+);
+
+export const ParkingIcon: React.FC<IconProps> = ({ modifier }) => (
+  <Icon {...{ modifier }}>
+    <Parking />
   </Icon>
 );
 
