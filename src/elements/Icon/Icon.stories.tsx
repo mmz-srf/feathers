@@ -61,6 +61,7 @@ import {
   NewsGraphicIcon,
   OpinionIcon,
   OrderedListIcon,
+  ParkingIcon,
   PeopleIcon,
   PlusCircleIcon,
   PlusIcon,
@@ -232,6 +233,7 @@ export const MeteoMap = (args) => <MeteoMapIcon {...args} />;
 export const NewsGraphic = (args) => <NewsGraphicIcon {...args} />;
 export const Opinion = (args) => <OpinionIcon {...args} />;
 export const OrderedList = (args) => <OrderedListIcon {...args} />;
+export const Parking = (args) => <ParkingIcon {...args} />;
 export const People = (args) => <PeopleIcon {...args} />;
 export const Plus = (args) => <PlusIcon {...args} />;
 export const PlusCircle = (args) => <PlusCircleIcon {...args} />;
@@ -250,7 +252,7 @@ export const Revert = (args) => <RevertIcon {...args} />;
 export const RotateBack = (args) => <RotateBackIcon {...args} />;
 export const RotateForward = (args) => <RotateForwardIcon {...args} />;
 export const Save = (args) => <SaveIcon {...args} />;
-export const SaveandLeave = (args) => <SaveAndLeaveIcon {...args} />;
+export const SaveAndLeave = (args) => <SaveAndLeaveIcon {...args} />;
 export const SchorschLogo = (args) => <SchorschLogoIcon {...args} />;
 export const Search = (args) => <SearchIcon {...args} />;
 export const Settings = (args) => <SettingsIcon {...args} />;
