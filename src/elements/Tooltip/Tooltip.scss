@@ -1,4 +1,5 @@
 @use '../../foundation/variables';
+@use '../../foundation/colors';
 @use '../../foundation/mixins';
 
 .f-tooltip {
@@ -26,8 +27,8 @@
   @include mixins.fontWeight(400);
   font-size: 12px;
   line-height: variables.$secondary-line-height-ratio;
-  color: var(--tooltip-text-color);
-  background-color: var(--tooltip-background-color);
+  color: var(--tooltip-text-color, colors.$color-srf-neutral-white);
+  background-color: var(--tooltip-background-color, colors.$color-srf-warmgrey-700);
   border-radius: 2px;
   box-shadow: variables.$shadow-elevation2;
   opacity: 0;
@@ -128,8 +129,8 @@
 .f-tooltip--validation {
   .f-tooltip__content {
     padding: 8px;
-    color: var(--tooltip-text-color);
-    background-color: var(--tooltip-validation-background-color);
+    color: var(--tooltip-text-color, colors.$color-srf-neutral-white);
+    background-color: var(--tooltip-validation-background-color, colors.$color-srf-red-600);
     @include mixins.fontWeight(400);
     font-size: 14px;
     line-height: variables.$default-line-height-ratio;

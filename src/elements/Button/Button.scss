@@ -219,7 +219,7 @@ $button-animation-duration: 0.3s;
 }
 
 .f-button--unobtrusive.f-button--unobtrusive {
-  --f-button-text-color: var(--icon-button-changing-icon-color);
+  --f-button-text-color: var(--icon-button-changing-icon-color, $color-srf-warmgrey-1100);
   box-shadow: none;
 
   &,
