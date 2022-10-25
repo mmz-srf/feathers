@@ -1,5 +1,5 @@
-@import 'variables';
-@import 'breakpoints';
+@use 'variables';
+@use 'breakpoints';
 
 /* FONT-RELATED MIXINS */
 @mixin fontFamilyText {
@@ -61,4 +61,23 @@
   word-break: break-word;
   overflow-wrap: break-word;
   word-wrap: break-word;
+}
+
+/**
+ * Prevents scrollbars with CSS only. Might not work on certain browsers or
+ * lead to side effects. Use at your own risk!
+ *
+ * Usage:
+ *    @include preventScrollbars();
+ */
+ @mixin preventScrollbars {
+  // webkit-based
+  &::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+
+  // firefox 64+
+  scrollbar-width: none;
 }

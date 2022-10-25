@@ -1,4 +1,4 @@
-@import '../../foundation/globals';
+@use '../../foundation/colors';
 
 .f-icon {
   display: flex;
@@ -44,23 +44,23 @@
 }
 
 .f-icon--success {
-  color: $color-srf-green-500;
+  color: colors.$color-srf-green-500;
 }
 .f-icon--danger {
-  color: $color-srf-red-400;
+  color: colors.$color-srf-red-400;
 }
 .f-icon--retire {
-  color: $color-srf-yellow-500;
+  color: colors.$color-srf-yellow-500;
 }
 .f-icon--info {
-  color: $color-srf-blue-600;
+  color: colors.$color-srf-blue-600;
 }
 .f-icon--white {
-  color: $color-srf-neutral-white;
+  color: colors.$color-srf-neutral-white;
 }
 .f-icon--light {
-  color: $color-srf-warmgrey-300;
+  color: colors.$color-srf-warmgrey-300;
 }
 .f-icon--branding {
-  color: $color-srf-red-500;
+  color: colors.$color-srf-red-500;
 }

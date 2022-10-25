@@ -27,6 +27,53 @@ const MyComponent = () => (
 
 ```
 
+### Importing Sass Modules
+
+Example using Webpack:
+
+```js
+module.exports = {
+  ...,
+  resolve: {
+    alias: {
+      "@Feathers": path.resolve(__dirname, "node_modules/srf-feathers/build")
+    },
+    extensions: [".scss"],
+    module: {
+      rules: [
+        {
+          test: /\.(scss)$/i,
+          use: ["style-loader", "css-loader", "resolve-url-loader", "sass-loader"],
+        }
+      ]
+    }
+  }
+}
+```
+
+Import Feathers Modules in your stylesheet:
+
+```scss
+@use "@Feathers/foundation/breakpoints";
+@use "@Feathers/foundation/colors";
+@use "@Feathers/foundation/fonts";
+@use "@Feathers/foundation/globals";
+@use "@Feathers/foundation/mixins";
+@use "@Feathers/foundation/variables";
+```
+
+#### Fonts
+
+Importing the font module requires to add the [resolve-url-loader](https://github.com/bholloway/resolve-url-loader/blob/v5/packages/resolve-url-loader/README.md) to your webpack config. It allows webpack to resolve the relative paths of fonts. Check the [webpack documentation](https://webpack.js.org/loaders/sass-loader/#problems-with-url) for more details on this issue.
+
+In case this solution doesn't work for your usecase. It is possible to adjust the path of the fonts by overwriting the `$font-path` variable:
+
+```scss
+@use "@Feathers/fonts" with (
+  $font-path: "/path/to/fonts/"
+);
+```
+
 ## Development
 
 ### Installation
@@ -59,7 +106,7 @@ npm run storybook
 
 ## Publishing
 
-`srf-feathers` is published on [NPM](https://www.npmjs.com/package/srf-feathers). A github workflow is used to auto-publish on NPM when the version number in `package.json` is increased on the master branch.
+`srf-feathers` is published on [NPM](https://www.npmjs.com/package/srf-feathers). A github workflow is used to auto-publish on NPM when the version number in `package.json` is increased on the main branch.
 
 In case this fails, publish via `npm publish` (you must be logged into npm in the CLI).
 
@@ -105,6 +152,14 @@ npm i --save ../feathers
 ```
 
 ⚠️ If you've previously installed srf-feathers via NPM, you might have to remove the folder in your `node_modules`.
+
+### Install feathers from GitHub branch
+
+Alternatively to installing a local version of feathers you can also install it from a GitHub branch. This option is useful if you want to provide a deployable review application for testing:
+
+```
+npm i --save mmz-srf/feathers#my-branch
+```
 
 ### dev-tools (feathers-dev)
 
