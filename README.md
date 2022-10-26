@@ -1,6 +1,8 @@
 # SRF Feathers 🪶
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[![NPM](https://badge.fury.io/js/srf-feathers.svg)](//npmjs.com/package/srf-feathers)
+
 
 Shared Frontend Components for SRF applications
 
