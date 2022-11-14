@@ -58,6 +58,7 @@ import {
   LiveIcon,
   LivetickerIcon,
   LockIcon,
+  LogoutIcon,
   LongformIcon,
   MaterialBoxIcon,
   MegaphonIcon,
@@ -244,6 +245,7 @@ export const Linkbox = (args) => <LinkboxIcon {...args} />;
 export const Live = (args) => <LiveIcon {...args} />;
 export const Liveticker = (args) => <LivetickerIcon {...args} />;
 export const Lock = (args) => <LockIcon {...args} />;
+export const Logout = (args) => <LogoutIcon {...args} />;
 export const Longform = (args) => <LongformIcon {...args} />;
 export const MaterialBox = (args) => <MaterialBoxIcon {...args} />;
 export const Megaphon = (args) => <MegaphonIcon {...args} />;

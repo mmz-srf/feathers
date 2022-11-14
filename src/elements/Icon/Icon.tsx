@@ -60,6 +60,7 @@ import Link from "./Images/Link.svg";
 import Linkbox from "./Images/Linkbox.svg";
 import Live from "./Images/Live.svg";
 import Liveticker from "./Images/Liveticker.svg";
+import Logout from "./Images/Logout.svg";
 import Lock from "./Images/Lock.svg";
 import Longform from "./Images/Longform.svg";
 import MaterialBox from "./Images/MaterialBox.svg";
@@ -931,6 +932,15 @@ export const ThreadIcon: React.FC<IconProps> = ({ modifier }) => (
 export const ParkingIcon: React.FC<IconProps> = ({ modifier }) => (
   <Icon {...{ modifier }}>
     <Parking />
+  </Icon>
+);
+
+export const LogoutIcon: React.FC<IconProps> = ({
+  modifier,
+  alt = "Logout",
+}) => (
+  <Icon {...{ modifier }}>
+    <Logout title={alt} />
   </Icon>
 );
 
