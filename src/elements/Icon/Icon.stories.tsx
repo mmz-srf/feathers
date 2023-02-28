@@ -116,6 +116,7 @@ import {
   VideoIcon,
   VideoeditorIcon,
   WarningIcon,
+  WordWrapIcon,
   ZoomInIcon,
   ZoomOutIcon,
 } from "./Icon";
@@ -305,5 +306,6 @@ export const VideoFeed = (args) => <VideoFeedIcon {...args} />;
 export const VideoGallery = (args) => <VideoGalleryIcon {...args} />;
 export const Videoeditor = (args) => <VideoeditorIcon {...args} />;
 export const Warning = (args) => <WarningIcon {...args} />;
+export const WordWrap = (args) => <WordWrapIcon {...args} />;
 export const ZoomIn = (args) => <ZoomInIcon {...args} />;
 export const ZoomOut = (args) => <ZoomOutIcon {...args} />;
