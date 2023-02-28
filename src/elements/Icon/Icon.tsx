@@ -119,6 +119,7 @@ import VideoFeed from "./Images/VideoFeed.svg";
 import VideoGallery from "./Images/VideoGallery.svg";
 import Videoeditor from "./Images/Videoeditor.svg";
 import Warning from "./Images/Warning.svg";
+import WordWrap from "./Images/WordWrap.svg";
 import ZoomIn from "./Images/ZoomIn.svg";
 import ZoomOut from "./Images/ZoomOut.svg";
 
@@ -932,6 +933,12 @@ export const ThreadIcon: React.FC<IconProps> = ({ modifier }) => (
 export const ParkingIcon: React.FC<IconProps> = ({ modifier }) => (
   <Icon {...{ modifier }}>
     <Parking />
+  </Icon>
+);
+
+export const WordWrapIcon: React.FC<IconProps> = ({ modifier }) => (
+  <Icon {...{ modifier }}>
+    <WordWrap />
   </Icon>
 );
 

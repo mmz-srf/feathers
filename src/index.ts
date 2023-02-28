@@ -115,6 +115,7 @@ import {
   VideoIcon,
   VideoeditorIcon,
   WarningIcon,
+  WordWrapIcon,
   ZoomInIcon,
   ZoomOutIcon,
 } from "./elements/Icon/Icon";
@@ -241,6 +242,7 @@ export {
   VideoIcon,
   VideoeditorIcon,
   WarningIcon,
+  WordWrapIcon,
   ZoomInIcon,
   ZoomOutIcon,
 };
