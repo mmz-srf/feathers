@@ -54,6 +54,16 @@ module.exports = {
       use: [
         {
           loader: "@svgr/webpack",
+          options: {
+            svgoConfig: {
+              plugins: [
+                {
+                  name: 'preset-default',
+                },
+                'prefixIds'
+              ]
+            }
+          }
         },
       ],
     });

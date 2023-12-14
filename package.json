@@ -11,8 +11,6 @@
   "scripts": {
     "build": "rollup -c",
     "build:watch": "rollup -c -w",
-    "test": "jest --passWithNoTests",
-    "test:watch": "jest --watch",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "generate": "node ./util/create-component",
@@ -61,6 +59,7 @@
     "@babel/preset-env": "^7.23.6",
     "@babel/preset-react": "^7.23.3",
     "@babel/preset-typescript": "^7.23.3",
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@rollup/plugin-commonjs": "^25.0.7",
     "@rollup/plugin-eslint": "^9.0.5",
     "@rollup/plugin-node-resolve": "^15.2.3",
@@ -70,9 +69,6 @@
     "@storybook/react-webpack5": "^7.6.4",
     "@svgr/rollup": "^8.1.0",
     "@svgr/webpack": "^8.1.0",
-    "@testing-library/jest-dom": "^6.1.5",
-    "@testing-library/react": "^14.1.2",
-    "@types/jest": "^29.5.11",
     "@types/react": "^18.2.45",
     "@types/react-dom": "^18.2.17",
     "@typescript-eslint/eslint-plugin": "^6.14.0",
@@ -102,13 +98,6 @@
     "sass": "^1.69.5",
     "sass-loader": "^13.3.2",
     "storybook": "^7.6.4",
-    "style-loader": "^3.3.3",
-    "ts-jest": "^29.1.1",
-    "typescript": "^5.3.3",
-    "webpack": "^5.89.0"
-  },
-  "dependencies": {
-    "postcss": "^8.4.32",
-    "srf-feathers": "^1.3.6"
+    "style-loader": "^3.3.3"
   }
 }

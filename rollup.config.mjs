@@ -26,7 +26,7 @@ export default {
   plugins: [
     peerDepsExternal(),
     resolve(),
-    svgr(),
+    svgr({ svgoConfig: { plugins: [{ name: 'preset-default' }, 'prefixIds'] }}),
     eslint(),
     commonjs(),
     typescript({ useTsconfigDeclarationDir: true }),
