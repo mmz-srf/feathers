@@ -51,27 +51,7 @@ module.exports = {
 
     config.module.rules.push({
       test: /\.svg$/u,
-      use: [
-        {
-          loader: "@svgr/webpack",
-          options: {
-            svgoConfig: {
-              name: "preset-default",
-              params: {
-                overrides: {
-                  // customize default plugin options
-                  prefixIds: false,
-                  inlineStyles: false,
-                  mergeStyles: false,
-                  minifyStyles: false,
-                  removeTitle: false,
-                  removeViewBox: false,
-                },
-              },
-            },
-          }
-        },
-      ],
+      use: ["@svgr/webpack"],
     });
 
     config.resolve.extensions.push(".svg");

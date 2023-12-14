@@ -26,20 +26,7 @@ export default {
   plugins: [
     peerDepsExternal(),
     resolve(),
-    svgr({ svgoConfig: {
-      name: "preset-default",
-      params: {
-        overrides: {
-          // customize default plugin options
-          prefixIds: false,
-          inlineStyles: false,
-          mergeStyles: false,
-          minifyStyles: false,
-          removeTitle: false,
-          removeViewBox: false,
-        },
-      },
-    },}),
+    svgr(),
     eslint(),
     commonjs(),
     typescript({ useTsconfigDeclarationDir: true }),
