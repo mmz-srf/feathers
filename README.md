@@ -10,7 +10,6 @@ Shared Frontend Components for SRF applications
 - [Sass](https://sass-lang.com/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Storybook](https://storybook.js.org/) to help you create and show off your components
-- [Jest](https://jestjs.io/) and [React Testing Library](https://github.com/testing-library/react-testing-library) enabling testing of the components
 
 ## Usage
 
@@ -86,12 +85,6 @@ In case this solution doesn't work for your usecase. It is possible to adjust th
 
 ℹ️ If you have to update the _secrets_ (e.g. `CHROMATIC_PROJECT_TOKEN` for deployment to chromatic or `NPM_TOKEN` for deploying on NPM), you can change them on https://github.com/mmz-srf/feathers/settings/secrets/actions 
 
-### Testing
-
-```
-npm run test
-```
-
 ### Building
 
 ```
@@ -127,7 +120,6 @@ This will generate:
   /YourComponentName
     YourComponentName.tsx
     YourComponentName.stories.tsx
-    YourComponentName.test.tsx
     YourComponentName.types.ts
     YourComponentName.scss
 ```
