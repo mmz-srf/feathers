@@ -118,9 +118,9 @@ import {
   WordWrapIcon,
   ZoomInIcon,
   ZoomOutIcon,
-} from "./elements/Icon/Icon";
-import Button, { ButtonTooltip } from "./elements/Button/Button";
-import Tooltip from "./elements/Tooltip/Tooltip";
+} from './elements/Icon/Icon';
+import Button, { ButtonTooltip } from './elements/Button/Button';
+import Tooltip from './elements/Tooltip/Tooltip';
 
 export {
   AddColumnIcon,

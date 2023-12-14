@@ -12,9 +12,10 @@ module.exports = {
     '@typescript-eslint',
   ],
   extends: [
-    'eslint:recommended',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:prettier/recommended',
-    'prettier',
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended",
+    "prettier",
+    "plugin:storybook/recommended"
   ],
 };

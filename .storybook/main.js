@@ -1,14 +1,30 @@
 const path = require("path");
 
 module.exports = {
-  core: {
-    builder: "webpack5",
-  },
   stories: ["../src/**/*.stories.tsx"],
+
   // Add any Storybook addons you want here: https://storybook.js.org/addons/
-  addons: [
-    '@storybook/addon-essentials',
-  ],
+  addons: ['@storybook/addon-essentials', "@storybook/addon-styling-webpack", ({
+    name: "@storybook/addon-styling-webpack",
+
+    options: {
+      rules: [{
+    test: /\.css$/,
+    sideEffects: true,
+    use: [
+        require.resolve("style-loader"),
+        {
+            loader: require.resolve("css-loader"),
+            options: {
+                
+                
+            },
+        },
+    ],
+  },],
+    }
+  })],
+
   webpackFinal: async (config) => {
     config.module.rules.push({
       test: /\.scss$/,
@@ -35,15 +51,20 @@ module.exports = {
 
     config.module.rules.push({
       test: /\.svg$/u,
-      use: [
-        {
-          loader: "@svgr/webpack",
-        },
-      ],
+      use: ["@svgr/webpack"],
     });
 
     config.resolve.extensions.push(".svg");
 
     return config;
+  },
+
+  framework: {
+    name: "@storybook/react-webpack5",
+    options: {}
+  },
+
+  docs: {
+    autodocs: true
   }
 };

@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   AddColumnIcon,
   AddRowIcon,
@@ -119,24 +119,24 @@ import {
   WordWrapIcon,
   ZoomInIcon,
   ZoomOutIcon,
-} from "./Icon";
+} from './Icon';
 
 import '../../foundation/globals.scss';
 
 export default {
-  title: "Icon",
+  title: 'Icon',
   args: {
     modifier: undefined,
     alt: undefined,
   },
   argTypes: {
     modifier: {
-      options: ["", ...IconModifiers],
-      control: { type: "multi-select" },
+      options: ['', ...IconModifiers],
+      control: { type: 'multi-select' },
     },
     alt: {
       control: {
-        type: "text",
+        type: 'text',
       },
     },
   },
@@ -147,45 +147,45 @@ const ModifierTemplate = (args) => <ExclamationMarkIcon {...args} />;
 
 export const SuccessModifier = ModifierTemplate.bind({});
 SuccessModifier.args = {
-  modifier: "success",
+  modifier: 'success',
 };
 export const DangerModifier = ModifierTemplate.bind({});
 DangerModifier.args = {
-  modifier: "danger",
+  modifier: 'danger',
 };
 export const InfoModifier = ModifierTemplate.bind({});
 InfoModifier.args = {
-  modifier: "info",
+  modifier: 'info',
 };
 export const SmallModifier = ModifierTemplate.bind({});
 SmallModifier.args = {
-  modifier: "small",
+  modifier: 'small',
 };
 export const TinyModifier = ModifierTemplate.bind({});
 TinyModifier.args = {
-  modifier: "tiny",
+  modifier: 'tiny',
 };
 export const RotatableModifier = ModifierTemplate.bind({});
 RotatableModifier.args = {
-  modifier: "rotatable",
+  modifier: 'rotatable',
 };
 export const Rotated45Modifier = ModifierTemplate.bind({});
 Rotated45Modifier.args = {
-  modifier: "rotated-45",
+  modifier: 'rotated-45',
 };
 export const Rotated180Modifier = ModifierTemplate.bind({});
 Rotated180Modifier.args = {
-  modifier: "rotated-180",
+  modifier: 'rotated-180',
 };
 export const MultipleModifiers = ModifierTemplate.bind({});
 MultipleModifiers.args = {
-  modifier: ["info", "small"],
+  modifier: ['info', 'small'],
 };
 
 /* ALT-TEXT */
 export const ExampleWithAltText = (args) => <TwitterIcon {...args} />;
 ExampleWithAltText.args = {
-  alt: "A little bird",
+  alt: 'A little bird',
 };
 
 /* ICONS */
@@ -286,7 +286,7 @@ export const Settings = (args) => <SettingsIcon {...args} />;
 export const SortArrows = (args) => <SortArrowsIcon {...args} />;
 export const Spinner = (args) => <SpinnerIcon {...args} />;
 export const SpinnerWithBrandColor = (args) => <SpinnerIcon {...args} />;
-SpinnerWithBrandColor.args = { modifier: "branding" };
+SpinnerWithBrandColor.args = { modifier: 'branding' };
 export const Success = (args) => <SuccessIcon {...args} />;
 export const TV = (args) => <TVIcon {...args} />;
 export const Table = (args) => <TableIcon {...args} />;

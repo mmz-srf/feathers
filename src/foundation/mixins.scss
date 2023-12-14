@@ -13,7 +13,9 @@
 @mixin fontFamilySystem {
   // System UI font stack, for details see
   // https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",  sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
 }
 
 @mixin fontFamilySerif {
@@ -37,7 +39,7 @@
   }
 
   font-weight: $weight $importantStatement; // for static fonts
-  font-variation-settings: "wght" $weight $importantStatement; // for variable fonts
+  font-variation-settings: 'wght' $weight $importantStatement; // for variable fonts
 }
 
 @mixin font-smoothing {
@@ -70,7 +72,7 @@
  * Usage:
  *    @include preventScrollbars();
  */
- @mixin preventScrollbars {
+@mixin preventScrollbars {
   // webkit-based
   &::-webkit-scrollbar {
     display: none;

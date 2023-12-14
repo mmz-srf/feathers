@@ -1,4 +1,4 @@
-@use "variables";
+@use 'variables';
 
 @mixin smartphone {
   @media (max-width: #{variables.$tablet-size - 1px}) {

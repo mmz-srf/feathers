@@ -5,7 +5,6 @@ module.exports = {
       params: {
         overrides: {
           // customize default plugin options
-          prefixIds: false,
           inlineStyles: false,
           mergeStyles: false,
           minifyStyles: false,
@@ -14,5 +13,11 @@ module.exports = {
         },
       },
     },
+    {
+      name: "prefixIds",
+      params: {
+        prefixIds: false
+      }
+    }
   ],
 };
