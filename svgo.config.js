@@ -13,6 +13,11 @@ module.exports = {
         },
       },
     },
-    "prefixIds",
+    {
+      name: "prefixIds",
+      params: {
+        prefixIds: false
+      }
+    }
   ],
 };
