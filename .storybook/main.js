@@ -1,14 +1,11 @@
 const path = require("path");
 
 module.exports = {
-  core: {
-    builder: "webpack5",
-  },
   stories: ["../src/**/*.stories.tsx"],
+
   // Add any Storybook addons you want here: https://storybook.js.org/addons/
-  addons: [
-    '@storybook/addon-essentials',
-  ],
+  addons: ['@storybook/addon-essentials', "@storybook/addon-styling-webpack"],
+
   webpackFinal: async (config) => {
     config.module.rules.push({
       test: /\.scss$/,
@@ -45,5 +42,14 @@ module.exports = {
     config.resolve.extensions.push(".svg");
 
     return config;
+  },
+
+  framework: {
+    name: "@storybook/react-webpack5",
+    options: {}
+  },
+
+  docs: {
+    autodocs: true
   }
 };
