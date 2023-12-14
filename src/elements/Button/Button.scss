@@ -1,6 +1,6 @@
-@use '../../foundation/colors';
-@use '../../foundation/variables';
-@use '../../foundation/mixins';
+@use "../../foundation/colors";
+@use "../../foundation/variables";
+@use "../../foundation/mixins";
 
 $button-animation-duration: 0.3s;
 
@@ -79,20 +79,23 @@ $button-animation-duration: 0.3s;
   align-items: center;
   justify-content: center;
   // the smallest a button can be: gutter left, a single icon, gutter right
-  min-width: calc(var(--f-button-gutter) + var(--f-button-icon-size) + var(--f-button-gutter));
+  min-width: calc(
+    var(--f-button-gutter) + var(--f-button-icon-size) + var(--f-button-gutter)
+  );
   height: var(--f-button-height);
   max-width: 100%; // button shouldn't get bigger than its parent
   padding: 0 var(--f-button-gutter);
   margin: 0;
-  letter-spacing: .4px;
+  letter-spacing: 0.4px;
   background: var(--f-button-default-background);
   box-shadow: variables.$shadow-elevation2;
   border: none;
   border-radius: 2px;
-  transition: background-color $button-animation-duration ease-in-out,
-  width $button-animation-duration ease,
-  box-shadow $button-animation-duration ease-in-out,
-  filter $button-animation-duration ease-in-out;
+  transition:
+    background-color $button-animation-duration ease-in-out,
+    width $button-animation-duration ease,
+    box-shadow $button-animation-duration ease-in-out,
+    filter $button-animation-duration ease-in-out;
 
   // override browser styles
   -webkit-appearance: none;
@@ -132,7 +135,7 @@ $button-animation-duration: 0.3s;
 
   &:disabled {
     cursor: not-allowed;
-    opacity: .66;
+    opacity: 0.66;
   }
 }
 
@@ -160,66 +163,69 @@ $button-animation-duration: 0.3s;
 
 // Button that looks like a link
 .f-button--link {
-  --f-button-text-color:         var(--f-button-link-default-color);
-  --f-button-hover-text-color:   var(--f-button-link-hover-color);
+  --f-button-text-color: var(--f-button-link-default-color);
+  --f-button-hover-text-color: var(--f-button-link-hover-color);
   --f-button-default-background: var(--f-button-link-default-background);
-  --f-button-hover-background:   var(--f-button-link-hover-background);
-  --f-button-focus-background:   var(--f-button-link-focus-background);
+  --f-button-hover-background: var(--f-button-link-hover-background);
+  --f-button-focus-background: var(--f-button-link-focus-background);
 
   box-shadow: none;
 }
 
 .f-button--primary {
-  --f-button-text-color:         var(--f-button-primary-default-color);
+  --f-button-text-color: var(--f-button-primary-default-color);
   --f-button-default-background: var(--f-button-primary-default-background);
-  --f-button-hover-background:   var(--f-button-primary-hover-background);
-  --f-button-focus-background:   var(--f-button-primary-focus-background);
+  --f-button-hover-background: var(--f-button-primary-hover-background);
+  --f-button-focus-background: var(--f-button-primary-focus-background);
 }
 
 .f-button--danger {
-  --f-button-text-color:         var(--f-button-danger-default-color);
+  --f-button-text-color: var(--f-button-danger-default-color);
   --f-button-default-background: var(--f-button-danger-default-background);
-  --f-button-hover-background:   var(--f-button-danger-hover-background);
-  --f-button-focus-background:   var(--f-button-danger-focus-background);
+  --f-button-hover-background: var(--f-button-danger-hover-background);
+  --f-button-focus-background: var(--f-button-danger-focus-background);
 }
 
 .f-button--favorite {
-  --f-button-text-color:         var(--f-button-favorite-default-color);
+  --f-button-text-color: var(--f-button-favorite-default-color);
   --f-button-default-background: var(--f-button-favorite-default-background);
-  --f-button-hover-background:   var(--f-button-favorite-hover-background);
-  --f-button-focus-background:   var(--f-button-favorite-focus-background);
+  --f-button-hover-background: var(--f-button-favorite-hover-background);
+  --f-button-focus-background: var(--f-button-favorite-focus-background);
 }
 
 .f-button--save {
-  --f-button-text-color:         var(--f-button-save-default-color);
+  --f-button-text-color: var(--f-button-save-default-color);
   --f-button-default-background: var(--f-button-save-default-background);
-  --f-button-hover-background:   var(--f-button-save-hover-background);
-  --f-button-focus-background:   var(--f-button-save-focus-background);
+  --f-button-hover-background: var(--f-button-save-hover-background);
+  --f-button-focus-background: var(--f-button-save-focus-background);
 }
 
 .f-button--publish {
-  --f-button-text-color:         var(--f-button-publish-default-color);
+  --f-button-text-color: var(--f-button-publish-default-color);
   --f-button-default-background: var(--f-button-publish-default-background);
-  --f-button-hover-background:   var(--f-button-publish-hover-background);
-  --f-button-focus-background:   var(--f-button-publish-focus-background);
+  --f-button-hover-background: var(--f-button-publish-hover-background);
+  --f-button-focus-background: var(--f-button-publish-focus-background);
 }
 
 .f-button--retire {
-  --f-button-text-color:         var(--f-button-retire-default-color);
+  --f-button-text-color: var(--f-button-retire-default-color);
   --f-button-default-background: var(--f-button-retire-default-background);
-  --f-button-hover-background:   var(--f-button-retire-hover-background);
-  --f-button-focus-background:   var(--f-button-retire-focus-background);
+  --f-button-hover-background: var(--f-button-retire-hover-background);
+  --f-button-focus-background: var(--f-button-retire-focus-background);
 }
 
 .f-button--white {
-  --f-button-text-color:         var(--f-button-white-default-color);
+  --f-button-text-color: var(--f-button-white-default-color);
   --f-button-default-background: var(--f-button-white-default-background);
-  --f-button-hover-background:   var(--f-button-white-hover-background);
-  --f-button-focus-background:   var(--f-button-white-focus-background);
+  --f-button-hover-background: var(--f-button-white-hover-background);
+  --f-button-focus-background: var(--f-button-white-focus-background);
 }
 
 .f-button--unobtrusive.f-button--unobtrusive {
-  --f-button-text-color: var(--icon-button-changing-icon-color, $color-srf-warmgrey-1100);
+  --f-button-text-color: var(
+    --icon-button-changing-icon-color,
+    $color-srf-warmgrey-1100
+  );
   box-shadow: none;
 
   &,
@@ -352,7 +358,11 @@ $button-animation-duration: 0.3s;
 .f-button--icon-sticks-to-border {
   // this means the button "reserves" enough space on both sides for the icon +
   // gap + gutter
-  padding: 0 calc(var(--f-button-gutter) + var(--f-button-icon-size) + var(--f-button-icon-text-gap));
+  padding: 0
+    calc(
+      var(--f-button-gutter) + var(--f-button-icon-size) +
+        var(--f-button-icon-text-gap)
+    );
 
   .f-button__text {
     flex-grow: 1;

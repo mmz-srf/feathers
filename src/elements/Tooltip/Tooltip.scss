@@ -1,6 +1,6 @@
-@use '../../foundation/variables';
-@use '../../foundation/colors';
-@use '../../foundation/mixins';
+@use "../../foundation/variables";
+@use "../../foundation/colors";
+@use "../../foundation/mixins";
 
 .f-tooltip {
   display: inline-block;
@@ -28,7 +28,10 @@
   font-size: 12px;
   line-height: variables.$secondary-line-height-ratio;
   color: var(--tooltip-text-color, colors.$color-srf-neutral-white);
-  background-color: var(--tooltip-background-color, colors.$color-srf-warmgrey-700);
+  background-color: var(
+    --tooltip-background-color,
+    colors.$color-srf-warmgrey-700
+  );
   border-radius: 2px;
   box-shadow: variables.$shadow-elevation2;
   opacity: 0;
@@ -49,7 +52,7 @@
     +----------------------+
   */
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     z-index: -1; // must be behind the content - otherwise links in content are not clickable
     display: inline-block;
@@ -130,7 +133,10 @@
   .f-tooltip__content {
     padding: 8px;
     color: var(--tooltip-text-color, colors.$color-srf-neutral-white);
-    background-color: var(--tooltip-validation-background-color, colors.$color-srf-red-600);
+    background-color: var(
+      --tooltip-validation-background-color,
+      colors.$color-srf-red-600
+    );
     @include mixins.fontWeight(400);
     font-size: 14px;
     line-height: variables.$default-line-height-ratio;

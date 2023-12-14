@@ -1,4 +1,4 @@
-@use 'colors';
+@use "colors";
 
 /*** LINE HEIGHTS ***/
 $default-line-height-ratio: 1.5 !default;
@@ -9,27 +9,38 @@ $secondary-line-height-ratio: 1.35 !default;
 // e.g. Headings, Teaser
 $emphasize-line-height-ratio: 1.25 !default;
 
-
 /*** IMAGE SIZES ***/
 $image-size-preview: 92px !default;
 $image-size-preview-gallery: 68px !default;
-
 
 /*** SHADOWS ***/
 // References: https://www.figma.com/file/xe1x6NHOojNKIQBvcx7qoY/SRF-Global-Library?node-id=256%3A9
 // => Bug in Safari/WebKit for elevation1. Design: «mir würded vorerscht mitem bug läbe» (2018-08)
 // => DEMO -> https://codepen.io/albuvee/full/qyJKMe/
 // => BUG -> https://bugs.webkit.org/show_bug.cgi?id=188446
-$shadow-elevation1:  0 0px  1px 0 colors.$color-srf-neutral-blacka16, 0 0  1px 0 colors.$color-srf-neutral-blacka08;
-$shadow-elevation2:  0 1px  2px 0 colors.$color-srf-neutral-blacka16, 0 0  2px 0 colors.$color-srf-neutral-blacka08;
-$shadow-elevation4:  0 2px  4px 0 colors.$color-srf-neutral-blacka16, 0 0  4px 0 colors.$color-srf-neutral-blacka08;
-$shadow-elevation6:  0 3px  6px 0 colors.$color-srf-neutral-blacka16, 0 0  6px 0 colors.$color-srf-neutral-blacka08;
-$shadow-elevation8:  0 4px  8px 0 colors.$color-srf-neutral-blacka16, 0 0  8px 0 colors.$color-srf-neutral-blacka08;
-$shadow-elevation12: 0 6px 12px 0 colors.$color-srf-neutral-blacka16, 0 0 12px 0 colors.$color-srf-neutral-blacka08;
-$shadow-elevation16: 0 8px 16px 0 colors.$color-srf-neutral-blacka16, 0 0 16px 0 colors.$color-srf-neutral-blacka08;
+$shadow-elevation1:
+  0 0px 1px 0 colors.$color-srf-neutral-blacka16,
+  0 0 1px 0 colors.$color-srf-neutral-blacka08;
+$shadow-elevation2:
+  0 1px 2px 0 colors.$color-srf-neutral-blacka16,
+  0 0 2px 0 colors.$color-srf-neutral-blacka08;
+$shadow-elevation4:
+  0 2px 4px 0 colors.$color-srf-neutral-blacka16,
+  0 0 4px 0 colors.$color-srf-neutral-blacka08;
+$shadow-elevation6:
+  0 3px 6px 0 colors.$color-srf-neutral-blacka16,
+  0 0 6px 0 colors.$color-srf-neutral-blacka08;
+$shadow-elevation8:
+  0 4px 8px 0 colors.$color-srf-neutral-blacka16,
+  0 0 8px 0 colors.$color-srf-neutral-blacka08;
+$shadow-elevation12:
+  0 6px 12px 0 colors.$color-srf-neutral-blacka16,
+  0 0 12px 0 colors.$color-srf-neutral-blacka08;
+$shadow-elevation16:
+  0 8px 16px 0 colors.$color-srf-neutral-blacka16,
+  0 0 16px 0 colors.$color-srf-neutral-blacka08;
 
 $shadow-elevation1-dark: 0 -1px 0 0 colors.$color-srf-neutral-whitea12;
-
 
 /*** BREAKPOINT AND CONTENT related variables ***/
 $smartphone-size: 320px !default;

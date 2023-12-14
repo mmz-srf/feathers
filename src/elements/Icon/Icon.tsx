@@ -139,7 +139,7 @@ export const IconModifiers = [
   "rotated-45",
   "rotated-180",
 ] as const;
-export type IconModifiersType = typeof IconModifiers[number];
+export type IconModifiersType = (typeof IconModifiers)[number];
 
 const Icon: React.FC<IconProps> = ({ modifier, noStroke, children }) => (
   <div

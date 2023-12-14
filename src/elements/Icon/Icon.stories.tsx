@@ -121,7 +121,7 @@ import {
   ZoomOutIcon,
 } from "./Icon";
 
-import '../../foundation/globals.scss';
+import "../../foundation/globals.scss";
 
 export default {
   title: "Icon",

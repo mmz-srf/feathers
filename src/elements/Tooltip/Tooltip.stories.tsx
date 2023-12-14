@@ -1,7 +1,7 @@
 import React from "react";
 import Tooltip, { TooltipModifiers, TooltipDirections } from "./Tooltip";
 
-import '../../foundation/globals.scss';
+import "../../foundation/globals.scss";
 
 export default {
   title: "Tooltip",

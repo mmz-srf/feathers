@@ -17,7 +17,7 @@ export const TooltipModifiers = [
   "no_margin",
   "clickable",
 ] as const;
-export type TooltipModifiersType = typeof TooltipModifiers[number];
+export type TooltipModifiersType = (typeof TooltipModifiers)[number];
 
 export const TooltipDirections = [
   "up",
@@ -27,7 +27,7 @@ export const TooltipDirections = [
   "down-edge-left",
   "down-edge-right",
 ] as const;
-export type TooltipDirectionsType = typeof TooltipDirections[number];
+export type TooltipDirectionsType = (typeof TooltipDirections)[number];
 
 const Tooltip: React.FC<TooltipProps> = ({
   modifier,

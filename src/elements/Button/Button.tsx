@@ -40,7 +40,7 @@ export const ButtonModifiers = [
   "link",
   "circle",
 ] as const;
-export type ButtonModifiersType = typeof ButtonModifiers[number];
+export type ButtonModifiersType = (typeof ButtonModifiers)[number];
 
 const Button: React.FC<ButtonProps> = ({
   modifier,
@@ -82,7 +82,7 @@ const Button: React.FC<ButtonProps> = ({
       "f-button--hidden": modifier?.includes("hidden"),
       "f-button--icon-on-the-right": modifier?.includes("icon_right"),
       "f-button--icon-sticks-to-border": modifier?.includes(
-        "icon_sticks_to_border"
+        "icon_sticks_to_border",
       ),
       "f-button--spread-content": modifier?.includes("spread_content"),
       "f-button--bold": modifier?.includes("bold"),

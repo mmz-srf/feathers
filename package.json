@@ -17,7 +17,9 @@
     "build-storybook": "storybook build",
     "generate": "node ./util/create-component",
     "prepare": "npm run build",
-    "chromatic": "npx chromatic"
+    "chromatic": "npx chromatic",
+    "format-only": "node_modules/.bin/prettier --write './src/**/*.{ts,tsx,scss}'",
+    "format-check": "node_modules/.bin/prettier --check './src/**/*.{ts,tsx,scss}'"
   },
   "browserslist": {
     "production": [
