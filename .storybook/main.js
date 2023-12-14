@@ -4,7 +4,26 @@ module.exports = {
   stories: ["../src/**/*.stories.tsx"],
 
   // Add any Storybook addons you want here: https://storybook.js.org/addons/
-  addons: ['@storybook/addon-essentials', "@storybook/addon-styling-webpack"],
+  addons: ['@storybook/addon-essentials', "@storybook/addon-styling-webpack", ({
+    name: "@storybook/addon-styling-webpack",
+
+    options: {
+      rules: [{
+    test: /\.css$/,
+    sideEffects: true,
+    use: [
+        require.resolve("style-loader"),
+        {
+            loader: require.resolve("css-loader"),
+            options: {
+                
+                
+            },
+        },
+    ],
+  },],
+    }
+  })],
 
   webpackFinal: async (config) => {
     config.module.rules.push({

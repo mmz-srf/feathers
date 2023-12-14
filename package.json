@@ -70,6 +70,7 @@
     "babel-preset-react-app": "^10.0.1",
     "chromatic": "^10.1.0",
     "classnames": "^2.3.2",
+    "css-loader": "^6.8.1",
     "eslint": "^8.55.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.0.1",
@@ -90,6 +91,7 @@
     "sass": "^1.69.5",
     "sass-loader": "^13.3.2",
     "storybook": "^7.6.4",
+    "style-loader": "^3.3.3",
     "ts-jest": "^29.1.1",
     "typescript": "^5.3.3",
     "webpack": "^5.89.0"
