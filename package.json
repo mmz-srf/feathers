@@ -9,8 +9,8 @@
   "types": "build/index.d.ts",
   "description": "Shared Frontend Components between SRF web applications",
   "scripts": {
-    "build": "rollup -c --bundleConfigAsCjs",
-    "build:watch": "rollup -c -w --bundleConfigAsCjs",
+    "build": "rollup -c",
+    "build:watch": "rollup -c -w",
     "test": "jest --passWithNoTests",
     "test:watch": "jest --watch",
     "storybook": "storybook dev -p 6006",
