@@ -28,6 +28,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 20
+          cache: "npm"
       - run: npm ci
       - uses: chromaui/action@latest
         with:
