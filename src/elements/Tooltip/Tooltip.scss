@@ -1,6 +1,6 @@
-@use "../../foundation/variables";
-@use "../../foundation/colors";
-@use "../../foundation/mixins";
+@use '../../foundation/variables';
+@use '../../foundation/colors';
+@use '../../foundation/mixins';
 
 .f-tooltip {
   display: inline-block;
@@ -52,7 +52,7 @@
     +----------------------+
   */
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     z-index: -1; // must be behind the content - otherwise links in content are not clickable
     display: inline-block;

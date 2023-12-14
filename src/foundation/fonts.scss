@@ -1,17 +1,17 @@
 /*! URHEBERRECHTSHINWEIS: Die SRG SSR Schrift und die dazugehoerige Software stehen im vollumfaenglichen Eigentum der SRG. Jede Bearbeitung, Vervielfaeltigung, Verbreitung und/oder oeffentliche Wiedergabe, insbesondere die ungenehmigte Uebernahme der SRG SSR Schrift stellt einen Rechtsverstoss dar, der zum Schadenersatz verpflichtet und auch strafrechtlich verfolgt wird. */
 
 // Load fonts from this directory
-$font-path: "../assets/fonts/" !default;
+$font-path: '../assets/fonts/' !default;
 
 /* VARIABLE FONTS Definitions (as a progressive enhancement for supporting browsers) */
 @supports (font-variation-settings: normal) {
   @font-face {
-    font-family: "SRG_SSR_Text_VF";
+    font-family: 'SRG_SSR_Text_VF';
     src:
-      url("#{$font_path}SRGSSRTypeVF_Text_W_Wght.woff2")
-        format("woff2-variations"),
-      /* new standard */ url("#{$font_path}SRGSSRTypeVF_Text_W_Wght.woff2")
-        format("woff2");
+      url('#{$font_path}SRGSSRTypeVF_Text_W_Wght.woff2')
+        format('woff2-variations'),
+      /* new standard */ url('#{$font_path}SRGSSRTypeVF_Text_W_Wght.woff2')
+        format('woff2');
     /* older style */
     font-weight: 300 800;
     font-display: swap;
@@ -21,23 +21,23 @@ $font-path: "../assets/fonts/" !default;
      chrome does not render `font-style: italic` in faux italic for variable fonts if there's a font-weight range defined.
      see: https://bugs.chromium.org/p/chromium/issues/detail?id=971610 */
   @font-face {
-    font-family: "SRG_SSR_Text_FauxItalic_VF";
+    font-family: 'SRG_SSR_Text_FauxItalic_VF';
     src:
-      url("#{$font_path}SRGSSRTypeVF_Text_W_Wght.woff2")
-        format("woff2-variations"),
-      /* new standard */ url("#{$font_path}SRGSSRTypeVF_Text_W_Wght.woff2")
-        format("woff2");
+      url('#{$font_path}SRGSSRTypeVF_Text_W_Wght.woff2')
+        format('woff2-variations'),
+      /* new standard */ url('#{$font_path}SRGSSRTypeVF_Text_W_Wght.woff2')
+        format('woff2');
     /* older style */
     font-display: swap;
   }
 
   @font-face {
-    font-family: "SRG_SSR_Display_VF";
+    font-family: 'SRG_SSR_Display_VF';
     src:
-      url("#{$font_path}SRGSSRTypeVF_Display_W_Wght.woff2")
-        format("woff2-variations"),
-      /* new standard */ url("#{$font_path}SRGSSRTypeVF_Display_W_Wght.woff2")
-        format("woff2");
+      url('#{$font_path}SRGSSRTypeVF_Display_W_Wght.woff2')
+        format('woff2-variations'),
+      /* new standard */ url('#{$font_path}SRGSSRTypeVF_Display_W_Wght.woff2')
+        format('woff2');
     /* older style */
     font-weight: 300 800;
     font-display: swap;
@@ -45,8 +45,8 @@ $font-path: "../assets/fonts/" !default;
 }
 
 @font-face {
-  font-family: "SRG_SSR_Serif_Regular";
-  src: url("#{$font_path}SRGSSRTypeSerifText_W_Rg.woff2") format("woff2");
+  font-family: 'SRG_SSR_Serif_Regular';
+  src: url('#{$font_path}SRGSSRTypeSerifText_W_Rg.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
   font-display: swap;

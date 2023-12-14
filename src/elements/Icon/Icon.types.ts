@@ -1,4 +1,4 @@
-import { IconModifiersType } from "./Icon";
+import { IconModifiersType } from './Icon';
 
 export interface IconProps {
   modifier?: IconModifiersType | Array<IconModifiersType>;

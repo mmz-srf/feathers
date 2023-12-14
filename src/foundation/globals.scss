@@ -1,7 +1,7 @@
-@use "mixins";
-@use "variables";
-@use "colors";
-@use "fonts";
+@use 'mixins';
+@use 'variables';
+@use 'colors';
+@use 'fonts';
 
 /*
 the following rule is - unfortunately - neccessary for consistency reasons with patternlab
@@ -19,9 +19,9 @@ html {
 
 body {
   margin: 0;
-  font-family: "SRG_SSR_Text_Static", sans-serif;
+  font-family: 'SRG_SSR_Text_Static', sans-serif;
   @supports (font-variation-settings: normal) {
-    font-family: "SRG_SSR_Text_VF", sans-serif;
+    font-family: 'SRG_SSR_Text_VF', sans-serif;
   }
   @include mixins.fontWeight(300);
   background-color: var(--t-body-bg);
