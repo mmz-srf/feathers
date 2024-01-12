@@ -35,6 +35,8 @@ import {
   ErrorIcon,
   ExclamationMarkIcon,
   ExternalLinkIcon,
+  EyeIcon,
+  EyeSlashIcon,
   FacebookIcon,
   FavoriteIcon,
   FavoriteRemovedIcon,
@@ -309,3 +311,5 @@ export const Warning = (args) => <WarningIcon {...args} />;
 export const WordWrap = (args) => <WordWrapIcon {...args} />;
 export const ZoomIn = (args) => <ZoomInIcon {...args} />;
 export const ZoomOut = (args) => <ZoomOutIcon {...args} />;
+export const Eye = (args) => <EyeIcon {...args} />;
+export const EyeSlash = (args) => <EyeSlashIcon {...args} />;

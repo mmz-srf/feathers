@@ -122,6 +122,8 @@ import Warning from './Images/Warning.svg';
 import WordWrap from './Images/WordWrap.svg';
 import ZoomIn from './Images/ZoomIn.svg';
 import ZoomOut from './Images/ZoomOut.svg';
+import Eye from './Images/Eye.svg';
+import EyeSlash from './Images/EyeSlash.svg';
 
 import './Icon.scss';
 
@@ -938,6 +940,18 @@ export const ParkingIcon: React.FC<IconProps> = ({ modifier }) => (
 export const WordWrapIcon: React.FC<IconProps> = ({ modifier }) => (
   <Icon {...{ modifier }}>
     <WordWrap />
+  </Icon>
+);
+
+export const EyeIcon: React.FC<IconProps> = ({ modifier }) => (
+  <Icon {...{ modifier }}>
+    <Eye />
+  </Icon>
+);
+
+export const EyeSlashIcon: React.FC<IconProps> = ({ modifier }) => (
+  <Icon {...{ modifier }}>
+    <EyeSlash />
   </Icon>
 );
 

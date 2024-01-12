@@ -153,6 +153,8 @@ Alternatively to installing a local version of feathers you can also install it 
 
 ```
 npm i --save mmz-srf/feathers#my-branch
+
+yarn add srf-feathers@https://github.com/mmz-srf/feathers.git#my-branch
 ```
 
 ### dev-tools (feathers-dev)
