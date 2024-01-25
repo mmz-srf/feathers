@@ -28,7 +28,7 @@ import Danger from './Images/Danger.svg';
 import Datawrapper from './Images/Datawrapper.svg';
 import DeleteColumn from './Images/DeleteColumn.svg';
 import DeleteRow from './Images/DeleteRow.svg';
-import DraggableIndicator from './Images/DropAdd.svg';
+import DraggableIndicator from './Images/DraggableIndicator.svg';
 import DropAdd from './Images/DropAdd.svg';
 import DropDelete from './Images/DropDelete.svg';
 import DropDown from './Images/DropDown.svg';
