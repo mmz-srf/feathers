@@ -28,6 +28,7 @@ import Danger from './Images/Danger.svg';
 import Datawrapper from './Images/Datawrapper.svg';
 import DeleteColumn from './Images/DeleteColumn.svg';
 import DeleteRow from './Images/DeleteRow.svg';
+import DraggableIndicator from './Images/DropAdd.svg';
 import DropAdd from './Images/DropAdd.svg';
 import DropDelete from './Images/DropDelete.svg';
 import DropDown from './Images/DropDown.svg';
@@ -39,6 +40,8 @@ import Empty from './Images/Empty.svg';
 import Error from './Images/Error.svg';
 import ExclamationMark from './Images/ExclamationMark.svg';
 import ExternalLink from './Images/ExternalLink.svg';
+import Eye from './Images/Eye.svg';
+import EyeSlash from './Images/EyeSlash.svg';
 import Facebook from './Images/Facebook.svg';
 import Favorite from './Images/Favorite.svg';
 import FavoriteRemoved from './Images/FavoriteRemoved.svg';
@@ -122,8 +125,6 @@ import Warning from './Images/Warning.svg';
 import WordWrap from './Images/WordWrap.svg';
 import ZoomIn from './Images/ZoomIn.svg';
 import ZoomOut from './Images/ZoomOut.svg';
-import Eye from './Images/Eye.svg';
-import EyeSlash from './Images/EyeSlash.svg';
 
 import './Icon.scss';
 
@@ -469,6 +470,12 @@ export const ZoomInIcon: React.FC<IconProps> = ({ modifier }) => (
 export const ZoomOutIcon: React.FC<IconProps> = ({ modifier }) => (
   <Icon {...{ modifier }}>
     <ZoomOut />
+  </Icon>
+);
+
+export const DraggableIndicatorIcon: React.FC<IconProps> = ({ modifier }) => (
+  <Icon {...{ modifier }}>
+    <DraggableIndicator />
   </Icon>
 );
 
