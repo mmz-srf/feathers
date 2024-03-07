@@ -7,7 +7,7 @@ export default {
   title: 'Dropdown',
   args: {
     modifier: undefined,
-    children: <h1>Elia</h1>,
+    children: <p>option</p>,
   },
   argTypes: {
     modifier: {
@@ -18,10 +18,6 @@ export default {
 };
 
 /* MODIFIER */
-const ModifierTemplate = (args) => <DropdownButton {...args} />;
-
-export const ScrollableModifier = ModifierTemplate.bind({});
-ScrollableModifier.args = { modifier: 'scrollable' };
 
 // it's possible to provide a `key` - this is a special property and helps
 // react with rerendering. Remove it and see how react complains.
@@ -32,9 +28,9 @@ export const KeyTest = () => (
     {[1, 2, 3].map((id) => (
       <DropdownButton
         key={id}
-        text="Elia test"
-        onClick={() => console.log('helloo elia')}
-        children={<h1>h1 tag elia</h1>}
+        text="Dropdown button"
+        onClick={() => alert("Drop it like it's hot!")}
+        children={<p>option</p>}
       />
     ))}
   </div>
