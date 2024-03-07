@@ -11,6 +11,7 @@ import useOutsideClickListener from '../../hooks/useOutsideClickListener';
 import { DropdownPaneProps, DropdownButtonProps } from './Dropdown.types';
 
 import './Dropdown.scss';
+import ProgressDisplay from '../ProgressDisplay/ProgressDisplay';
 
 // DropdownPane
 export const DropdownPaneModifiers = [
@@ -149,10 +150,7 @@ const DropdownButton = ({
       }
 
       {open && <DropdownPane ref={dropdownPanelRef}>{children}</DropdownPane>}
-
-      {
-        //{inProgress && <GlobiProgressDisplay />}
-      }
+      {inProgress && <ProgressDisplay />}
     </div>
   );
 };
