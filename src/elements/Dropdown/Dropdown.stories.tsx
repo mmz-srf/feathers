@@ -18,6 +18,15 @@ export default {
 };
 
 /* MODIFIER */
+/* MODIFIER */
+const ModifierTemplate = (args) => <DropdownButton {...args} />;
+
+export const Normal = ModifierTemplate.bind({});
+Normal.args = {
+  text: 'Dropdown button',
+  onClick: () => alert("Drop it like it's hot!"),
+  children: <p>option</p>,
+};
 
 // it's possible to provide a `key` - this is a special property and helps
 // react with rerendering. Remove it and see how react complains.

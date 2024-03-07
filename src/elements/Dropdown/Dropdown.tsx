@@ -5,6 +5,9 @@ import classNames from 'classnames';
 import Button, { ButtonModifiersType, ButtonTooltip } from '../Button/Button';
 import { CaretIcon, IconModifiersType } from '../Icon/Icon';
 
+//Helpers
+import useOutsideClickListener from '../../hooks/useOutsideClickListener';
+
 import { DropdownPaneProps, DropdownButtonProps } from './Dropdown.types';
 
 import './Dropdown.scss';
@@ -19,21 +22,19 @@ export const DropdownPaneModifiers = [
 
 export type DropdownPaneModifiersType = (typeof DropdownPaneModifiers)[number];
 
-const DropdownPane: React.FC<DropdownPaneProps> = ({
-  modifier,
-  children,
-  ref,
-}) => (
-  <div
-    className={classNames('f-dropdown-panel', {
-      'f-dropdown-panel--scrollable': modifier?.includes('scrollable'),
-      'f-dropdown-panel--transparent': modifier?.includes('transparent'),
-      'f-dropdown-panel--upside-down': modifier?.includes('open_upwards'),
-      'f-dropdown-panel--left': modifier?.includes('open_to_right'),
-    })}
-    ref={ref}>
-    {children}
-  </div>
+const DropdownPane = React.forwardRef<HTMLDivElement, DropdownPaneProps>(
+  ({ modifier, children }, ref) => (
+    <div
+      className={classNames('f-dropdown-panel', {
+        'f-dropdown-panel--scrollable': modifier?.includes('scrollable'),
+        'f-dropdown-panel--transparent': modifier?.includes('transparent'),
+        'f-dropdown-panel--upside-down': modifier?.includes('open_upwards'),
+        'f-dropdown-panel--left': modifier?.includes('open_to_right'),
+      })}
+      ref={ref}>
+      {children}
+    </div>
+  ),
 );
 
 //DropdownButton
@@ -57,14 +58,14 @@ const DropdownButton = ({
   const dropdownButtonRef = useRef(null);
 
   // useOutsideClickListener hook
-  // useOutsideClickListener(dropdownPanelRef, (event) => {
-  //   if (
-  //     dropdownButtonRef.current &&
-  //     !dropdownButtonRef.current.contains(event.target)
-  //   ) {
-  //     setOpen(false);
-  //   }
-  // });
+  useOutsideClickListener(dropdownPanelRef, (event) => {
+    if (
+      dropdownButtonRef.current &&
+      !dropdownButtonRef.current.contains(event.target)
+    ) {
+      setOpen(false);
+    }
+  });
 
   const handleDropdownPanelClick = (event) => {
     if (dropdownPanelRef.current?.contains(event.target)) {
