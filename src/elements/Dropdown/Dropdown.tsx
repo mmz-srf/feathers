@@ -156,4 +156,4 @@ const DropdownButton = ({
   );
 };
 
-export { DropdownPane, DropdownButton };
+export default DropdownButton;
