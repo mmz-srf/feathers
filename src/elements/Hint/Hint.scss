@@ -1,0 +1,20 @@
+@use '../../foundation/colors';
+
+.f-hint {
+  width: 100%;
+  font-size: 12px;
+  color: colors.$color-srf-warmgrey-900;
+  text-align: right;
+  display: block;
+}
+
+.f-hint--left {
+  text-align: left;
+}
+
+.f-hint--article {
+  width: auto;
+  font-size: 14px;
+  float: right;
+  margin: 4px 0;
+}
