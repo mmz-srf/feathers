@@ -1,0 +1,40 @@
+.f-app-switcher {
+    // intentionally left empty
+  }
+
+  .f-app-switcher--unclickable {
+    pointer-events: none;
+  }
+
+  .f-app-switcher__button-container {
+    margin: 16px 0;
+  }
+
+  .f-app-switcher__caret-fixer {
+    margin-left: -8px;
+  }
+
+  .f-app-switcher__dropdown {
+    margin-left: 8px;
+    position: relative;
+  }
+
+.f-app-switcher__birds {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    gap: 8px;
+  }
+
+.f-app-switcher-button__bird-label {
+    flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  white-space: nowrap;
+}
+
+.f-app-switcher-button__bird-label p {
+    margin: 0;
+    font-weight: bold;
+  }

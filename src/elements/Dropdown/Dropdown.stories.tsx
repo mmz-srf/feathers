@@ -13,15 +13,15 @@ export default {
     icon: undefined, // Replace with your icon component
     text: 'Default Text',
     textOpen: undefined,
-    modifier: '',
-    buttonModifier: [],
-    dropdownPaneModifier: [],
+    modifier: undefined,
+    buttonModifier: undefined,
+    dropdownPaneModifier: undefined,
     disabled: false,
     tooltip: undefined, // Replace with your tooltip component
     children: 'Option',
     inProgress: false,
     initiallyOpen: false,
-    badge: '',
+    badge: undefined,
     dataCy: undefined,
   },
   argTypes: {
@@ -67,6 +67,7 @@ export const ChildrenExample = ModifierTemplate.bind({});
 ChildrenExample.args = {
   text: 'Default Text',
   children: 'Your Custom Content',
+  onClick: () => alert("Drop it like it's hot!"),
 };
 
 //Children Example with ButtonList
@@ -99,7 +100,7 @@ export const IconExample = ModifierTemplate.bind({});
 IconExample.args = {
   icon: <ImageIcon />,
   text: 'Default Text',
-  children: 'Option',
+  children: 'content',
 };
 
 // TextOpen Example
@@ -107,7 +108,7 @@ export const TextOpenExample = ModifierTemplate.bind({});
 TextOpenExample.args = {
   text: 'Default Text',
   textOpen: 'Open Text',
-  children: 'Option',
+  children: 'content',
 };
 
 // Modifier Example
@@ -115,7 +116,7 @@ export const ModifierExample = ModifierTemplate.bind({});
 ModifierExample.args = {
   text: 'Default Text',
   modifier: 'your-custom-modifier',
-  children: 'Option',
+  children: 'content',
 };
 
 // Disabled Example
@@ -123,7 +124,7 @@ export const DisabledExample = ModifierTemplate.bind({});
 DisabledExample.args = {
   text: 'Default Text',
   disabled: true,
-  children: 'Option',
+  children: 'content',
 };
 
 // Tooltip Example
@@ -131,7 +132,7 @@ export const TooltipExample = ModifierTemplate.bind({});
 TooltipExample.args = {
   text: 'Default Text',
   tooltip: <ButtonTooltip content="✨ Magic ✨" />,
-  children: 'Option',
+  children: 'content',
 };
 
 // InProgress Example
@@ -139,7 +140,7 @@ export const InProgressExample = ModifierTemplate.bind({});
 InProgressExample.args = {
   text: 'Default Text',
   inProgress: true,
-  children: 'Option',
+  children: 'content',
 };
 
 // InitiallyOpen Example
@@ -147,7 +148,7 @@ export const InitiallyOpenExample = ModifierTemplate.bind({});
 InitiallyOpenExample.args = {
   text: 'Default Text',
   initiallyOpen: true,
-  children: 'Option',
+  children: 'content',
 };
 
 // Badge Example
@@ -155,7 +156,7 @@ export const BadgeExample = ModifierTemplate.bind({});
 BadgeExample.args = {
   text: 'Default Text',
   badge: 'New',
-  children: 'Option',
+  children: 'content',
 };
 
 //dropdownPaneModifier
