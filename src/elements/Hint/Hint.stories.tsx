@@ -12,7 +12,7 @@ export default {
 };
 
 /* MODIFIER */
-const ModifierTemplate = (args) => <Hint {...args}>Take the Hint!</Hint>;
+const ModifierTemplate = (args) => <Hint {...args}>Take the hint!</Hint>;
 
 export const Normal = ModifierTemplate.bind({});
 

@@ -2,6 +2,9 @@ import React from 'react';
 import DropdownButton from './Dropdown';
 
 import '../../foundation/globals.scss';
+import ButtonList, { ButtonListEntry } from '../ButtonList/ButtonList';
+import { ImageIcon } from '../Icon/Icon';
+import { ButtonTooltip } from '../Button/Button';
 
 export default {
   title: 'Dropdown',
@@ -21,8 +24,32 @@ export default {
 /* MODIFIER */
 const ModifierTemplate = (args) => <DropdownButton {...args} />;
 
-export const Normal = ModifierTemplate.bind({});
-Normal.args = {
+export const ButtonListComponent = ModifierTemplate.bind({});
+ButtonListComponent.args = {
+  text: 'Dropdown button',
+  onClick: () => alert("Drop it like it's hot!"),
+  children: (
+    <ButtonList>
+      <ButtonListEntry
+        text="ButtonListEntry"
+        onClick={() => console.log('clicked')}
+      />
+      <ButtonListEntry
+        text="ButtonListEntry"
+        onClick={() => console.log('clicked')}
+        icon={<ImageIcon />}
+      />
+      <ButtonListEntry
+        text="ButtonListEntry"
+        onClick={() => console.log('clicked')}
+        tooltip={<ButtonTooltip content="✨ Magic ✨" />}
+      />
+    </ButtonList>
+  ),
+};
+
+export const Paragraph = ModifierTemplate.bind({});
+Paragraph.args = {
   text: 'Dropdown button',
   onClick: () => alert("Drop it like it's hot!"),
   children: <p>option</p>,

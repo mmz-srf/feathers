@@ -23,7 +23,7 @@ export const DropdownPaneModifiers = [
 
 export type DropdownPaneModifiersType = (typeof DropdownPaneModifiers)[number];
 
-const DropdownPane = React.forwardRef<HTMLDivElement, DropdownPaneProps>(
+export const DropdownPane = React.forwardRef<HTMLDivElement, DropdownPaneProps>(
   ({ modifier, children }, ref) => (
     <div
       className={classNames('f-dropdown-panel', {
