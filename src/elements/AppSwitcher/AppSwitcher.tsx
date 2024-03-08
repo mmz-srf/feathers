@@ -116,10 +116,10 @@ const AppSwitcher = ({
 
       {open && (
         <div className="f-app-switcher__dropdown">
-          <DropdownPane ref={dropdownPanelRef}>
+          <DropdownPane ref={dropdownPanelRef} modifier="open_to_right">
             <div className="f-app-switcher__birds">
               {
-                //Todo: Add Link component
+                //Todo: Add Children
               }
               {birdselection.map((bird) => {
                 //get base url
