@@ -1,0 +1,56 @@
+.logo {
+    // this space is left empty BEM-tentionally
+  }
+  
+  .f-logo__image {
+    width: 48px;
+    height: 48px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .f-logo__image--globi {
+    background-image: url('./images/Globi.png');
+  }
+  
+  .f-logo__image--edith {
+    background-image: url('./images/Edith.png');
+  }
+  
+  .f-logo__image--schorsch {
+    background-image: url('./images/Schorsch.png');
+  }
+  
+  .f-logo__image--karl {
+    background-image: url('./images/Karl.png');
+  }
+  
+  .f-logo__image--woody {
+    background-image: url('./images/Woody.png');
+  }
+  
+  .f-logo__image--hahn {
+    background-image: url('./images/Hahn.png');
+  }
+  
+  .f-logo__image--roebi {
+    // TBD
+    background-image: url('./images/Globi.png');
+  }
+  
+  .f-logo__image--pitt {
+    background-image: url('./images/Pitt.png');
+    // image isn't cut perfectly but it's also not final yet
+    background-size: 32px;
+  }
+  
+  .f-logo__image--tweety {
+    background-image: url('./images/Tweety.png');
+  }
+  
+  .f-logo__image--falk {
+    background-image: url('./images/Falk.png');
+    background-size: 32px;
+  }
+  
