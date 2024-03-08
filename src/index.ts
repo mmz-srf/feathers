@@ -124,6 +124,14 @@ import {
 } from './elements/Icon/Icon';
 import Button, { ButtonTooltip } from './elements/Button/Button';
 import Tooltip from './elements/Tooltip/Tooltip';
+import DropdownButton, { DropdownPane } from './elements/Dropdown/Dropdown';
+import ProgressDisplay from './elements/ProgressDisplay/ProgressDisplay';
+import Badge from './elements/Badge/Badge';
+import Logo from './elements/Logo/Logo';
+import Hint from './elements/Hint/Hint';
+import useOutsideClickListener from './hooks/useOutsideClickListener';
+import AppSwitcher from './elements/AppSwitcher/AppSwitcher';
+import ButtonList, { ButtonListEntry } from './elements/ButtonList/ButtonList';
 
 export {
   AddColumnIcon,
@@ -251,4 +259,14 @@ export {
   WordWrapIcon,
   ZoomInIcon,
   ZoomOutIcon,
+  DropdownButton,
+  DropdownPane,
+  ProgressDisplay,
+  Badge,
+  Logo,
+  Hint,
+  useOutsideClickListener,
+  AppSwitcher,
+  ButtonList,
+  ButtonListEntry,
 };
