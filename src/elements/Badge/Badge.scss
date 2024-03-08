@@ -1,0 +1,23 @@
+@use '../../foundation/colors';
+
+.f-badge {
+    position: absolute;
+    top: -7px;
+    right: -9px;
+    height: 18px;
+    background-color: colors.$color-srf-red-600;
+    display: inline-block;
+    color: colors.$color-srf-neutral-white;
+    padding-left: 4px;
+    padding-right: 4px;
+    min-width: 18px;
+    line-height: 18px;
+    font-size: 10px;
+    text-align: center;
+    width: auto;
+    border-radius: 9px;
+  }
+  
+  .f-badge--neutral {
+    background-color: colors.$color-srf-warmgrey-700;
+  }
