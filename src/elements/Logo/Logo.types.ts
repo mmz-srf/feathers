@@ -1,12 +1,5 @@
+import { LogoBirdsType } from './Logo';
+
 export interface LogoProps {
-  bird:
-    | 'globi'
-    | 'schorsch'
-    | 'roebi'
-    | 'karl'
-    | 'pitt'
-    | 'tweety'
-    | 'hahn'
-    | 'falk'
-    | 'woody';
+  bird: LogoBirdsType;
 }

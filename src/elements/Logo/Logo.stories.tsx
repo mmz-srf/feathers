@@ -1,13 +1,19 @@
 import React from 'react';
 
-import Logo from './Logo';
+import Logo, { LogoBirds } from './Logo';
 
 import '../../foundation/globals.scss';
 
 export default {
   title: 'Logo',
   args: {
-    modifier: undefined,
+    bird: 'globi',
+  },
+  argTypes: {
+    bird: {
+      options: LogoBirds,
+      control: { type: 'select' },
+    },
   },
 };
 
