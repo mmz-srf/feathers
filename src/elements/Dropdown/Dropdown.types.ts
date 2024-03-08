@@ -16,11 +16,13 @@ export interface DropdownButtonProps {
   text: string;
   textOpen?: string;
   modifier?: string;
-  childModifier?: Array<ButtonModifiersType>;
+  buttonModifier?: Array<ButtonModifiersType>;
+  dropdownPaneModifier?: Array<DropdownPaneModifiersType>;
   disabled?: boolean;
   tooltip?: ReactElement<TooltipProps, string>;
   children: React.ReactNode;
   inProgress?: boolean;
   initiallyOpen?: boolean;
+  badge?: string;
   dataCy?: unknown;
 }

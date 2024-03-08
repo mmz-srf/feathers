@@ -10,6 +10,15 @@ export default {
   title: 'ButtonList',
   args: {
     modifier: undefined,
+    text: 'Entry',
+  },
+  argTypes: {
+    modifier: {
+      control: { type: 'text' },
+    },
+    text: {
+      control: { type: 'text' },
+    },
   },
 };
 

@@ -12,6 +12,7 @@ import { DropdownPaneProps, DropdownButtonProps } from './Dropdown.types';
 
 import './Dropdown.scss';
 import ProgressDisplay from '../ProgressDisplay/ProgressDisplay';
+import Badge from '../Badge/Badge';
 
 // DropdownPane
 export const DropdownPaneModifiers = [
@@ -43,7 +44,8 @@ const DropdownButton = ({
   onClick,
   icon,
   modifier,
-  childModifier = [],
+  buttonModifier = [],
+  dropdownPaneModifier = [],
   disabled = false,
   text = '',
   textOpen = text,
@@ -51,7 +53,7 @@ const DropdownButton = ({
   children,
   inProgress = false,
   initiallyOpen = false,
-  //badge = false,
+  badge = '',
   dataCy = null,
 }: DropdownButtonProps) => {
   const [open, setOpen] = useState(initiallyOpen);
@@ -107,7 +109,7 @@ const DropdownButton = ({
         modifier={
           [
             'no_outline',
-            ...childModifier,
+            ...buttonModifier,
             inProgress ? 'invisible_content' : '',
           ] as Array<ButtonModifiersType>
         }
@@ -130,7 +132,7 @@ const DropdownButton = ({
         modifier={
           [
             'no_outline',
-            ...childModifier,
+            ...buttonModifier,
             inProgress ? 'invisible_content' : '',
           ] as Array<ButtonModifiersType>
         }
@@ -145,11 +147,13 @@ const DropdownButton = ({
         }
       />
 
-      {
-        //{badge && <GlobiBadge>{badge}</GlobiBadge>}
-      }
+      {badge && <Badge>{badge}</Badge>}
 
-      {open && <DropdownPane ref={dropdownPanelRef}>{children}</DropdownPane>}
+      {open && (
+        <DropdownPane modifier={dropdownPaneModifier} ref={dropdownPanelRef}>
+          {children}
+        </DropdownPane>
+      )}
       {inProgress && <ProgressDisplay />}
     </div>
   );

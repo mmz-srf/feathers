@@ -7,10 +7,12 @@ import { ButtonListEntryProps, ButtonListProps } from './ButtonList.types';
 
 import './ButtonList.scss';
 
+// ButtonList
 const ButtonList: React.FC<ButtonListProps> = ({ modifier = '', children }) => (
   <ul className={classNames('f-button-list', modifier)}>{children}</ul>
 );
 
+// ButtonListEntry
 export const ButtonListEntry: React.FC<ButtonListEntryProps> = ({
   modifier,
   icon,
