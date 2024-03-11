@@ -2,7 +2,6 @@
 @use '../../foundation/variables';
 @use '../../foundation/mixins';
 
-
 //DropdownPane
 .f-dropdown-panel {
   position: absolute;
@@ -46,7 +45,7 @@
 
   > *:first-child {
     flex-grow: 1;
-    
+
     &::after {
       content: '';
       position: absolute;

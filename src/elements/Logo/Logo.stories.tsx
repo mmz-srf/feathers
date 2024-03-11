@@ -46,15 +46,3 @@ Falk.args = { bird: 'falk' };
 
 export const Woody = ModifierTemplate.bind({});
 Woody.args = { bird: 'woody' };
-
-// it's possible to provide a `key` - this is a special property and helps
-// react with rerendering. Remove it and see how react complains.
-// This property is not in the type list on purpose!
-// More: https://reactjs.org/docs/lists-and-keys.html#keys
-export const KeyTest = () => (
-  <div>
-    {[1, 2, 3].map((id) => (
-      <Logo key={id} bird="globi" />
-    ))}
-  </div>
-);

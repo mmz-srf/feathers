@@ -60,7 +60,6 @@ const DropdownButton = ({
   const dropdownPanelRef = useRef(null);
   const dropdownButtonRef = useRef(null);
 
-  // useOutsideClickListener hook
   useOutsideClickListener(dropdownPanelRef, (event) => {
     if (
       dropdownButtonRef.current &&

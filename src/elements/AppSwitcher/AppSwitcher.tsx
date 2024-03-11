@@ -8,7 +8,11 @@ import { CaretIcon } from '../Icon/Icon';
 //Helpers
 import useOutsideClickListener from '../../hooks/useOutsideClickListener';
 
-import { AppSwitcherProps } from './AppSwitcher.types';
+import {
+  AppSwitcherButtonProps,
+  AppSwitcherProps,
+  birdsType,
+} from './AppSwitcher.types';
 
 import './AppSwitcher.scss';
 import Logo from '../Logo/Logo';
@@ -24,7 +28,7 @@ export const BirdsModifiers = [
 
 export type BirdsModifiersType = (typeof BirdsModifiers)[number];
 
-const birds = [
+const birds: birdsType[] = [
   {
     id: 'schorsch',
     path: '/articles',
@@ -60,8 +64,10 @@ const birds = [
 const AppSwitcher = ({
   modifier,
   currentBirdId,
-  currentPortal,
-  phase,
+  currentPortal = 'news',
+  phase = 'dev',
+  disabled = false,
+  children = null,
 }: AppSwitcherProps) => {
   const [open, setOpen] = useState(false);
   const dropdownPanelRef = useRef(null);
@@ -94,17 +100,17 @@ const AppSwitcher = ({
 
   return (
     <div
-      className={classNames('f-app-switcher', modifier)}
+      className={classNames('f-app-switcher', modifier, {
+        'f-app-switcher--unclickable': disabled,
+      })}
       ref={dropdownButtonRef}
       onClick={handleDropdownPanelClick}>
       <div className="f-app-switcher__button-container">
         <Button
           onClick={onCaretClick}
           modifier={['unobtrusive', 'tiny']}
-          // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-          // @ts-ignore
           icon={<Logo bird={currentBirdId} />}>
-          {true && (
+          {!disabled && (
             <span className="f-app-switcher__caret-fixer">
               <CaretIcon
                 modifier={['tiny', 'rotatable', open ? 'rotated-180' : null]}
@@ -119,19 +125,17 @@ const AppSwitcher = ({
           <DropdownPane ref={dropdownPanelRef} modifier="open_to_right">
             <div className="f-app-switcher__birds">
               {
-                //Todo: Add Children
+                //check if children are passed and render them instead of the birds
+                children
+                  ? children
+                  : birdselection.map((bird: birdsType) => (
+                      <a
+                        href={getBirdUrl(bird, currentPortal, phase)}
+                        key={bird.id}>
+                        <AppSwitcherButton bird={bird} />
+                      </a>
+                    ))
               }
-              {birdselection.map((bird) => {
-                //get base url
-
-                const url = getBirdUrl(bird, currentPortal, phase);
-
-                return (
-                  <a href={url} key={bird.id}>
-                    <AppSwitcherButton bird={bird} />
-                  </a>
-                );
-              })}
             </div>
           </DropdownPane>
         </div>
@@ -140,7 +144,7 @@ const AppSwitcher = ({
   );
 };
 
-const AppSwitcherButton = ({ bird }) => (
+export const AppSwitcherButton = ({ bird }: AppSwitcherButtonProps) => (
   <Button icon={<Logo bird={bird.id} />} modifier={['fullwidth']}>
     <div className="f-app-switcher-button__bird-label">
       <p>{bird.label}</p>
