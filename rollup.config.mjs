@@ -29,7 +29,9 @@ export default {
     resolve(),
     svgr(),
     eslint(),
-    image(),
+    image({
+      include: ['**/*.png'],
+    }),
     commonjs(),
     typescript({ useTsconfigDeclarationDir: true }),
     postcss({
