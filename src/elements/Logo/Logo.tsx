@@ -9,9 +9,6 @@ import globiImage from './images/Globi.png';
 import schorschImage from './images/Schorsch.png';
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-expect-error
-import roebiImage from './images/Roebi.png';
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-expect-error
 import karlImage from './images/Karl.png';
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-expect-error
@@ -34,7 +31,7 @@ import './Logo.scss';
 const images = {
   globi: globiImage,
   schorsch: schorschImage,
-  roebi: roebiImage,
+  roebi: globiImage,
   karl: karlImage,
   pitt: pittImage,
   tweety: tweetyImage,
