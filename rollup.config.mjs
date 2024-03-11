@@ -7,6 +7,7 @@ import copy from "rollup-plugin-copy";
 import svgr from "@svgr/rollup";
 import eslint from "@rollup/plugin-eslint";
 import minify from "postcss-minify";
+import image from 'rollup-plugin-img';
 import packageJson from './package.json' assert { type: 'json' };
 
 export default {
@@ -27,6 +28,9 @@ export default {
     peerDepsExternal(),
     resolve(),
     svgr(),
+    image({
+      limit: 10000,
+    }),
     eslint(),
     commonjs(),
     typescript({ useTsconfigDeclarationDir: true }),
