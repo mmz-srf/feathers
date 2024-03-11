@@ -27,8 +27,8 @@ export default {
   plugins: [
     peerDepsExternal(),
     resolve(),
-    svgr(),
     image(),
+    svgr(),
     eslint(),
     commonjs(),
     typescript({ useTsconfigDeclarationDir: true }),
@@ -45,11 +45,6 @@ export default {
         {
           src: 'src/assets/fonts/*.woff2',
           dest: 'build/assets/fonts',
-          rename: (name, extension) => `${name}.${extension}`,
-        },
-        {
-          src: 'src/assets/images/*',
-          dest: 'build/assets/images',
           rename: (name, extension) => `${name}.${extension}`,
         },
       ],
