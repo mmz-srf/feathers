@@ -4,7 +4,7 @@ import ProgressDisplay from './ProgressDisplay';
 import '../../foundation/globals.scss';
 
 export default {
-  title: 'ProgressDsiplay',
+  title: 'ProgressDisplay',
   args: {
     modifier: undefined,
   },
