@@ -8,6 +8,7 @@ import svgr from '@svgr/rollup';
 import eslint from '@rollup/plugin-eslint';
 import minify from 'postcss-minify';
 import packageJson from './package.json' assert { type: 'json' };
+import image from '@rollup/plugin-image';
 
 export default {
   input: 'src/index.ts',
@@ -28,6 +29,7 @@ export default {
     resolve(),
     svgr(),
     eslint(),
+    image(),
     commonjs(),
     typescript({ useTsconfigDeclarationDir: true }),
     postcss({
