@@ -1,26 +1,25 @@
-import peerDepsExternal from "rollup-plugin-peer-deps-external";
-import resolve from "@rollup/plugin-node-resolve";
-import commonjs from "@rollup/plugin-commonjs";
-import typescript from "rollup-plugin-typescript2";
-import postcss from "rollup-plugin-postcss";
-import copy from "rollup-plugin-copy";
-import svgr from "@svgr/rollup";
-import eslint from "@rollup/plugin-eslint";
-import minify from "postcss-minify";
-import image from 'rollup-plugin-img';
+import peerDepsExternal from 'rollup-plugin-peer-deps-external';
+import resolve from '@rollup/plugin-node-resolve';
+import commonjs from '@rollup/plugin-commonjs';
+import typescript from 'rollup-plugin-typescript2';
+import postcss from 'rollup-plugin-postcss';
+import copy from 'rollup-plugin-copy';
+import svgr from '@svgr/rollup';
+import eslint from '@rollup/plugin-eslint';
+import minify from 'postcss-minify';
 import packageJson from './package.json' assert { type: 'json' };
 
 export default {
-  input: "src/index.ts",
+  input: 'src/index.ts',
   output: [
     {
       file: packageJson.main,
-      format: "cjs",
+      format: 'cjs',
       sourcemap: true,
     },
     {
       file: packageJson.module,
-      format: "esm",
+      format: 'esm',
       sourcemap: true,
     },
   ],
@@ -28,27 +27,27 @@ export default {
     peerDepsExternal(),
     resolve(),
     svgr(),
-    image({
-      limit: 10000,
-    }),
     eslint(),
     commonjs(),
     typescript({ useTsconfigDeclarationDir: true }),
     postcss({
-      plugins: [
-        minify(),
-      ]
+      plugins: [minify()],
     }),
     copy({
       targets: [
         {
-          src: "src/foundation/*.scss",
-          dest: "build/foundation",
+          src: 'src/foundation/*.scss',
+          dest: 'build/foundation',
           rename: (name, extension) => `${name}.${extension}`,
         },
         {
-          src: "src/assets/fonts/*.woff2",
-          dest: "build/assets/fonts",
+          src: 'src/assets/fonts/*.woff2',
+          dest: 'build/assets/fonts',
+          rename: (name, extension) => `${name}.${extension}`,
+        },
+        {
+          src: 'src/assets/images/*',
+          dest: 'build/assets/images',
           rename: (name, extension) => `${name}.${extension}`,
         },
       ],
