@@ -5,7 +5,6 @@ import typescript from 'rollup-plugin-typescript2';
 import postcss from 'rollup-plugin-postcss';
 import copy from 'rollup-plugin-copy';
 import svgr from '@svgr/rollup';
-import image from '@rollup/plugin-image';
 import eslint from '@rollup/plugin-eslint';
 import minify from 'postcss-minify';
 import packageJson from './package.json' assert { type: 'json' };
@@ -27,7 +26,6 @@ export default {
   plugins: [
     peerDepsExternal(),
     resolve(),
-    image(),
     svgr(),
     eslint(),
     commonjs(),
