@@ -169,7 +169,7 @@ const getBirdUrl = (bird, portal, phase) => {
         baseUrl = 'https://srf-comments-int.herokuapp.com/';
         break;
       case 'prod':
-        baseUrl = 'https://srf-comments-int.herokuapp.com/'; //Todo: Change to production url
+        baseUrl = 'https://comments.srfdigital.ch/';
         break;
     }
 
@@ -188,7 +188,7 @@ const getBirdUrl = (bird, portal, phase) => {
       baseUrl = 'https://nora.int.srfdigital.ch/';
       break;
     case 'prod':
-      baseUrl = 'https://nora.int.srfdigital.ch/'; //Todo: Change to production url
+      baseUrl = 'https://nora.srfdigital.ch/';
       break;
   }
 
