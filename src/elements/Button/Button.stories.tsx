@@ -159,7 +159,7 @@ export const WithCallback = () => (
   <Button
     text="Alert trigger"
     modifier={['primary', 'big']}
-    onClick={() => alert('Alarm! Alaarm!')}
+    onClick={() => console.warn('Alarm! Alaarm!')}
   />
 );
 
