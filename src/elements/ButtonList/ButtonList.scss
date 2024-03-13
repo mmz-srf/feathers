@@ -1,0 +1,19 @@
+@use '../../foundation/colors';
+
+.f-button-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.f-button-list-entry {
+  border-bottom: 1px solid colors.$color-srf-warmgrey-50;
+
+  & > * {
+    padding: 0 16px;
+  }
+
+  &:last-child {
+    border: none;
+  }
+}

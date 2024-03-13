@@ -1,6 +1,6 @@
 {
   "name": "srf-feathers",
-  "version": "1.5.2",
+  "version": "1.6.0",
   "main": "build/index.js",
   "module": "build/index.esm.js",
   "files": [
@@ -55,12 +55,13 @@
     "react-dom": ">=18.2.0"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@babel/preset-env": "^7.23.6",
     "@babel/preset-react": "^7.23.3",
     "@babel/preset-typescript": "^7.23.3",
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@rollup/plugin-commonjs": "^25.0.7",
     "@rollup/plugin-eslint": "^9.0.5",
+    "@rollup/plugin-image": "^3.0.3",
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@storybook/addon-essentials": "^7.6.4",
     "@storybook/addon-styling-webpack": "^0.0.6",

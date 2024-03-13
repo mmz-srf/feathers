@@ -1,0 +1,22 @@
+.logo {
+  // this space is left empty BEM-tentionally
+}
+
+.f-logo__image {
+  width: 48px;
+  height: 48px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.f-logo__image--pitt {
+  // image isn't cut perfectly but it's also not final yet
+  background-size: 32px;
+}
+
+.f-logo__image--pitt,
+.f-logo__image--falk {
+  // image isn't cut perfectly but it's also not final yet
+  padding: 8px;
+}

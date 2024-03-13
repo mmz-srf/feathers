@@ -1,0 +1,59 @@
+@use '../../foundation/colors';
+@use '../../foundation/variables';
+@use '../../foundation/mixins';
+
+//DropdownPane
+.f-dropdown-panel {
+  position: absolute;
+  top: calc(100% + 4px);
+  right: 0;
+  min-width: 100%;
+  background: colors.$color-srf-warmgrey-10;
+  box-shadow: variables.$shadow-elevation4;
+  border-radius: 2px 0px 2px 2px;
+  z-index: 1;
+}
+
+.f-dropdown-panel--left {
+  right: initial;
+  left: 0;
+}
+
+// make panel scrollable after an arbitrary max-height of 500px
+.f-dropdown-panel--scrollable {
+  max-height: 500px;
+  overflow: auto;
+}
+
+.f-dropdown-panel--upside-down {
+  top: initial;
+  bottom: calc(100% + 4px);
+}
+
+.f-dropdown-panel--transparent {
+  background-color: transparent;
+}
+
+//DropdownButton
+.f-dropdown-button {
+  position: relative;
+  display: inline-flex;
+  align-items: stretch;
+  justify-content: center;
+  box-shadow: variables.$shadow-elevation2;
+  border-radius: 2px;
+
+  > *:first-child {
+    flex-grow: 1;
+
+    &::after {
+      content: '';
+      position: absolute;
+      height: 100%;
+      top: 0;
+      right: 0;
+      width: 0px;
+      border-right: 1px solid colors.$color-srf-neutral-whitea24;
+    }
+  }
+}
