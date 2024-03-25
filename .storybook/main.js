@@ -23,7 +23,7 @@ module.exports = {
     ],
   },],
     }
-  }), "@storybook/addon-webpack5-compiler-babel"],
+  })],
 
   webpackFinal: async (config) => {
     config.module.rules.push({
