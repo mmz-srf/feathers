@@ -71,6 +71,7 @@ import Megaphon from './Images/Megaphon.svg';
 import MeteoMap from './Images/MeteoMap.svg';
 import Moderate from './Images/Moderate.svg';
 import NewsGraphic from './Images/NewsGraphic.svg';
+import OlympicRings from './Images/OlympicRings.svg';
 import Opinion from './Images/Opinion.svg';
 import OrderedList from './Images/OrderedList.svg';
 import Parking from './Images/Parking.svg';
@@ -893,6 +894,12 @@ export const MegaphonIcon: React.FC<IconProps> = ({ modifier }) => (
 export const ModerateIcon: React.FC<IconProps> = ({ modifier }) => (
   <Icon {...{ modifier }}>
     <Moderate />
+  </Icon>
+);
+
+export const OlympicRingsIcon: React.FC<IconProps> = ({ modifier }) => (
+  <Icon {...{ modifier }}>
+    <OlympicRings />
   </Icon>
 );
 
