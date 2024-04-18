@@ -3,7 +3,7 @@ import { LogoProps } from './Logo.types';
 
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-expect-error
-import globiImage from './images/Globi.png';
+import globiImage from './images/Globi.jpeg';
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-expect-error
 import schorschImage from './images/Schorsch.png';
@@ -18,20 +18,23 @@ import pittImage from './images/Pitt.png';
 import tweetyImage from './images/Tweety.png';
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-expect-error
-import hahnImage from './images/Hahn.png';
+import hahnImage from './images/Hahn.jpeg';
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-expect-error
 import falkImage from './images/Falk.png';
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-expect-error
 import woodyImage from './images/Woody.png';
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-expect-error
+import roebiImage from './images/Roebi.png';
 
 import './Logo.scss';
 
 const images = {
   globi: globiImage,
   schorsch: schorschImage,
-  roebi: globiImage,
+  roebi: roebiImage,
   karl: karlImage,
   pitt: pittImage,
   tweety: tweetyImage,

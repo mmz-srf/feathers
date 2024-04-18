@@ -30,7 +30,7 @@ export default {
     svgr(),
     eslint(),
     image({
-      include: ['**/*.png'],
+      include: ['**/*.png', '**/*.jpeg'],
     }),
     commonjs(),
     typescript({ useTsconfigDeclarationDir: true }),

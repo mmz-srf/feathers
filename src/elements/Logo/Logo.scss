@@ -1,4 +1,4 @@
-.logo {
+.f-logo {
   // this space is left empty BEM-tentionally
 }
 
@@ -10,13 +10,13 @@
   background-position: center;
 }
 
-.f-logo__image--pitt {
-  // image isn't cut perfectly but it's also not final yet
-  background-size: 32px;
+// some images are not cut perfectly:
+.f-logo__image--globi,
+.f-logo__image--woody {
+  padding: 6px;
 }
 
-.f-logo__image--pitt,
+.f-logo__image--hahn,
 .f-logo__image--falk {
-  // image isn't cut perfectly but it's also not final yet
   padding: 8px;
 }
