@@ -67,6 +67,7 @@ import {
   MeteoMapIcon,
   ModerateIcon,
   NewsGraphicIcon,
+  OlympicRingsIcon,
   OpinionIcon,
   OrderedListIcon,
   ParkingIcon,
@@ -255,6 +256,7 @@ export const Megaphon = (args) => <MegaphonIcon {...args} />;
 export const MeteoMap = (args) => <MeteoMapIcon {...args} />;
 export const Moderate = (args) => <ModerateIcon {...args} />;
 export const NewsGraphic = (args) => <NewsGraphicIcon {...args} />;
+export const OlympicRings = (args) => <OlympicRingsIcon {...args} />;
 export const Opinion = (args) => <OpinionIcon {...args} />;
 export const OrderedList = (args) => <OrderedListIcon {...args} />;
 export const Parking = (args) => <ParkingIcon {...args} />;
