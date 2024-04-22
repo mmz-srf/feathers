@@ -46,3 +46,6 @@ Falk.args = { bird: 'falk' };
 
 export const Woody = ModifierTemplate.bind({});
 Woody.args = { bird: 'woody' };
+
+export const Edith = ModifierTemplate.bind({});
+Edith.args = { bird: 'edith' };
