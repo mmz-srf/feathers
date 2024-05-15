@@ -130,6 +130,7 @@ import AppSwitcher, {
 import Badge from './elements/Badge/Badge';
 import Button, { ButtonTooltip } from './elements/Button/Button';
 import ButtonList, { ButtonListEntry } from './elements/ButtonList/ButtonList';
+import ConfirmButton from './elements/ConfirmButton/ConfirmButton';
 import DropdownButton, { DropdownPane } from './elements/Dropdown/Dropdown';
 import Hint from './elements/Hint/Hint';
 import Logo from './elements/Logo/Logo';
@@ -164,6 +165,7 @@ export {
   CHMapIcon,
   CloseIcon,
   CommentIcon,
+  ConfirmButton,
   CopyIcon,
   CropIcon,
   DangerIcon,
