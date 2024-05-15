@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import classNames from 'classnames';
 
 import { ConfirmButtonProps } from './ConfirmButton.types';
@@ -25,11 +25,23 @@ const ConfirmButton: React.FC<ConfirmButtonProps> = ({
   icon,
 }) => {
   const [confirming, setConfirming] = useState(false);
+  const [disabledCountdown, setDisabledCountdown] = useState(3);
+
+  useEffect(() => {
+    if (disabledCountdown > 0) {
+      const timer = setTimeout(() => {
+        setDisabledCountdown(
+          (prevDisabledCountdown) => prevDisabledCountdown - 1,
+        );
+      }, 1000);
+
+      return () => clearTimeout(timer);
+    }
+  }, [disabledCountdown]);
 
   const handleClick = (event) => {
-    if (allowInstantConfirmation) {
-      confirm(event);
-      return;
+    if (!allowInstantConfirmation) {
+      setDisabledCountdown(3);
     }
 
     event.stopPropagation();
@@ -73,10 +85,17 @@ const ConfirmButton: React.FC<ConfirmButtonProps> = ({
           <div className="f-confirm-button__confirmation">
             <p className="f-confirm-button__confirmation-text">{confirmText}</p>
             <Button
-              text={iconsOnly ? '' : 'Ja'}
+              text={
+                disabledCountdown !== 0
+                  ? disabledCountdown.toString()
+                  : iconsOnly
+                    ? ''
+                    : 'Ja'
+              }
               onClick={confirm}
               modifier={['danger']}
               icon={<CheckIcon />}
+              disabled={disabledCountdown > 0}
             />
 
             <Button

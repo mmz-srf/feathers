@@ -57,5 +57,5 @@ ButtonModifier.args = { buttonModifier: ['retire'] };
 export const Disabled = ModifierTemplate.bind({});
 Disabled.args = { disabled: true };
 
-export const InProgress = ModifierTemplate.bind({});
-InProgress.args = { inProgress: true };
+export const AllowInstantConfirmation = ModifierTemplate.bind({});
+AllowInstantConfirmation.args = { allowInstantConfirmation: true };

@@ -10,9 +10,9 @@ export interface ConfirmButtonProps {
   allowInstantConfirmation?: boolean;
   confirmText?: string;
   iconsOnly?: boolean;
-  callback: () => void;
+  callback?: () => void;
   onConfirmationCallback: () => void;
-  onAbortCallback: () => void;
+  onAbortCallback?: () => void;
   icon?: ReactElement<IconProps>;
   disabled?: boolean;
 }
