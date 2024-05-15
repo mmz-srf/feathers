@@ -4,7 +4,6 @@
 
 .f-confirm-button {
   @include mixins.fontSize(16);
-  margin-top: 10px;
 }
 
 .f-confirm-button--confirming {
