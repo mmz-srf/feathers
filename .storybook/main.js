@@ -23,7 +23,7 @@ module.exports = {
     ],
   },],
     }
-  })],
+  }), "@storybook/addon-webpack5-compiler-babel", "@chromatic-com/storybook"],
 
   webpackFinal: async (config) => {
     config.module.rules.push({
@@ -64,7 +64,9 @@ module.exports = {
     options: {}
   },
 
-  docs: {
-    autodocs: true
+  docs: {},
+
+  typescript: {
+    reactDocgen: "react-docgen-typescript"
   }
 };
