@@ -1,5 +1,8 @@
+
 name: Storybook
 
+# Trigger the workflow on push or pull request,
+# but only for the main branch
 on:
   push:
     branches:
@@ -8,21 +11,22 @@ on:
     branches:
       - main
 
+
 jobs:
-  test:
+  chromatic:
+    name: Run Chromatic
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: "pnpm"
-      - run: npm install -g pnpm # Install pnpm globally
-      - run: pnpm install # Install dependencies using pnpm
-      - uses: chromaui/action@latest
+      - name: Install dependencies
+        run: npm ci
+      - name: Run Chromatic
+        uses: chromaui/action@latest
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
-          exitOnceUploaded: true
