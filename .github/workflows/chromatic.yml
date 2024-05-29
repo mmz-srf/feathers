@@ -30,7 +30,7 @@ jobs:
           node-version: 20
           cache: 'npm'
       - name: Build Storybook
-        run: pnpm run build-storybook --output-dir storybook-static
+        run: npm run build-storybook --output-dir storybook-static
 
       - run: npm ci
       - uses: chromaui/action@latest
