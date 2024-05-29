@@ -30,7 +30,7 @@ jobs:
           node-version: 20
           cache: "npm"
       - run: npm ci
-      - uses: chromaui/action@latest
+      - uses: chromaui/action@v1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
