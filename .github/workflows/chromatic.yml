@@ -28,9 +28,12 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 20
-          cache: "npm"
+          cache: 'npm'
+      - name: Build Storybook
+        run: pnpm run build-storybook --output-dir storybook-static
+
       - run: npm ci
-      - uses: chromaui/action@v1
+      - uses: chromaui/action@latest
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
