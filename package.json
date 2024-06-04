@@ -59,13 +59,15 @@
     "@babel/preset-env": "^7.24.3",
     "@babel/preset-react": "^7.24.1",
     "@babel/preset-typescript": "^7.24.1",
+    "@chromatic-com/storybook": "^1.5.0",
     "@rollup/plugin-commonjs": "^25.0.7",
     "@rollup/plugin-eslint": "^9.0.5",
     "@rollup/plugin-image": "^3.0.3",
     "@rollup/plugin-node-resolve": "^15.2.3",
-    "@storybook/addon-essentials": "^7.6.17",
-    "@storybook/addon-styling-webpack": "^0.0.6",
-    "@storybook/react-webpack5": "^7.6.17",
+    "@storybook/addon-essentials": "^8.1.4",
+    "@storybook/addon-styling-webpack": "^1.0.0",
+    "@storybook/addon-webpack5-compiler-babel": "^3.0.3",
+    "@storybook/react-webpack5": "^8.1.4",
     "@svgr/rollup": "^8.1.0",
     "@svgr/webpack": "^8.1.0",
     "@types/react": "^18.2.69",
@@ -93,7 +95,7 @@
     "rollup-plugin-typescript2": "^0.36.0",
     "sass": "^1.72.0",
     "sass-loader": "^14.1.1",
-    "storybook": "^7.6.4",
+    "storybook": "^8.1.4",
     "style-loader": "^3.3.3"
   }
 }
