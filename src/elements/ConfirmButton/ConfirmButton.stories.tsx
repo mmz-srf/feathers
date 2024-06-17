@@ -59,3 +59,6 @@ Disabled.args = { disabled: true };
 
 export const AllowInstantConfirmation = ModifierTemplate.bind({});
 AllowInstantConfirmation.args = { allowInstantConfirmation: true };
+
+export const AllowInstantDeletion = ModifierTemplate.bind({});
+AllowInstantDeletion.args = { allowInstantDeletion: true };

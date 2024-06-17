@@ -21,6 +21,7 @@ const ConfirmButton: React.FC<ConfirmButtonProps> = ({
   confirmText = 'Sind Sie sicher?',
   disabled = false,
   allowInstantConfirmation = false,
+  allowInstantDeletion = false,
   iconsOnly = false,
   icon,
 }) => {
@@ -40,6 +41,11 @@ const ConfirmButton: React.FC<ConfirmButtonProps> = ({
   }, [disabledCountdown]);
 
   const handleClick = (event) => {
+    if (allowInstantDeletion) {
+      callback();
+      return;
+    }
+
     if (!allowInstantConfirmation) {
       setDisabledCountdown(3);
     }

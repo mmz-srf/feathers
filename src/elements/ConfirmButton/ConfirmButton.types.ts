@@ -8,6 +8,7 @@ export interface ConfirmButtonProps {
   buttonModifier?: Array<ButtonModifiersType>;
   text?: string;
   allowInstantConfirmation?: boolean;
+  allowInstantDeletion?: boolean;
   confirmText?: string;
   iconsOnly?: boolean;
   callback?: () => void;
