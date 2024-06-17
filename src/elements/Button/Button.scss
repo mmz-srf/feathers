@@ -143,6 +143,8 @@ $button-animation-duration: 0.3s;
   display: flex;
   // together with some text
   padding: 0 var(--f-button-icon-text-gap) 0 0;
+  // ignore clicks on the icon
+  pointer-events: none;
 }
 
 .f-button__text {
