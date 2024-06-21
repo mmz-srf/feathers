@@ -26,7 +26,7 @@ const ConfirmButton: React.FC<ConfirmButtonProps> = ({
   icon,
 }) => {
   const [confirming, setConfirming] = useState(false);
-  const [disabledCountdown, setDisabledCountdown] = useState(3);
+  const [disabledCountdown, setDisabledCountdown] = useState(0);
 
   useEffect(() => {
     if (disabledCountdown > 0) {
