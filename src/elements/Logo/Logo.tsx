@@ -58,6 +58,7 @@ export const LogoBirds = [
   'falk',
   'woody',
   'edith',
+  'dashboard',
 ] as const;
 
 export type LogoBirdsType = (typeof LogoBirds)[number];

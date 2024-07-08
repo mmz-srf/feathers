@@ -24,6 +24,7 @@ export const BirdsModifiers = [
   'karl',
   'pitt',
   'tweety',
+  'dashboard',
 ] as const;
 
 export type BirdsModifiersType = (typeof BirdsModifiers)[number];
@@ -58,6 +59,12 @@ const birds: birdsType[] = [
     path: '/list/new',
     label: 'Tweety',
     hint: 'Kommentar-Verwaltung',
+  },
+  {
+    id: 'dashboard',
+    path: '/dashboard',
+    label: 'Dashboard',
+    hint: 'Statistiken & Co.',
   },
 ];
 
