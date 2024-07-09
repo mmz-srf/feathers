@@ -3,7 +3,7 @@ import { LogoProps } from './Logo.types';
 
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-expect-error
-import globiImage from './images/Globi.jpeg';
+import globiImage from './images/Globi.png';
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-expect-error
 import schorschImage from './images/Schorsch.png';
@@ -31,6 +31,9 @@ import edithImage from './images/Edith.png';
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-expect-error
 import roebiImage from './images/Roebi.png';
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-expect-error
+import waltraudImage from './images/Waltraud.png';
 
 import './Logo.scss';
 
@@ -45,6 +48,7 @@ const images = {
   falk: falkImage,
   woody: woodyImage,
   edith: edithImage,
+  waltraud: waltraudImage,
 };
 
 export const LogoBirds = [
@@ -58,6 +62,7 @@ export const LogoBirds = [
   'falk',
   'woody',
   'edith',
+  'waltraud',
 ] as const;
 
 export type LogoBirdsType = (typeof LogoBirds)[number];
