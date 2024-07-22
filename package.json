@@ -67,7 +67,7 @@
     "@storybook/addon-essentials": "^8.1.10",
     "@storybook/addon-styling-webpack": "^1.0.0",
     "@storybook/addon-webpack5-compiler-babel": "^3.0.3",
-    "@storybook/react-webpack5": "^8.1.10",
+    "@storybook/react-webpack5": "^8.2.5",
     "@svgr/rollup": "^8.1.0",
     "@svgr/webpack": "^8.1.0",
     "@types/react": "^18.3.3",
