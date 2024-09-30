@@ -22,12 +22,8 @@
   font-family: 'SRG_SSR_Serif_Regular', serif;
 }
 
-@mixin fontFamilySerifDisplayMedium {
-  font-family: 'SRG_SSR_Serif_Display_Medium', serif;
-}
-
 @mixin fontFamilyFauxItalic {
-  font-family: 'SRG_SSR_Text_FauxItalic_VF', sans-serif;
+  font-family: 'SRG_SSR_Text_VF', sans-serif;
   font-style: italic;
   font-synthesis: style;
 }
