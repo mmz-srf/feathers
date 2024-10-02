@@ -1,0 +1,44 @@
+==Release notes SRG SSR Type, SRG SSR Text, SRG SSR Type VF, SRG SSR Text VF==
+
+Compiler of release notes: Dalton Maag
+Designer: Dalton Maag
+Designer URL: daltonmaag.com
+
+Release date: 2024-06-28
+
+Change log:
+- v2.100:
+    - Character set expansion to All European Latin, based on the TTF sources of SRGSSR Type V1.300.
+    - Renaming of family name as follows:
+        SRGSSR Type Display > SRGSSR Type
+        SRGSSR Type Text > SRGSSR Text
+    - Added static fonts, that are based on the VF.
+    - Minor kerning and outline refinements.
+    - Bug fix in case conversion feature of SRG SSR Type.
+- v2.000: This is the first release of the VF.
+
+Basic information
+1 Font name: 
+    - Static Fonts: SRG SSR Type, SRG SSR Text
+    - Variable Fonts: SRG SSR Type VF, SRG SSR Text VF
+2 TrueType Version record: 2.100
+3 Character Set: All European Latin
+4 Supported scripts: Latin
+5 Number of glyphs: 504
+6 Usage: Text and Display
+7 Number of axes: 1
+8 Axes:
+    - Weight
+        tag: wght
+        range: 300 (Light) - 900 (Heavy)
+5 Named instances per style: Light, Regular, Medium, Bold, Heavy.
+
+Technology
+1 File formats: The files have been delivered as variable fonts in the TrueType-based OpenType format, for use in all major Operating Systems, TTF for use in apps, and in web font format: WOFF, WOFF2.
+2 Embedding settings: Print and preview of the document is allowed (print and preview mode); subsetting is allowed.
+3 Screen optimization information: No screen optimization.
+4 Default numerals: Proportional. Tabular figures accessible via OpenType features.
+
+Other Information
+The fonts contain the following OpenType Stylistic Sets:
+    - ss01: alternate design for K, P, R, Thorn and related accented glyphs.

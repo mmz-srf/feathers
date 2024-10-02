@@ -17,20 +17,6 @@ $font-path: '../assets/fonts/' !default;
     font-display: swap;
   }
 
-  /* this FAUX ITALIC font definition is needed as a workaround for a chrome bug.
-     chrome does not render `font-style: italic` in faux italic for variable fonts if there's a font-weight range defined.
-     see: https://bugs.chromium.org/p/chromium/issues/detail?id=971610 */
-  @font-face {
-    font-family: 'SRG_SSR_Text_FauxItalic_VF';
-    src:
-      url('#{$font_path}SRGSSRTypeVF_Text_W_Wght.woff2')
-        format('woff2-variations'),
-      /* new standard */ url('#{$font_path}SRGSSRTypeVF_Text_W_Wght.woff2')
-        format('woff2');
-    /* older style */
-    font-display: swap;
-  }
-
   @font-face {
     font-family: 'SRG_SSR_Display_VF';
     src:
