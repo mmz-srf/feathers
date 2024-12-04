@@ -49,3 +49,6 @@ Woody.args = { bird: 'woody' };
 
 export const Edith = ModifierTemplate.bind({});
 Edith.args = { bird: 'edith' };
+
+export const Thomy = ModifierTemplate.bind({});
+Thomy.args = { bird: 'thomy' };

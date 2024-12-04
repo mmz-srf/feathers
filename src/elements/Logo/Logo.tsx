@@ -34,6 +34,9 @@ import roebiImage from './images/Roebi.png';
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-expect-error
 import waltraudImage from './images/Waltraud.png';
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-expect-error
+import thomyImage from './images/Thomy.png';
 
 import './Logo.scss';
 
@@ -49,6 +52,7 @@ const images = {
   woody: woodyImage,
   edith: edithImage,
   waltraud: waltraudImage,
+  thomy: thomyImage,
 };
 
 export const LogoBirds = [
@@ -63,6 +67,7 @@ export const LogoBirds = [
   'woody',
   'edith',
   'waltraud',
+  'thomy',
 ] as const;
 
 export type LogoBirdsType = (typeof LogoBirds)[number];
