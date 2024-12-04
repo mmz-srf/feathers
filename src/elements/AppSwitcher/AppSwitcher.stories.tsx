@@ -56,15 +56,27 @@ export const AppSwitcherWithCustomAppSwitcherButtonChild =
 AppSwitcherWithCustomAppSwitcherButtonChild.args = {
   currentBirdId: 'tweety',
   children: (
-    <a href="https://www.srf.ch/">
-      <AppSwitcherButton
-        bird={{
-          id: 'schorsch',
-          path: '',
-          label: 'Schorsch',
-          hint: 'Ich bin custom!',
-        }}
-      />
-    </a>
+    <>
+      <a href="https://www.srf.ch/">
+        <AppSwitcherButton
+          bird={{
+            id: 'schorsch',
+            path: '',
+            label: 'Schorsch',
+            hint: 'Ich bin custom!',
+          }}
+        />
+      </a>
+      <a href="https://www.srf.ch/">
+        <AppSwitcherButton
+          bird={{
+            id: 'thomy',
+            path: '',
+            label: 'Thomy die Taube',
+            hint: 'Ich bin auch custom!',
+          }}
+        />
+      </a>
+    </>
   ),
 };

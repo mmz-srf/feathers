@@ -24,6 +24,7 @@ export const BirdsModifiers = [
   'karl',
   'pitt',
   'tweety',
+  'thomy',
 ] as const;
 
 export type BirdsModifiersType = (typeof BirdsModifiers)[number];
