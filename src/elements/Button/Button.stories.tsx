@@ -47,6 +47,9 @@ BoldModifier.args = { modifier: 'bold' };
 export const CircleModifier = ModifierTemplate.bind({});
 CircleModifier.args = { modifier: 'circle' };
 
+export const PillModifier = ModifierTemplate.bind({});
+PillModifier.args = { modifier: 'pill' };
+
 export const DangerModifier = ModifierTemplate.bind({});
 DangerModifier.args = { modifier: 'danger' };
 

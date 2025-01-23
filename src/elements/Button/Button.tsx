@@ -39,6 +39,7 @@ export const ButtonModifiers = [
   'uppercase',
   'link',
   'circle',
+  'pill',
 ] as const;
 export type ButtonModifiersType = (typeof ButtonModifiers)[number];
 
@@ -90,6 +91,7 @@ const Button: React.FC<ButtonProps> = ({
       'f-button--uppercase': modifier?.includes('uppercase'),
       'f-button--link': modifier?.includes('link'),
       'f-button--circle': modifier?.includes('circle'),
+      'f-button--pill': modifier?.includes('pill'),
       'f-button--icon-only': icon && !text,
     })}
     disabled={disabled}

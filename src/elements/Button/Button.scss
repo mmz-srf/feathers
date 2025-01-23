@@ -163,6 +163,10 @@ $button-animation-duration: 0.3s;
   border-radius: 50%;
 }
 
+.f-button--pill {
+  border-radius: var(--f-button-height);
+}
+
 // Button that looks like a link
 .f-button--link {
   --f-button-text-color: var(--f-button-link-default-color);
