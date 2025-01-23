@@ -93,7 +93,7 @@
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-typescript2": "^0.36.0",
-    "sass": "^1.80.4",
+    "sass": "^1.83.4",
     "sass-loader": "^14.2.1",
     "storybook": "^8.3.6",
     "style-loader": "^4.0.0"
