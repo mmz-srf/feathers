@@ -1,4 +1,5 @@
-import { useRef, useState } from 'react';
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import React, { useRef, useState } from 'react';
 import classNames from 'classnames';
 
 import { DropdownPane } from '../Dropdown/Dropdown';
