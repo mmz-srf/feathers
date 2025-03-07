@@ -25,8 +25,10 @@ export default [
   pluginPrettier,
   {
     languageOptions: {
-      globals: globals.browser,
-      globals: globals.builtin,
+      globals: {
+        ...globals.browser,
+        ...globals.builtin,
+      },
     },
     plugins: {
       'react-hooks': pluginReactHooks,
