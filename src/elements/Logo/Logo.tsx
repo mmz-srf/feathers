@@ -1,41 +1,17 @@
 import React from 'react';
 import { LogoProps } from './Logo.types';
 
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-expect-error
 import globiImage from './images/Globi.png';
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-expect-error
 import schorschImage from './images/Schorsch.png';
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-expect-error
 import karlImage from './images/Karl.png';
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-expect-error
 import pittImage from './images/Pitt.png';
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-expect-error
 import tweetyImage from './images/Tweety.png';
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-expect-error
-import hahnImage from './images/Hahn.jpeg';
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-expect-error
+import hahnImage from './images/Hahn.png';
 import falkImage from './images/Falk.png';
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-expect-error
 import woodyImage from './images/Woody.png';
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-expect-error
 import edithImage from './images/Edith.png';
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-expect-error
 import roebiImage from './images/Roebi.png';
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-expect-error
 import waltraudImage from './images/Waltraud.png';
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-expect-error
 import thomyImage from './images/Thomy.png';
 
 import './Logo.scss';
