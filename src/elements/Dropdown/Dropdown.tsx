@@ -39,6 +39,8 @@ export const DropdownPane = React.forwardRef<HTMLDivElement, DropdownPaneProps>(
   ),
 );
 
+DropdownPane.displayName = 'DropdownPane';
+
 //DropdownButton
 const DropdownButton = ({
   onClick,
@@ -96,10 +98,13 @@ const DropdownButton = ({
 
   return (
     <div
+      role="button"
+      tabIndex={0}
       className={classNames('f-dropdown-button', modifier)}
       ref={dropdownButtonRef}
       data-cy={dataCy}
-      onClick={handleDropdownPanelClick}>
+      onClick={handleDropdownPanelClick}
+      onKeyDown={handleDropdownPanelClick}>
       <Button
         icon={icon}
         text={open ? textOpen : text}

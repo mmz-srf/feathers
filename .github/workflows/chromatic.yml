@@ -27,7 +27,7 @@ jobs:
           fetch-depth: 0 # Required to retrieve git history
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           cache: 'npm'
       - run: npm ci
       - uses: chromaui/action@latest

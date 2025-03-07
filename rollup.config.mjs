@@ -5,21 +5,19 @@ import typescript from 'rollup-plugin-typescript2';
 import postcss from 'rollup-plugin-postcss';
 import copy from 'rollup-plugin-copy';
 import svgr from '@svgr/rollup';
-import eslint from '@rollup/plugin-eslint';
 import minify from 'postcss-minify';
-import packageJson from './package.json' assert { type: 'json' };
 import image from '@rollup/plugin-image';
 
 export default {
   input: 'src/index.ts',
   output: [
     {
-      file: packageJson.main,
+      file: 'build/index.js',
       format: 'cjs',
       sourcemap: true,
     },
     {
-      file: packageJson.module,
+      file: 'build/index.esm.js',
       format: 'esm',
       sourcemap: true,
     },
@@ -28,9 +26,8 @@ export default {
     peerDepsExternal(),
     resolve(),
     svgr(),
-    eslint(),
     image({
-      include: ['**/*.png', '**/*.jpeg'],
+      include: ['**/*.png'],
     }),
     commonjs(),
     typescript({ useTsconfigDeclarationDir: true }),

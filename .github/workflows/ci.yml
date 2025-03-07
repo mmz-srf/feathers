@@ -1,9 +1,11 @@
-name: NPM Publish
+name: CI
 
 on:
   push:
     branches:
       - main
+  pull_request:
+  workflow_dispatch:
 
 jobs:
   publish:
@@ -15,7 +17,5 @@ jobs:
           node-version: 22
           cache: 'npm'
       - run: npm ci
+      - run: npm run lint
       - run: npm run build
-      - uses: JS-DevTools/npm-publish@v3
-        with:
-          token: ${{ secrets.NPM_TOKEN }}

@@ -28,11 +28,9 @@ const useOutsideClickListener = (ref, callback = () => {}) => {
 
   useEffect(() => {
     // Bind the event listener
-    // eslint-disable-next-line no-undef
     document.addEventListener('mousedown', handleClickOutside);
     return () => {
       // Unbind the event listener on clean up
-      // eslint-disable-next-line no-undef
       document.removeEventListener('mousedown', handleClickOutside);
     };
   });
