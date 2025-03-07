@@ -90,6 +90,8 @@ export default [
     files: ['**/*.stories.tsx'],
     rules: {
       'import/no-unused-modules': 'off',
+      'no-console': 'off',
+      '@typescript-eslint/no-unused-vars': 'off',
     },
   },
 ];

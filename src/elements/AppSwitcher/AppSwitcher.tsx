@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import classNames from 'classnames';
 
 import { DropdownPane } from '../Dropdown/Dropdown';
@@ -101,11 +101,14 @@ const AppSwitcher = ({
 
   return (
     <div
+      role="button"
+      tabIndex={0}
       className={classNames('f-app-switcher', modifier, {
         'f-app-switcher--unclickable': disabled,
       })}
       ref={dropdownButtonRef}
-      onClick={handleDropdownPanelClick}>
+      onClick={handleDropdownPanelClick}
+      onKeyDown={handleDropdownPanelClick}>
       <div className="f-app-switcher__button-container">
         <Button
           onClick={onCaretClick}
