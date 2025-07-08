@@ -5,7 +5,6 @@ import globiImage from './images/Globi.png';
 import schorschImage from './images/Schorsch.png';
 import karlImage from './images/Karl.png';
 import pittImage from './images/Pitt.png';
-import tweetyImage from './images/Tweety.png';
 import hahnImage from './images/Hahn.png';
 import falkImage from './images/Falk.png';
 import woodyImage from './images/Woody.png';
@@ -22,7 +21,6 @@ const images = {
   roebi: roebiImage,
   karl: karlImage,
   pitt: pittImage,
-  tweety: tweetyImage,
   hahn: hahnImage,
   falk: falkImage,
   woody: woodyImage,
@@ -37,7 +35,6 @@ export const LogoBirds = [
   'roebi',
   'karl',
   'pitt',
-  'tweety',
   'hahn',
   'falk',
   'woody',

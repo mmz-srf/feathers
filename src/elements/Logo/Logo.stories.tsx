@@ -35,9 +35,6 @@ Karl.args = { bird: 'karl' };
 export const Pitt = ModifierTemplate.bind({});
 Pitt.args = { bird: 'pitt' };
 
-export const Tweety = ModifierTemplate.bind({});
-Tweety.args = { bird: 'tweety' };
-
 export const Hahn = ModifierTemplate.bind({});
 Hahn.args = { bird: 'hahn' };
 
