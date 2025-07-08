@@ -24,7 +24,6 @@ export const BirdsModifiers = [
   'roebi',
   'karl',
   'pitt',
-  'tweety',
   'thomy',
 ] as const;
 
@@ -54,12 +53,6 @@ const birds: birdsType[] = [
     path: '/cockpit',
     label: 'Cock Pitt',
     hint: 'Cockpit',
-  },
-  {
-    id: 'tweety',
-    path: '/list/new',
-    label: 'Tweety',
-    hint: 'Kommentar-Verwaltung',
   },
 ];
 
@@ -160,26 +153,6 @@ export const AppSwitcherButton = ({ bird }: AppSwitcherButtonProps) => (
 
 const getBirdUrl = (bird, portal, phase) => {
   let baseUrl;
-
-  //Tweety bird
-  if (bird.id === 'tweety') {
-    switch (phase) {
-      case 'local':
-        baseUrl = 'http://localhost:8050/';
-        break;
-      case 'dev':
-        baseUrl = 'https://srf-comments-dev.herokuapp.com/';
-        break;
-      case 'int':
-        baseUrl = 'https://srf-comments-int.herokuapp.com/';
-        break;
-      case 'prod':
-        baseUrl = 'https://comments.srfdigital.ch/';
-        break;
-    }
-
-    return baseUrl + 'moderation/' + portal + bird.path;
-  }
 
   //Nora birds
   switch (phase) {

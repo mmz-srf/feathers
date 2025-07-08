@@ -48,13 +48,10 @@ Karl.args = { currentBirdId: 'karl' };
 export const Pitt = ModifierTemplate.bind({});
 Pitt.args = { currentBirdId: 'pitt' };
 
-export const Tweety = ModifierTemplate.bind({});
-Tweety.args = { currentBirdId: 'tweety' };
-
 export const AppSwitcherWithCustomAppSwitcherButtonChild =
   ModifierTemplate.bind({});
 AppSwitcherWithCustomAppSwitcherButtonChild.args = {
-  currentBirdId: 'tweety',
+  currentBirdId: 'schorsch',
   children: (
     <>
       <a href="https://www.srf.ch/">
