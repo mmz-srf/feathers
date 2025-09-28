@@ -12,6 +12,7 @@ import edithImage from './images/Edith.png';
 import roebiImage from './images/Roebi.png';
 import waltraudImage from './images/Waltraud.png';
 import thomyImage from './images/Thomy.png';
+import abedImage from './images/Abed.png';
 
 import './Logo.scss';
 
@@ -27,6 +28,7 @@ const images = {
   edith: edithImage,
   waltraud: waltraudImage,
   thomy: thomyImage,
+  abed: abedImage,
 };
 
 export const LogoBirds = [
@@ -41,6 +43,7 @@ export const LogoBirds = [
   'edith',
   'waltraud',
   'thomy',
+  'abed',
 ] as const;
 
 export type LogoBirdsType = (typeof LogoBirds)[number];
