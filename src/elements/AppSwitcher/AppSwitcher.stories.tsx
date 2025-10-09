@@ -48,6 +48,9 @@ Karl.args = { currentBirdId: 'karl' };
 export const Pitt = ModifierTemplate.bind({});
 Pitt.args = { currentBirdId: 'pitt' };
 
+export const Abed = ModifierTemplate.bind({});
+Abed.args = { currentBirdId: 'abed' };
+
 export const AppSwitcherWithCustomAppSwitcherButtonChild =
   ModifierTemplate.bind({});
 AppSwitcherWithCustomAppSwitcherButtonChild.args = {

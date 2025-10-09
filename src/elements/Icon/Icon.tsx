@@ -3,6 +3,7 @@ import classNames from 'classnames';
 
 import { IconProps } from './Icon.types';
 
+import AbedLogo from './Images/AbedLogo.svg';
 import AddColumn from './Images/AddColumn.svg';
 import AddRow from './Images/AddRow.svg';
 import ArrowDown from './Images/ArrowDown.svg';
@@ -218,6 +219,12 @@ export const CopyIcon: React.FC<IconProps> = ({ modifier }) => (
 export const GlobiLogoIcon: React.FC<IconProps> = ({ modifier }) => (
   <Icon {...{ modifier }}>
     <GlobiLogo />
+  </Icon>
+);
+
+export const AbedLogoIcon: React.FC<IconProps> = ({ modifier }) => (
+  <Icon {...{ modifier }}>
+    <AbedLogo />
   </Icon>
 );
 
