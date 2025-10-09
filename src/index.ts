@@ -1,4 +1,5 @@
 import {
+  AbedLogoIcon,
   AddColumnIcon,
   AddRowIcon,
   ArrowDownIcon,
@@ -139,6 +140,7 @@ import Tooltip from './elements/Tooltip/Tooltip';
 import useOutsideClickListener from './hooks/useOutsideClickListener';
 
 export {
+  AbedLogoIcon,
   AddColumnIcon,
   AddRowIcon,
   AppSwitcher,
