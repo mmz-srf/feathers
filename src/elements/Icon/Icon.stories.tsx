@@ -1,5 +1,6 @@
 import React from 'react';
 import {
+  AbedLogoIcon,
   AddColumnIcon,
   AddRowIcon,
   ArrowDownIcon,
@@ -192,6 +193,7 @@ ExampleWithAltText.args = {
 };
 
 /* ICONS */
+export const AbedLogo = (args) => <AbedLogoIcon {...args} />;
 export const AddColumn = (args) => <AddColumnIcon {...args} />;
 export const AddRow = (args) => <AddRowIcon {...args} />;
 export const ArrowDown = (args) => <ArrowDownIcon {...args} />;
