@@ -83,7 +83,7 @@ In case this solution doesn't work for your usecase. It is possible to adjust th
 * enter directory where you installed it, e.g. `cd feathers`
 * install dependencies `npm install`
 
-ℹ️ If you have to update the _secrets_ (e.g. `CHROMATIC_PROJECT_TOKEN` for deployment to chromatic or `NPM_TOKEN` for deploying on NPM), you can change them on https://github.com/mmz-srf/feathers/settings/secrets/actions 
+ℹ️ If you have to update the _secrets_ (e.g. `CHROMATIC_PROJECT_TOKEN` for deployment to chromatic), you can change them on https://github.com/mmz-srf/feathers/settings/secrets/actions 
 
 ### Building
 
@@ -101,9 +101,11 @@ npm run storybook
 
 ## Publishing
 
-`srf-feathers` is published on [NPM](https://www.npmjs.com/package/srf-feathers). A github workflow is used to auto-publish on NPM when the version number in `package.json` is increased on the main branch.
+`srf-feathers` is published on [NPM](https://www.npmjs.com/package/srf-feathers).
 
-In case this fails, publish via `npm publish` (you must be logged into npm in the CLI).
+Make sure you're logged into npm with the correct user: `npm login` (User, Password and 2FA are all found in the password vault)
+
+Afterwards, publish via `npm publish`
 
 ### Generating New Components
 
