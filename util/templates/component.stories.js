@@ -1,5 +1,5 @@
 module.exports = (componentName) => ({
-  content: `// Generated with util/create-component.js
+  content: `// Generated with util/create-component.js - adapt as needed
 import React from "react";
 import ${componentName} from "./${componentName}";
 
