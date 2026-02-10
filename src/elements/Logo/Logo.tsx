@@ -1,49 +1,52 @@
 import React from 'react';
 import { LogoProps } from './Logo.types';
 
+import abedImage from './images/Abed.png';
+import edithImage from './images/Edith.png';
+import falkImage from './images/Falk.png';
 import globiImage from './images/Globi.png';
-import schorschImage from './images/Schorsch.png';
+import hahnImage from './images/Hahn.png';
 import karlImage from './images/Karl.png';
 import pittImage from './images/Pitt.png';
-import hahnImage from './images/Hahn.png';
-import falkImage from './images/Falk.png';
-import woodyImage from './images/Woody.png';
-import edithImage from './images/Edith.png';
 import roebiImage from './images/Roebi.png';
-import waltraudImage from './images/Waltraud.png';
+import schorschImage from './images/Schorsch.png';
+import starImage from './images/Star.png';
 import thomyImage from './images/Thomy.png';
-import abedImage from './images/Abed.png';
+import waltraudImage from './images/Waltraud.png';
+import woodyImage from './images/Woody.png';
 
 import './Logo.scss';
 
 const images = {
+  abed: abedImage,
+  edith: edithImage,
+  falk: falkImage,
   globi: globiImage,
-  schorsch: schorschImage,
-  roebi: roebiImage,
+  hahn: hahnImage,
   karl: karlImage,
   pitt: pittImage,
-  hahn: hahnImage,
-  falk: falkImage,
-  woody: woodyImage,
-  edith: edithImage,
-  waltraud: waltraudImage,
+  roebi: roebiImage,
+  schorsch: schorschImage,
+  star: starImage,
   thomy: thomyImage,
-  abed: abedImage,
+  waltraud: waltraudImage,
+  woody: woodyImage,
 };
 
 export const LogoBirds = [
+  'abed',
+  'edith',
+  'falk',
   'globi',
-  'schorsch',
-  'roebi',
+  'hahn',
   'karl',
   'pitt',
-  'hahn',
-  'falk',
-  'woody',
-  'edith',
-  'waltraud',
+  'roebi',
+  'schorsch',
+  'star',
   'thomy',
-  'abed',
+  'waltraud',
+  'woody',
 ] as const;
 
 export type LogoBirdsType = (typeof LogoBirds)[number];
