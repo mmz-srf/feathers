@@ -73,6 +73,8 @@ import {
   OrderedListIcon,
   ParkingIcon,
   PeopleIcon,
+  PlayIcon,
+  PlaySrfIcon,
   PlusCircleIcon,
   PlusIcon,
   PodcastIcon,
@@ -263,6 +265,8 @@ export const Opinion = (args) => <OpinionIcon {...args} />;
 export const OrderedList = (args) => <OrderedListIcon {...args} />;
 export const Parking = (args) => <ParkingIcon {...args} />;
 export const People = (args) => <PeopleIcon {...args} />;
+export const Play = (args) => <PlayIcon {...args} />;
+export const PlaySrf = (args) => <PlaySrfIcon {...args} />;
 export const Plus = (args) => <PlusIcon {...args} />;
 export const PlusCircle = (args) => <PlusCircleIcon {...args} />;
 export const Podcast = (args) => <PodcastIcon {...args} />;

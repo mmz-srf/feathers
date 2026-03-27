@@ -77,6 +77,8 @@ import Opinion from './Images/Opinion.svg';
 import OrderedList from './Images/OrderedList.svg';
 import Parking from './Images/Parking.svg';
 import People from './Images/People.svg';
+import Play from './Images/Play.svg';
+import PlaySrf from './Images/PlaySrf.svg';
 import Plus from './Images/Plus.svg';
 import PlusCircle from './Images/PlusCircle.svg';
 import Podcast from './Images/Podcast.svg';
@@ -982,6 +984,18 @@ export const LogoutIcon: React.FC<IconProps> = ({
 }) => (
   <Icon {...{ modifier }}>
     <Logout title={alt} />
+  </Icon>
+);
+
+export const PlayIcon: React.FC<IconProps> = ({ modifier }) => (
+  <Icon {...{ modifier }}>
+    <Play />
+  </Icon>
+);
+
+export const PlaySrfIcon: React.FC<IconProps> = ({ modifier }) => (
+  <Icon {...{ modifier }}>
+    <PlaySrf />
   </Icon>
 );
 
