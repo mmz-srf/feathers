@@ -110,7 +110,7 @@ const AppSwitcher = ({
           onClick={onCaretClick}
           modifier={['unobtrusive', 'tiny']}
           icon={<Logo bird={currentBirdId} />}
-          title={currentBird?.label}>
+          title={`${currentBird?.label} (${currentBird?.hint})`}>
           {!disabled && (
             <span className="f-app-switcher__caret-fixer">
               <CaretIcon
