@@ -93,6 +93,7 @@ const AppSwitcher = ({
   };
 
   const birdselection = birds.filter((bird) => bird.id !== currentBirdId);
+  const currentBird = birds.find((bird) => bird.id === currentBirdId);
 
   return (
     <div
@@ -108,7 +109,8 @@ const AppSwitcher = ({
         <Button
           onClick={onCaretClick}
           modifier={['unobtrusive', 'tiny']}
-          icon={<Logo bird={currentBirdId} />}>
+          icon={<Logo bird={currentBirdId} />}
+          title={currentBird?.label}>
           {!disabled && (
             <span className="f-app-switcher__caret-fixer">
               <CaretIcon
